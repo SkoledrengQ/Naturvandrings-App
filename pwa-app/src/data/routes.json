@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Mølleskovens historie og dannelse",
+    "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
+    "lengthMeters": null,
+    "ageTarget": "Voksne historieinteresserede",
+    "storyteller": "Kristian",
+    "poiOrder": [1, 2, 3, 4, 5, 6, 7, 8]
+  }
+]
