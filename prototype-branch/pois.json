@@ -1,0 +1,16 @@
+[
+  {
+    "id": "p1",
+    "title": "Å-forløbet",
+    "lat": 57.12345,
+    "lon": 10.12345,
+    "text": "Her ser du åens gamle løb, som en af fortællerne vil fortælle om."
+  },
+  {
+    "id": "p2",
+    "title": "Egetræet",
+    "lat": 57.12440,
+    "lon": 10.12495,
+    "text": "Dette egetræ er over 200 år gammelt og har været vidne til områdets historie."
+  }
+]

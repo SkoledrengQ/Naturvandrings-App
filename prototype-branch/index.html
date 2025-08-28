@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prototype Naturvandringsapp</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; }
+    #map { height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Init map
+    const map = L.map('map').setView([57.123, 10.123], 15);
+
+    // Base layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Load POIs
+    fetch('pois.json')
+      .then(r => r.json())
+      .then(pois => {
+        pois.forEach(p => {
+          L.marker([p.lat, p.lon])
+            .addTo(map)
+            .bindPopup(`<h3>${p.title}</h3><p>${p.text}</p>`);
+        });
+      });
+  </script>
+</body>
+</html>
