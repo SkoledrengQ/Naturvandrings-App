@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -66,3 +64,45 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 640px) {
+  .map { height: calc(100vh - 120px) !important; }
+}
+
+/* Tiles SKAL være 256x256 for præcis positionering */
+.leaflet-tile {
+  width: 256px !important;
+  height: 256px !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Marker-billeder må ikke re-sizes af global CSS */
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+}
+
+/* Leaflet panes skal være absolute (nogle frameworks overstyrer det) */
+.leaflet-pane,
+.leaflet-tile,
+.leaflet-marker-icon,
+.leaflet-marker-shadow,
+.leaflet-tile-container,
+.leaflet-overlay-pane,
+.leaflet-shadow-pane,
+.leaflet-marker-pane,
+.leaflet-tooltip-pane,
+.leaflet-popup-pane {
+  position: absolute !important;
+}
+
+
+/* Gør animation mere smooth på mobilen */
+.leaflet-container .leaflet-zoom-animated {
+  will-change: transform;
+}
+
