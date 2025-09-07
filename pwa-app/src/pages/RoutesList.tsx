@@ -57,10 +57,6 @@ export default function RoutesList() {
           </li>
         ))}
       </ul>
-
-      <div style={{ marginTop: 12 }}>
-        <Link to="/">Til forsiden</Link>
-      </div>
     </section>
   );
 }

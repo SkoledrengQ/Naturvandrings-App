@@ -1,25 +1,84 @@
-html, body, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-body {
-  overflow: hidden;        
-  background: #000;        
-}
+/* ===== Baseline ===== */
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+body { overflow: hidden; background: #000; }
 
-:root {
+/* ===== Vars ===== */
+:root{
   --safe-top: env(safe-area-inset-top);
   --safe-bottom: env(safe-area-inset-bottom);
+
+  /* Header-dim matcher Header.tsx (logo 56/64 + 10px top + 10px bund) */
+  --header-inner: 56px;      /* mobil logo/indhold */
+  --header-pad-y: 30px;      /* ekstra padding top+bund */
 }
+@media (min-width:768px){
+  :root{ --header-inner: 64px; }
+}
+
+/* Header ekstra padding for notch */
 .header-safe {
-  padding-top: calc(10px + var(--safe-top));
+  padding-top: var(--safe-top);
 }
-.route-bottombar-safe {
+
+/* Skub sideindhold ned under fixed header */
+.pad-for-header{
+  padding-top: calc(var(--safe-top) + var(--header-inner) + var(--header-pad-y));
+}
+
+/* Bottombar safe area */
+.route-bottombar-safe{
   padding-bottom: calc(8px + var(--safe-bottom));
 }
+
+/* ===== Leaflet kontroller ===== */
+/* Zoom “+/-” øverst-venstre: læg dem UNDER headeren */
+.leaflet-top.leaflet-left .leaflet-control{
+  margin-top: calc(12px + var(--safe-top) + var(--header-inner) + var(--header-pad-y));
+  margin-left: 12px;
+}
+/* Knapper i bunden */
+.leaflet-bottom .leaflet-control{ margin-bottom: calc(84px + var(--safe-bottom)); }
+.leaflet-right .leaflet-control{ margin-right: 12px; }
+
+/* ===== Marching-ants til rute-segment ===== */
+.leaflet-pane .route-animated{
+  animation: route-dash 1.1s linear infinite;
+  stroke-linecap: round;
+  will-change: stroke-dashoffset;
+}
+@keyframes route-dash{
+  from{ stroke-dashoffset: 0; }
+  to  { stroke-dashoffset: -26; }
+}
+
+.leaflet-top.leaflet-left .leaflet-control{
+  margin-top: calc(
+    12px + var(--safe-top) + var(--header-inner) + var(--header-pad-y)
+  );
+  margin-left: 12px;
+}
+
+/* Skub alt indhold ned under den fixed header (76px) */
+.pad-for-header {
+  padding-top: 76px !important;
+}
+
+/* Flyt Leaflet-zoomknapper ned under headeren + lidt luft */
+.leaflet-top.leaflet-left .leaflet-control {
+  margin-top: 88px !important; /* 76 + 12 */
+  margin-left: 12px;
+}
+
+/* (valgfrit) bund-kontroller fri af bottombar */
+.leaflet-bottom .leaflet-control { margin-bottom: 84px; }
+.leaflet-right .leaflet-control { margin-right: 12px; }
+
+/* Header fallback hvis JS ikke har sat den endnu */
+:root { --headerH: 76px; }
+
+/* Skub alt indhold ned – aktiveres kun når Header har mounted */
+body.header-padded .pad-for-header {
+  padding-top: var(--headerH) !important;
+}
+

@@ -1,4 +1,4 @@
-import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker, useMap, ZoomControl } from "react-leaflet";
 import L from "leaflet";
 import { useEffect, useMemo, useRef } from "react";
 import type { Poi } from "../lib/data";
@@ -19,14 +19,14 @@ const PoiDivIcon = L.divIcon({
 });
 const PoiIcon = L.divIcon(PoiDivIcon.options);
 
-
 type Props = {
   pois: Poi[];
   polyline?: [number, number][];
   userPos?: [number, number] | null;
-
   /** Giv rute-id her, så fitBounds kun sker én gang pr. rute */
   boundsKey?: string | number;
+  /** NYT (valgfri): lille animeret segment fra aktuelt → næste */
+  nextSegment?: [[number, number], [number, number]] | null;
 };
 
 function FitBoundsOnce({
@@ -66,7 +66,6 @@ function FitBoundsOnce({
   return null;
 }
 
-
 /** 2) Følg ALTID brugerens position – men glat (anti-flicker) */
 function FollowUserSmooth({ userPos }: { userPos?: [number, number] | null }) {
   const map = useMap();
@@ -97,7 +96,7 @@ function FollowUserSmooth({ userPos }: { userPos?: [number, number] | null }) {
   return null;
 }
 
-export default function MapView({ pois, polyline, userPos, boundsKey }: Props) {
+export default function MapView({ pois, polyline, userPos, boundsKey, nextSegment }: Props) {
   // Zoom-interval
   const minZoom = 12;
   const maxZoom = 19;
@@ -112,7 +111,8 @@ export default function MapView({ pois, polyline, userPos, boundsKey }: Props) {
   }, [pois, polyline]);
 
   return (
-    <div style={{ position: "fixed", inset: 0, width: "100%", height: "100dvh", zIndex: 1 }}>
+    <div
+  style={{ position: "fixed", left: 0, right: 0, bottom: 0, top: "var(--headerH, 76px)", zIndex: 1, }}>
         <MapContainer
           center={[56, 10]}
           zoom={7}
@@ -120,7 +120,6 @@ export default function MapView({ pois, polyline, userPos, boundsKey }: Props) {
           maxBounds={maxBounds}
           maxBoundsViscosity={0.5}
           worldCopyJump={false}
-          /* stabil/intuiv zoom-pan */
           preferCanvas={true}
           zoomAnimation={false}
           markerZoomAnimation={false}
@@ -130,22 +129,41 @@ export default function MapView({ pois, polyline, userPos, boundsKey }: Props) {
           zoomSnap={1}
           zoomDelta={1}
           wheelPxPerZoomLevel={120}
+          zoomControl={false}           // ← slå default fra
         >
         <TileLayer
           attribution="&copy; OpenStreetMap contributors"
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
+        <ZoomControl position="topleft" />
 
         {polyline && polyline.length > 1 && <Polyline positions={polyline} />}
+
+        {/* Animeret retningslinje fra aktuelt → næste */}
+        {nextSegment && (
+          <Polyline
+            positions={nextSegment}
+            pathOptions={{
+              className: "route-animated",
+              color: "#f59e0b",
+              weight: 6,
+              opacity: 0.95,
+              lineCap: "round",
+              // Vigtigt: Sat stregmønster på elementet så CSS kan animere stregforskydning.
+              dashArray: "12 16",
+              dashOffset: "0",
+            }}
+          />
+        )}
 
         {pois.map((p, idx) => (
           <Marker key={p.id} position={[p.lat, p.lon]} icon={PoiDivIcon}>
             <Popup>
               <strong>{idx + 1}. {p.title}</strong>
-              {p.text ? <div style={{ marginTop: 6 }}>{p.text}</div> : null}
             </Popup>
           </Marker>
         ))}
+
 
         {userPos && <CircleMarker center={userPos} radius={6} />}
 

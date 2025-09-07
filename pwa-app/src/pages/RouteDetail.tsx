@@ -79,8 +79,8 @@ export default function RouteDetail() {
       )}
 
       <div style={{ marginTop: 12 }}>
-        <Link to={`/routes/${route.id}/run`}>Start</Link>{" "}
         <Link to="/routes">Tilbage</Link>
+        <Link to={`/routes/${route.id}/run`}> | Start</Link>{" "}
       </div>
     </section>
   );
