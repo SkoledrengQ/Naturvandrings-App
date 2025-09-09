@@ -1,6 +1,7 @@
 import { safeFetchJson } from "./http";
 
 export type Route = {
+  difficulty: any;
   id: number;
   title: string;
   summary?: string | null;
@@ -9,6 +10,7 @@ export type Route = {
   storyteller?: string;
   poiOrder: number[];
   polyline?: [number, number][];
+  coverImage?: string;
 };
 
 export type Poi = {

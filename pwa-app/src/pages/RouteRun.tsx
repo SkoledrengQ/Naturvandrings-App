@@ -8,6 +8,8 @@ import StoryOverlay from "../components/StoryOverlay";
 import { useHeader } from "../contexts/HeaderContext";
 import { useLanguage } from "../contexts/LanguageContext";
 
+const AUTO_OPEN_ON_ENTER = true; //Sæt til false hvis auto popup ikke ønskes
+
 /** Lille distance-helper */
 function distanceMeters(a: [number, number], b: [number, number]) {
   const R = 6371000;
@@ -58,6 +60,10 @@ export default function RouteRun() {
   // POI-state
   const [activePoiId, setActivePoiId] = useState<number | null>(null); // aktuelt “inde i”
   const [shownPoiId, setShownPoiId] = useState<number | null>(null);   // overlay åbent
+
+  // Bruges til at huske at brugeren har lukket overlay for det aktuelle POI,
+  // så vi ikke auto-åbner igen før man har forladt og re-entered.
+  const [dismissedPoiId, setDismissedPoiId] = useState<number | null>(null);
 
   // Smooth buffer til geofence (mod jitter)
   const [posBuffer, setPosBuffer] = useState<[number, number][]>([]);
@@ -185,6 +191,33 @@ export default function RouteRun() {
     return idx >= 0 ? idx : 0;
   }, [shownPoiId, activePoiId, orderedPois]);
 
+  // Auto-åbn fortælling når vi er "inde i" et POI (dwell opfyldt)
+  useEffect(() => {
+  if (!AUTO_OPEN_ON_ENTER) return;
+  if (!activePoiId) return;
+
+  // Hvis brugeren læser en anden fortælling, så lad være med at stjæle fokus.
+  if (shownPoiId != null && shownPoiId !== activePoiId) return;
+
+  // Hvis brugeren lige har lukket denne fortælling, så auto-åbn ikke igen,
+  // før vi har forladt og re-entered.
+  if (dismissedPoiId === activePoiId) return;
+
+  setShownPoiId(activePoiId);
+  }, [activePoiId, shownPoiId, dismissedPoiId]);
+
+  // Når vi forlader et POI (activePoiId -> null) eller går til et andet POI,
+  // må auto-open gerne virke igen.
+  useEffect(() => {
+  if (!activePoiId && dismissedPoiId !== null) {
+    setDismissedPoiId(null);
+  }
+  if (activePoiId && dismissedPoiId !== null && dismissedPoiId !== activePoiId) {
+    setDismissedPoiId(null);
+  }
+  }, [activePoiId, dismissedPoiId]);
+
+
   // Sprogtekst
   const { t } = useLanguage();
   const progressText = t("run.progress", {
@@ -303,8 +336,8 @@ export default function RouteRun() {
         </div>
       )}
 
-      {/* “Start fortælling” hvis i radius men overlay ikke åbent */}
-      {activePoi && !shownPoi && (
+            {/* “Start fortælling” hvis i radius men overlay ikke åbent */}
+      {activePoi && !shownPoi && (!AUTO_OPEN_ON_ENTER || dismissedPoiId === activePoi.id) && (
         <div style={{ position: "fixed", left: 0, right: 0, bottom: 112, display: "flex", justifyContent: "center", zIndex: 60 }}>
           <button
             onClick={() => setShownPoiId(activePoi.id)}
@@ -314,7 +347,7 @@ export default function RouteRun() {
               boxShadow: "0 6px 20px rgba(0,0,0,.25)"
             }}
           >
-          {t("run.start", { title: activePoi.title })}
+            {t("run.start", { title: activePoi.title })}
           </button>
         </div>
       )}
@@ -362,9 +395,14 @@ export default function RouteRun() {
       {shownPoi && (
         <StoryOverlay
           poi={shownPoi}
-          onClose={() => setShownPoiId(null)}
+          onClose={() => {
+            // Husker at brugeren lukkede denne fortælling, så vi ikke auto-åbner den igen, mens de stadig står i samme POI
+            setDismissedPoiId(shownPoi.id);
+            setShownPoiId(null);
+          }}
         />
       )}
     </section>
   );
+  
 }

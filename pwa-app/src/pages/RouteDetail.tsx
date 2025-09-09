@@ -12,76 +12,102 @@ export default function RouteDetail() {
   const [pois, setPois] = useState<Poi[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Hent route
   useEffect(() => {
-    loadRoutes()
-      .then((rs) => setRoute(rs.find((r) => r.id === routeId) ?? null))
+    Promise.all([loadRoutes(), loadPois()])
+      .then(([routes, allPois]) => {
+        const r = routes.find(x => x.id === routeId) ?? null;
+        setRoute(r);
+        setPois(allPois);
+      })
       .catch((e) => {
         console.error(e);
-        setError("Kunne ikke hente ruten.");
+        setError("Kunne ikke hente rute/POI-data.");
       });
   }, [routeId]);
 
-  // Hent POIs
-  useEffect(() => {
-    loadPois()
-      .then(setPois)
-      .catch((e) => {
-        console.error(e);
-        setError("Kunne ikke hente punkter (POI).");
-      });
-  }, []);
-
-  const routePois = useMemo(() => {
+  const orderedPois: Poi[] = useMemo(() => {
     if (!route || !pois) return [];
-    const byId = new Map(pois.map((p) => [p.id, p]));
-    return route.poiOrder
-      .map((pid) => byId.get(pid))
-      .filter(Boolean) as Poi[];
+    const byId = new Map(pois.map(p => [p.id, p]));
+    return (route.poiOrder ?? []).map(id => byId.get(id)).filter(Boolean) as Poi[];
   }, [route, pois]);
 
-  if (error) return (
-    <section>
-      <ErrorBanner message={error} />
-      <Link to="/routes">Tilbage</Link>
-    </section>
-  );
+  const preview = useMemo(() => {
+    if (!route) return { src: null as string | null, alt: "Rute-cover" };
 
-  if (!route || !pois) return <p>Henter…</p>;
-  if (!route) return <p>Rute ikke fundet.</p>;
+    // 1) route.coverImage hvis den findes
+    const rAny = route as any;
+    if (rAny.coverImage) {
+      return { src: rAny.coverImage as string, alt: rAny.coverImageAlt ?? route.title ?? "Rute-cover" };
+    }
+
+    // 2) Første POI i ordren med billede
+    for (const p of orderedPois) {
+      if (p.images && p.images.length > 0) {
+        return { src: p.images[0]!, alt: p.title || route.title || "Rute-cover" };
+      }
+    }
+
+    // 3) Sidste fallback: placeholder
+    return { src: null, alt: route.title ?? "Rute-cover" };
+  }, [route, orderedPois]);
+
+  if (error) return <div className="container"><ErrorBanner message={error} /></div>;
+  if (!route) return <div className="container">Indlæser rute…</div>;
 
   return (
-    <section>
-      <h2>{route.title}</h2>
-      <p>{route.summary || <em>(TODO: tilføj rute-summary)</em>}</p>
-      <p>
-        {typeof route.lengthMeters === "number" ? (
-          <span>{(route.lengthMeters / 1000).toFixed(1)} km</span>
-        ) : (
-          <em>(TODO: længde)</em>
-        )}
-        {route.storyteller ? (
-          <span> • Fortæller: {route.storyteller}</span>
-        ) : null}
-      </p>
-
-      <h3>Punkter på ruten</h3>
-      {routePois.length === 0 ? (
-        <p>Ingen punkter fundet for denne rute.</p>
-      ) : (
-        <ol>
-          {routePois.map((p, i) => (
-            <li key={p.id}>
-            {p.title}
-            </li>
-          ))}
-        </ol>
-      )}
-
-      <div style={{ marginTop: 12 }}>
-        <Link to="/routes">Tilbage</Link>
-        <Link to={`/routes/${route.id}/run`}> | Start</Link>{" "}
+    <div className="container">
+      <div className="header-row" style={{ marginBottom: 10 }}>
+        <h1 style={{ margin: 0 }}>{route.title}</h1>
+        <div className="actions" style={{ margin: 0 }}>
+          <Link to="/routes" className="btn">Tilbage</Link>
+          <Link to={`/routes/${route.id}/run`} className="btn btn-primary">Start</Link>
+        </div>
       </div>
-    </section>
+
+      <section className="card" style={{ overflow: "hidden" }}>
+        <div
+          className="card-media blurfill"
+          style={preview.src ? ({ ["--bg-image" as any]: `url(${preview.src})` }) : undefined}
+        >
+          <img
+            src={preview.src ?? "/img/placeholder-route.webp"}
+            alt={preview.alt}
+            loading="lazy"
+          />
+        </div>
+        <div className="card-body">
+          {route.summary ? <p style={{ marginTop: 0 }}>{route.summary}</p> : null}
+
+          <div className="badges">
+            {typeof route.lengthMeters === "number" ? (
+              <span className="badge">{(route.lengthMeters / 1000).toFixed(1)} km</span>
+            ) : <span className="badge">Længde: ukendt</span>}
+            {route.storyteller ? <span className="badge">Fortæller: {route.storyteller}</span> : null}
+            {route.ageTarget ? <span className="badge">{route.ageTarget}</span> : null}
+          </div>
+
+          <hr className="hr" />
+
+          <div className="kicker">Stop på ruten</div>
+          {orderedPois.length === 0 ? (
+            <p>Der er endnu ikke tilknyttet stop til ruten.</p>
+          ) : (
+            <ol className="poi-list">
+              {orderedPois.map((p, i) => (
+                <li key={p.id}>
+                  {p.title}
+                </li>
+              ))}
+            </ol>
+          )}
+
+          <div className="actions" style={{ marginTop: 16 }}>
+            <Link to={`/routes/${route.id}/run`} className="btn btn-primary" style={{ minWidth: 160 }}>
+              Start ruten
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

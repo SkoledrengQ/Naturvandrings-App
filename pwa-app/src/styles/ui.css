@@ -1,0 +1,201 @@
+:root{
+  /* Light theme (lidt mere kontrast) */
+  --bg:#f3f6fb;            /* lidt mørkere end hvid med bedre adskillelse */
+  --card:#ffffff;
+  --cardElev:#fbfdff;
+  --border:#dbe5f1;
+  --text:#0e1116;
+  --muted:#5f7089;
+  --primary:#2fb36d;
+  --primary-ink:#07361f;
+  --link:#1e66ff;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(16,24,40,.06), 0 8px 24px rgba(16,24,40,.06);
+  --shadowHover:0 2px 6px rgba(16,24,40,.08), 0 12px 32px rgba(16,24,40,.08);
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font: 16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+}
+
+a{ color:var(--link); text-decoration:none }
+a:hover{ text-decoration:underline }
+
+.container{
+  max-width: 1080px; margin: 0 auto; padding: 20px 16px;
+}
+
+.hero{
+  padding: 42px 22px; border-radius: var(--radius);
+  background: radial-gradient(1000px 500px at 0% -10%, #e8f6ee 0%, #eff4fb 55%, #f6f8fb 100%);
+  border:1px solid #e7eef6; box-shadow: var(--shadow);
+}
+.hero h1{ margin:0 0 10px; font-size: clamp(28px, 3.2vw, 42px); letter-spacing:.3px }
+.hero p{ margin:0; color:var(--muted); max-width: 70ch }
+
+.actions{ display:flex; gap:12px; flex-wrap:wrap; margin-top:18px }
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:10px 16px; border-radius:12px;
+  border:1px solid var(--border); background:#ffffff; color:var(--text);
+  text-decoration:none; font-weight:600; letter-spacing:.2px;
+}
+.btn:hover{ background:#f7fafc }
+.btn-primary{
+  background:linear-gradient(180deg,#35c377, #25a860);
+  border-color:#1a7b49;
+  color:#ffffff; /* hvid tekst for kontrast på grøn */
+}
+.btn-primary:hover{ filter:brightness(1.02); }
+
+.grid{
+  display:grid; gap:16px;
+  grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+}
+
+/* Tydeligere kort med kant + skygge */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, border .15s ease;
+}
+.card:hover{
+  transform: translateY(-2px);
+  background:var(--cardElev);
+  box-shadow: var(--shadowHover);
+}
+
+/* Gør portrætbilleder hele (contain) og udfyld siderne med blød blur af samme billede */
+.card-media.blurfill {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-media.blurfill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* --bg-image sættes inline via style i React: style={{ "--bg-image": `url(...)` }} */
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  filter: blur(18px) saturate(1.05) brightness(0.98);
+  transform: scale(1.1);           /* lidt større, så blur ikke afslører kanter */
+}
+
+/* Selve billedet vises fuldt (ingen beskæring) ovenpå blur */
+.card-media.blurfill img {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;             /* <- nøglepunktet */
+  background: rgba(255,255,255,.6);/* lys “papirbaggrund” bag portrætter */
+}
+
+/* Lysere media-baggrund for at “løfte” billedet fra siden */
+.card-media{
+  position:relative; aspect-ratio: 16/9;
+  background:#ecf2f9;
+  border-bottom:1px solid var(--border);
+}
+.card-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.card-body{ padding:14px 14px 16px; }
+.card-title{ margin:0 0 6px; font-weight:700; letter-spacing:.2px; }
+.card-meta{ color:var(--muted); font-size: 0.95rem }
+
+.badges{ display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 0 }
+.badge{
+  display:inline-flex; align-items:center; gap:6px; padding:6px 10px;
+  border-radius:10px; border:1px solid #dbe7f3; color:#3d4c62; background:#f5f9ff;
+  font-size:.92rem;
+}
+
+.section{
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+
+.kicker{ color:var(--muted); text-transform:uppercase; letter-spacing:.18em; font-size:.84rem; }
+.header-row{ display:flex; align-items:center; justify-content:space-between; gap:10px; }
+
+.poi-list{ margin:10px 0 0; padding-left: 20px; }
+.poi-list li{ margin:6px 0; }
+.meta-row{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin-top:10px }
+.hr{ height:1px; background:var(--border); border:0; margin:16px 0; }
+
+/* Safe-area variabler (iOS notch m.m.) */
+:root{
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+}
+
+/* Overlays */
+.story-overlay{
+  position: fixed;
+  inset: 0;
+  padding: max(12px, var(--safe-top)) max(12px, var(--safe-right)) max(12px, var(--safe-bottom)) max(12px, var(--safe-left));
+  background: rgba(0,0,0,.45);
+  display: grid;
+  place-items: center;
+  z-index: 999;
+  overscroll-behavior: contain; /* stop baggrundsscroll */
+}
+
+.story-overlay__panel{
+  width: min(980px, 100%);
+  background: #fff;
+  color: #111;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(16,24,40,.18);
+  display: grid;
+  grid-template-rows: auto 1fr; /* header + scroll-body */
+  max-height: calc(100dvh - max(12px, var(--safe-top)) - max(12px, var(--safe-bottom)));
+  overflow: hidden;
+}
+
+/* Fallback for ældre browsere der ikke kender 100dvh */
+@supports not (height: 100dvh){
+  .story-overlay__panel{
+    max-height: calc(100vh - max(12px, var(--safe-top)) - max(12px, var(--safe-bottom)));
+  }
+}
+
+.story-overlay__header{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e6edf5;
+  background: #fbfdff;
+}
+
+.story-overlay__close{
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #1a55d6;
+  background: #1e66ff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.story-overlay__body{
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 12px 12px 16px;
+}

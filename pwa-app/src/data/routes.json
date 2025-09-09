@@ -4,8 +4,51 @@
     "title": "Mølleskovens historie og dannelse",
     "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
     "lengthMeters": null,
+    "difficulty": "Ikke for gangbesværede",
     "ageTarget": "Voksne historieinteresserede",
     "storyteller": "Kristian",
+    "coverImage": "/img/Kristian.png",
     "poiOrder": [1, 2, 3, 4, 5, 6, 7, 8]
+  },
+  {
+    "id": 2,
+    "title": "En krible-krable tur for børn i Mølleskoven",
+    "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
+    "lengthMeters": null,
+    "difficulty": "Ikke for gangbesværede",
+    "ageTarget": "Aldersgruppe: +5",
+    "storyteller": "Ellen & Knud",
+    "coverImage": "/img/Ellen.png",
+    "poiOrder": [9, 10, 11, 12, 13, 14, 15, 16]
+  },
+  {
+    "id": 3,
+    "title": "Overtro og troldtøj i Mølleskoven",
+    "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
+    "lengthMeters": null,
+    "ageTarget": "Aldersgruppe: +10",
+    "storyteller": "Johanne",
+    "coverImage": "/img/Johanne.png",
+    "poiOrder": [17, 18, 19, 20, 21, 22, 23]
+  },
+  {
+    "id": 4,
+    "title": "Blomster og bær med Ingeborg & Margrethe",
+    "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
+    "lengthMeters": null,
+    "ageTarget": "Aldersgruppe +8",
+    "storyteller": "Ingeborg & Margrethe",
+    "coverImage": "/img/Margrethe.png",
+    "poiOrder": [24, 25, 26, 27, 28, 29, 30, 31, 32]
+  },
+  {
+    "id": 5,
+    "title": "Familien Mølleskov ved Møllesøen",
+    "summary": "TODO: skriv kort rute-beskrivelse her (hvad ser man, hvem er målgruppen, varighed)",
+    "lengthMeters": null,
+    "ageTarget": "Aldersgruppe +5",
+    "storyteller": "Erik",
+    "coverImage": "/img/Erik.png",
+    "poiOrder": [33, 34, 35, 36, 37, 38, 39]
   }
 ]
