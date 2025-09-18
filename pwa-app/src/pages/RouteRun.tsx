@@ -31,6 +31,7 @@ const ACC_MULTIPLIER = 1.2;      // accuracy-buffer (20%)
 const EXIT_EXTRA_RATIO = 1.25;   // exit-radius = enter-radius * 1.25
 const DWELL_MS = 3000;           // skal være inde i (ms) før aktivering
 const SMOOTH_N = 5;              // glidende gennemsnit over N positioner (til geofence – ikke til visning)
+const ACCURACY_BAD_THRESHOLD = 100; // meter – vis manuel start ved >= 100 m
 
 /** Beregn effektiv enter-radius (POI override vs. GPS accuracy) */
 function effectiveEnterRadius(p: Poi, acc: number | null) {
@@ -51,6 +52,9 @@ export default function RouteRun() {
   const [userPos, setUserPos] = useState<[number, number] | null>(null);
   const [accuracyM, setAccuracyM] = useState<number | null>(null);
   const [geoError, setGpsError] = useState(false);
+
+  // Remember user’s place even when overlay is closed and GPS is off
+const [cursorIndex, setCursorIndex] = useState(0);
 
   // UI/state
   const [muted, setMuted] = useState(false);
@@ -137,6 +141,13 @@ useEffect(() => {
       return;
     }
 
+    // Hvis vi har en aktiv POI, så sæt cursor til den
+    useEffect(() => {
+      if (!activePoiId) return;
+      const idx = orderedPois.findIndex(p => p.id === activePoiId);
+      if (idx >= 0) setCursorIndex(idx);
+    }, [activePoiId, orderedPois]);
+
     // Hvis vi allerede har en aktiv POI, hold fast indtil vi er ud over exit-radius
     if (activePoiId) {
       const ap = byId.get(activePoiId);
@@ -195,11 +206,14 @@ useEffect(() => {
   const shownPoi  = shownPoiId ? byId.get(shownPoiId) ?? null : null;
 
   const currentIndex = useMemo(() => {
-    const idToShow = shownPoiId ?? activePoiId;
-    if (!idToShow) return 0;
-    const idx = orderedPois.findIndex(p => p.id === idToShow);
-    return idx >= 0 ? idx : 0;
-  }, [shownPoiId, activePoiId, orderedPois]);
+    // Prefer what’s visible (overlay), else what GPS says, else our manual cursor
+    const pickId = shownPoiId ?? activePoiId;
+    if (pickId != null) {
+      const idx = orderedPois.findIndex(p => p.id === pickId);
+      if (idx >= 0) return idx;
+    }
+    return Math.min(cursorIndex, Math.max(orderedPois.length - 1, 0));
+  }, [shownPoiId, activePoiId, cursorIndex, orderedPois]);
 
   // Sprogtekst (brug samme t)
   const progressText = t("run.progress", {
@@ -257,6 +271,22 @@ useEffect(() => {
     ] as [[number, number], [number, number]];
   }, [orderedPois, currentIndex, nextIndex]);
 
+  const firstPoi = orderedPois[0] ?? null;
+
+  const hasGeo = typeof navigator !== "undefined" && "geolocation" in navigator;
+  const badAccuracy = typeof accuracyM === "number" && accuracyM >= ACCURACY_BAD_THRESHOLD;
+
+  const shouldShowManualStart =
+    !shownPoi &&                  // intet overlay åbent
+    !!firstPoi &&                 // har en første POI
+    !visited.has(firstPoi.id) &&  // første er ikke vist endnu
+    !activePoi &&                 // ikke allerede i radius (ellers har du en anden knap)
+    (
+      !hasGeo ||                  // ingen geolocation på enheden
+      geoError ||                 // afvist/fejl fra watchPosition
+      badAccuracy                 // meget dårlig nøjagtighed (>= 100 m)
+    );
+
   // Preload næste POI's billede
 useEffect(() => {
   const next = orderedPois[currentIndex + 1];
@@ -304,6 +334,7 @@ useEffect(() => {
   const goPrev = () => {
     if (orderedPois.length === 0) return;
     const nextIdx = Math.max(0, currentIndex - 1);
+    setCursorIndex(nextIdx); // <-- keep progress when overlay closes
     setShownPoiId(orderedPois[nextIdx].id);
     setVisited(prev => new Set(prev).add(orderedPois[nextIdx].id));
   };
@@ -311,6 +342,7 @@ useEffect(() => {
   const goNext = () => {
     if (orderedPois.length === 0) return;
     const nextIdx = Math.min(orderedPois.length - 1, currentIndex + 1);
+    setCursorIndex(nextIdx); // <-- keep progress when overlay closes
     setShownPoiId(orderedPois[nextIdx].id);
     setVisited(prev => new Set(prev).add(orderedPois[nextIdx].id));
   };
@@ -368,6 +400,41 @@ useEffect(() => {
           }}
         >
           GPS ±{Math.round(accuracyM)} m
+        </div>
+      )}
+
+      {/* Manuel start-knap (hvis GPS ikke virker eller er meget unøjagtig) */}
+      {shouldShowManualStart && (
+        <div
+          style={{
+            position: "fixed",
+            left: 0,
+            right: 0,
+            bottom: 112,
+            display: "flex",
+            justifyContent: "center",
+            zIndex: 60
+          }}
+        >
+          <button
+            onClick={() => {
+              if (!firstPoi) return;
+              setCursorIndex(0);
+              setShownPoiId(firstPoi.id);
+              setVisited(prev => { const next = new Set(prev); next.add(firstPoi.id); return next; });
+            }}
+            style={{
+              padding: "12px 16px",
+              borderRadius: 12,
+              border: "none",
+              background: "#1d4ed8",
+              color: "white",
+              fontSize: 16,
+              boxShadow: "0 6px 20px rgba(0,0,0,.25)"
+            }}
+          >
+            {t("run.start", { title: firstPoi?.title ?? "" })}
+          </button>
         </div>
       )}
 
