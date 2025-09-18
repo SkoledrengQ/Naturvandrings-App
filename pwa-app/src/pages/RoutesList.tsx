@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { loadRoutes, loadPois } from "../lib/data";
 import type { Route, Poi } from "../lib/data";
 import ErrorBanner from "../components/ErrorBanner";
+import { useLanguage } from "../contexts/LanguageContext";
 
 type RouteCardModel = {
   route: Route;
@@ -16,17 +17,25 @@ export default function RoutesList() {
   const [pois, setPois] = useState<Poi[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // i18n
+  const { lang, t } = useLanguage();
+
   useEffect(() => {
-    Promise.all([loadRoutes(), loadPois()])
-      .then(([r, p]) => {
-        setRoutes(r);
-        setPois(p);
+    setError(null);
+    let cancel = false;
+
+    Promise.all([loadRoutes(lang), loadPois(lang)])
+      .then(([rs, ps]) => {
+        if (cancel) return;
+        setRoutes(rs);
+        setPois(ps);
       })
-      .catch((e) => {
-        console.error(e);
-        setError("Kunne ikke hente ruter eller POI-data. Tjek netforbindelsen og prøv igen.");
+      .catch(() => {
+        if (!cancel) setError(t("common.loadError"));
       });
-  }, []);
+
+    return () => { cancel = true; };
+  }, [lang, t]);
 
   const models: RouteCardModel[] | null = useMemo(() => {
     if (!routes || !pois) return null;
@@ -77,13 +86,13 @@ export default function RoutesList() {
   }, [routes, pois]);
 
   if (error) return <div className="container"><ErrorBanner message={error} /></div>;
-  if (!models) return <div className="container">Indlæser ruter…</div>;
+  if (!models) return <div className="container">{t("routes.loading")}</div>;
 
   return (
     <div className="container">
       <div className="header-row" style={{ marginBottom: 10 }}>
-        <h1 style={{ margin: 0 }}>Ruter</h1>
-        <Link to="/" className="btn">Til forside</Link>
+        <h1 style={{ margin: 0 }}>{t("routes.title")}</h1>
+        <Link to="/" className="btn">{t("common.home")}</Link>
       </div>
 
       <div className="grid" role="list">
@@ -102,17 +111,21 @@ export default function RoutesList() {
             <div className="card-body">
               <h2 className="card-title">{route.title}</h2>
               <div className="card-meta">
-                {poiCount} stop{poiCount === 1 ? "" : "s"}
-                {route.storyteller ? <> • Fortæller: {route.storyteller}</> : null}
+                {poiCount} {t("routes.stopsLabel")}
+                {route.storyteller ? <> • {t("routes.storyteller")}: {route.storyteller}</> : null}
               </div>
               <div className="badges">
                 {typeof route.lengthMeters === "number" ? (
                   <span className="badge">{(route.lengthMeters / 1000).toFixed(1)} km</span>
-                ) : <span className="badge">Længde: ukendt</span>}
+                ) : <span className="badge">{t("routes.lengthUnknown")}</span>}
                 {route.ageTarget ? <span className="badge">{route.ageTarget}</span> : null}
+                {/* ← NYT: difficulty-badge hvis sat */}
+                {(route as any).difficulty ? (
+                  <span className="badge">⚠️ {(route as any).difficulty}</span>
+                ) : null}
               </div>
               <div className="actions" style={{ marginTop: 12 }}>
-                <Link to={`/routes/${route.id}`} className="btn btn-primary">Detaljer</Link>
+                <Link to={`/routes/${route.id}`} className="btn btn-primary">{t("routes.details")}</Link>
               </div>
             </div>
           </article>

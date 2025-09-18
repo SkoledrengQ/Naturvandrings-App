@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Poi } from "../lib/data";
+import { useLanguage } from "../contexts/LanguageContext";
 
 type MediaPoi = Poi & {
   text?: string;
@@ -25,6 +26,7 @@ export default function StoryOverlay({ poi, onClose }: Props) {
   const { title, text, images = [], imageAlts = [], audio } = poi;
   const [idx, setIdx] = useState(0);
   const count = images.length;
+  const { t } = useLanguage();
 
   // Keyboard: ESC luk, ←/→ navigér billeder
   useEffect(() => {
@@ -93,17 +95,15 @@ export default function StoryOverlay({ poi, onClose }: Props) {
           <h3 style={{ margin: 0, fontSize: 18 }}>{title}</h3>
           <button
             onClick={onClose}
-            aria-label="Luk"
+            aria-label={t("common.close")}
             className="btn"
-            style={{
-              minHeight: 36,
+            style={{ minHeight: 36,
               padding: "6px 12px",
               background: "#1e66ff",
               color: "#fff",
-              borderColor: "#1a55d6",
-            }}
+              borderColor: "#1a55d6" }}
           >
-            Luk ✕
+            {t("common.close")} <span aria-hidden>✕</span>
           </button>
         </div>
 
@@ -233,12 +233,9 @@ export default function StoryOverlay({ poi, onClose }: Props) {
               justifyContent: "flex-end",
             }}
           >
-            <button
-              onClick={onClose}
-              className="btn"
-              style={{ minHeight: 40, padding: "8px 14px" }}
-            >
-              Luk
+            <button onClick={onClose}
+              className="btn" style={{ minHeight: 40,padding: "8px 14px" }}>
+              {t("common.close")}
             </button>
           </div>
         )}

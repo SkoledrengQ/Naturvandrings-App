@@ -2,13 +2,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { loadRoutes, loadPois } from "../lib/data";
 import type { Route, Poi } from "../lib/data";
-import { insideRadius } from "../lib/geo";
+import { insideRadius } from "../lib/geo"; // beholdt som i din fil (selvom den ikke bruges)
 import MapView from "../components/MapView";
 import StoryOverlay from "../components/StoryOverlay";
 import { useHeader } from "../contexts/HeaderContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import useWakeLock from "../hooks/useWakeLock";
 
-const AUTO_OPEN_ON_ENTER = true; //Sæt til false hvis auto popup ikke ønskes
+const AUTO_OPEN_ON_ENTER = true; // Sæt til false hvis auto popup ikke ønskes
 
 /** Lille distance-helper */
 function distanceMeters(a: [number, number], b: [number, number]) {
@@ -65,6 +66,9 @@ export default function RouteRun() {
   // så vi ikke auto-åbner igen før man har forladt og re-entered.
   const [dismissedPoiId, setDismissedPoiId] = useState<number | null>(null);
 
+  // Besøgte POI’er i et run auto-åbnes kun første gang
+  const [visited, setVisited] = useState<Set<number>>(() => new Set());
+
   // Smooth buffer til geofence (mod jitter)
   const [posBuffer, setPosBuffer] = useState<[number, number][]>([]);
   const smoothedPos = useMemo(() => {
@@ -74,11 +78,17 @@ export default function RouteRun() {
     return [lat, lon] as [number, number];
   }, [posBuffer]);
 
-  // Hent data
-  useEffect(() => {
-    loadRoutes().then(rs => setRoute(rs.find(r => r.id === routeId) || null));
-    loadPois().then(all => setPois(all.filter(p => p.routeId === routeId)));
-  }, [routeId]);
+// Language (live i18n)
+const { lang, t } = useLanguage();
+
+// Hent data (reloader når lang eller routeId ændres)
+useEffect(() => {
+  loadRoutes(lang).then(rs => setRoute(rs.find(r => r.id === routeId) || null));
+  loadPois(lang).then(all => setPois(all.filter(p => p.routeId === routeId)));
+}, [routeId, lang]);
+
+  // Holder skærmen vågen under ruten
+  useWakeLock(true);
 
   // GPS watch
   useEffect(() => {
@@ -178,7 +188,7 @@ export default function RouteRun() {
       // Når vi bliver aktive, kan vi nulstille dwell
       setDwellStart(now);
     }
-  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId]);
+  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart]);
 
   // Afledte værdier
   const activePoi = activePoiId ? byId.get(activePoiId) ?? null : null;
@@ -191,41 +201,46 @@ export default function RouteRun() {
     return idx >= 0 ? idx : 0;
   }, [shownPoiId, activePoiId, orderedPois]);
 
-  // Auto-åbn fortælling når vi er "inde i" et POI (dwell opfyldt)
-  useEffect(() => {
-  if (!AUTO_OPEN_ON_ENTER) return;
-  if (!activePoiId) return;
-
-  // Hvis brugeren læser en anden fortælling, så lad være med at stjæle fokus.
-  if (shownPoiId != null && shownPoiId !== activePoiId) return;
-
-  // Hvis brugeren lige har lukket denne fortælling, så auto-åbn ikke igen,
-  // før vi har forladt og re-entered.
-  if (dismissedPoiId === activePoiId) return;
-
-  setShownPoiId(activePoiId);
-  }, [activePoiId, shownPoiId, dismissedPoiId]);
-
-  // Når vi forlader et POI (activePoiId -> null) eller går til et andet POI,
-  // må auto-open gerne virke igen.
-  useEffect(() => {
-  if (!activePoiId && dismissedPoiId !== null) {
-    setDismissedPoiId(null);
-  }
-  if (activePoiId && dismissedPoiId !== null && dismissedPoiId !== activePoiId) {
-    setDismissedPoiId(null);
-  }
-  }, [activePoiId, dismissedPoiId]);
-
-
-  // Sprogtekst
-  const { t } = useLanguage();
+  // Sprogtekst (brug samme t)
   const progressText = t("run.progress", {
-    cur: Math.min(currentIndex + 1, Math.max(orderedPois.length, 1)),
-    total: Math.max(orderedPois.length, 1),
+  cur: Math.min(currentIndex + 1, Math.max(orderedPois.length, 1)),
+  total: Math.max(orderedPois.length, 1),
   });
 
-  /* >>> NYT: beregn “næste” og et lille segment (aktuelt → næste) – GPS-uafhængigt */
+  // Auto-åbn fortælling når vi er "inde i" et POI (dwell opfyldt)
+  useEffect(() => {
+    if (!AUTO_OPEN_ON_ENTER) return;
+    if (!activePoiId) return;
+
+    // Hvis brugeren læser en anden fortælling, så lad være med at stjæle fokus.
+    if (shownPoiId != null && shownPoiId !== activePoiId) return;
+
+    // Hvis brugeren lige har lukket denne fortælling, så auto-åbn ikke igen,
+    // før vi har forladt og re-entered.
+    if (dismissedPoiId === activePoiId) return;
+
+    // Åbn kun første gang pr. POI
+    if (visited.has(activePoiId)) return;
+
+    setShownPoiId(activePoiId);
+
+    // Mark som besøgt + lille vibration (Android)
+    setVisited(prev => { const next = new Set(prev); next.add(activePoiId); return next; });
+    try { navigator.vibrate?.(150); } catch {}
+  }, [activePoiId, shownPoiId, dismissedPoiId, visited]);
+
+  // Når vi forlader et POI (activePoiId -> null) eller går til et andet POI,
+  // må auto-open gerne virke igen (reset dismissed).
+  useEffect(() => {
+    if (!activePoiId && dismissedPoiId !== null) {
+      setDismissedPoiId(null);
+    }
+    if (activePoiId && dismissedPoiId !== null && dismissedPoiId !== activePoiId) {
+      setDismissedPoiId(null);
+    }
+  }, [activePoiId, dismissedPoiId]);
+
+  /* Beregn “næste” og et lille segment (aktuelt til næste) – GPS-uafhængigt */
   const nextIndex = useMemo(() => {
     if (orderedPois.length < 2) return null;
     return Math.min(currentIndex + 1, orderedPois.length - 1);
@@ -241,7 +256,25 @@ export default function RouteRun() {
       [to.lat, to.lon],
     ] as [[number, number], [number, number]];
   }, [orderedPois, currentIndex, nextIndex]);
-  /* <<< NYT SLUT */
+
+  // Preload næste POI's billede
+useEffect(() => {
+  const next = orderedPois[currentIndex + 1];
+  const src = next?.images?.[0];
+  if (!src) return;
+  const img = new Image();
+  img.src = src;
+}, [currentIndex, orderedPois]);
+
+// Preload næste POI's lyd
+useEffect(() => {
+  const next = orderedPois[currentIndex + 1];
+  const audioSrc = (next as any)?.audio as string | undefined;
+  if (!audioSrc) return;
+  const a = new Audio();
+  a.preload = "auto";
+  a.src = audioSrc;
+}, [currentIndex, orderedPois]);
 
   // Global Header: titel + mute-knap + overlay-variant
   const { /* eslint-disable-line @typescript-eslint/no-unused-vars */ } = { };
@@ -272,12 +305,14 @@ export default function RouteRun() {
     if (orderedPois.length === 0) return;
     const nextIdx = Math.max(0, currentIndex - 1);
     setShownPoiId(orderedPois[nextIdx].id);
+    setVisited(prev => new Set(prev).add(orderedPois[nextIdx].id));
   };
 
   const goNext = () => {
     if (orderedPois.length === 0) return;
     const nextIdx = Math.min(orderedPois.length - 1, currentIndex + 1);
     setShownPoiId(orderedPois[nextIdx].id);
+    setVisited(prev => new Set(prev).add(orderedPois[nextIdx].id));
   };
 
   const stopRun = () => {
@@ -293,7 +328,7 @@ export default function RouteRun() {
           polyline={route?.polyline ?? []}
           userPos={userPos ?? undefined}   // blå cirkel kan stadig være “live”
           boundsKey={routeId}
-          nextSegment={nextSegment}        // <<< NYT: animeret retning
+          nextSegment={nextSegment}        // animeret retning
         />
       </div>
 
@@ -336,11 +371,14 @@ export default function RouteRun() {
         </div>
       )}
 
-            {/* “Start fortælling” hvis i radius men overlay ikke åbent */}
+      {/* “Start fortælling” hvis i radius men overlay ikke åbent */}
       {activePoi && !shownPoi && (!AUTO_OPEN_ON_ENTER || dismissedPoiId === activePoi.id) && (
         <div style={{ position: "fixed", left: 0, right: 0, bottom: 112, display: "flex", justifyContent: "center", zIndex: 60 }}>
           <button
-            onClick={() => setShownPoiId(activePoi.id)}
+            onClick={() => {
+              setShownPoiId(activePoi.id);
+              setVisited(prev => new Set(prev).add(activePoi.id));
+            }}
             style={{
               padding: "12px 16px", borderRadius: 12, border: "none",
               background: "#1d4ed8", color: "white", fontSize: 16,
@@ -404,5 +442,4 @@ export default function RouteRun() {
       )}
     </section>
   );
-  
 }

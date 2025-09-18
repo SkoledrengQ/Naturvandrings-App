@@ -3,27 +3,37 @@ import { useParams, Link } from "react-router-dom";
 import { loadRoutes, loadPois } from "../lib/data";
 import type { Route, Poi } from "../lib/data";
 import ErrorBanner from "../components/ErrorBanner";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function RouteDetail() {
   const { id } = useParams();
   const routeId = Number(id);
+
+  // i18n
+  const { lang, t } = useLanguage();
 
   const [route, setRoute] = useState<Route | null>(null);
   const [pois, setPois] = useState<Poi[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    Promise.all([loadRoutes(), loadPois()])
+    setError(null);
+    let cancel = false;
+
+    Promise.all([loadRoutes(lang), loadPois(lang)])
       .then(([routes, allPois]) => {
+        if (cancel) return;
         const r = routes.find(x => x.id === routeId) ?? null;
         setRoute(r);
         setPois(allPois);
       })
       .catch((e) => {
         console.error(e);
-        setError("Kunne ikke hente rute/POI-data.");
+        if (!cancel) setError(t("common.loadError"));
       });
-  }, [routeId]);
+
+  return () => { cancel = true; };
+  }, [routeId, lang, t]);
 
   const orderedPois: Poi[] = useMemo(() => {
     if (!route || !pois) return [];
@@ -32,35 +42,32 @@ export default function RouteDetail() {
   }, [route, pois]);
 
   const preview = useMemo(() => {
-    if (!route) return { src: null as string | null, alt: "Rute-cover" };
+    if (!route) return { src: null as string | null, alt: t("route.coverAlt") };
 
-    // 1) route.coverImage hvis den findes
     const rAny = route as any;
     if (rAny.coverImage) {
-      return { src: rAny.coverImage as string, alt: rAny.coverImageAlt ?? route.title ?? "Rute-cover" };
+      return { src: rAny.coverImage as string, alt: rAny.coverImageAlt ?? route.title ?? t("route.coverAlt") };
     }
 
-    // 2) Første POI i ordren med billede
     for (const p of orderedPois) {
       if (p.images && p.images.length > 0) {
-        return { src: p.images[0]!, alt: p.title || route.title || "Rute-cover" };
+        return { src: p.images[0]!, alt: p.title || route.title || t("route.coverAlt") };
       }
     }
 
-    // 3) Sidste fallback: placeholder
-    return { src: null, alt: route.title ?? "Rute-cover" };
-  }, [route, orderedPois]);
+    return { src: null, alt: route.title ?? t("route.coverAlt") };
+  }, [route, orderedPois, t]);
 
   if (error) return <div className="container"><ErrorBanner message={error} /></div>;
-  if (!route) return <div className="container">Indlæser rute…</div>;
+  if (!route) return <div className="container">{t("route.loading")}</div>;
 
   return (
     <div className="container">
       <div className="header-row" style={{ marginBottom: 10 }}>
         <h1 style={{ margin: 0 }}>{route.title}</h1>
         <div className="actions" style={{ margin: 0 }}>
-          <Link to="/routes" className="btn">Tilbage</Link>
-          <Link to={`/routes/${route.id}/run`} className="btn btn-primary">Start</Link>
+          <Link to="/routes" className="btn">{t("common.back")}</Link>
+          <Link to={`/routes/${route.id}/run`} className="btn btn-primary">{t("common.start")}</Link>
         </div>
       </div>
 
@@ -81,29 +88,31 @@ export default function RouteDetail() {
           <div className="badges">
             {typeof route.lengthMeters === "number" ? (
               <span className="badge">{(route.lengthMeters / 1000).toFixed(1)} km</span>
-            ) : <span className="badge">Længde: ukendt</span>}
-            {route.storyteller ? <span className="badge">Fortæller: {route.storyteller}</span> : null}
+            ) : <span className="badge">{t("routes.lengthUnknown")}</span>}
+            {route.storyteller ? <span className="badge">{t("routes.storyteller")}: {route.storyteller}</span> : null}
             {route.ageTarget ? <span className="badge">{route.ageTarget}</span> : null}
+            {/* ← NYT: difficulty-badge hvis sat */}
+            {(route as any).difficulty ? (
+              <span className="badge">⚠️ {(route as any).difficulty}</span>
+            ) : null}
           </div>
 
           <hr className="hr" />
 
-          <div className="kicker">Stop på ruten</div>
+          <div className="kicker">{t("route.stopsTitle")}</div>
           {orderedPois.length === 0 ? (
-            <p>Der er endnu ikke tilknyttet stop til ruten.</p>
+            <p>{t("route.noStops")}</p>
           ) : (
             <ol className="poi-list">
-              {orderedPois.map((p, i) => (
-                <li key={p.id}>
-                  {p.title}
-                </li>
+              {orderedPois.map((p) => (
+                <li key={p.id}>{p.title}</li>
               ))}
             </ol>
           )}
 
           <div className="actions" style={{ marginTop: 16 }}>
             <Link to={`/routes/${route.id}/run`} className="btn btn-primary" style={{ minWidth: 160 }}>
-              Start ruten
+              {t("route.startRoute")}
             </Link>
           </div>
         </div>

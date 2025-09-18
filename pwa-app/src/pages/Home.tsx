@@ -1,31 +1,49 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "../contexts/LanguageContext"; // tilpas sti hvis nødvendig
 
 export default function Home() {
+  const { t } = useLanguage();
+
   return (
     <div className="container">
       <section className="hero">
         <div className="kicker">Dorf Møllegård</div>
-        <h1>Udforsk Mølleskoven og historien bag landskabet</h1>
-        <p>
-          Tag på naturvandring og oplev fortællinger om istidens kræfter, randmoræner
-          og livet omkring møllebækken. Vælg en rute og lad telefonen guide dig ved
-          de markante steder i terrænet.
-        </p>
+        <h1>{t("home.hometitle")}</h1>
+        <p>{t("home.homelead")}</p>
         <div className="actions">
-          <Link to="/routes" className="btn btn-primary">Se ruter</Link>
-          <Link to="/about" className="btn">Om stedet</Link>
+          <Link to="/routes" className="btn btn-primary">
+            {t("home.ctaRoutes")}
+          </Link>
+          <Link to="/about" className="btn">
+            {t("home.ctaAbout")}
+          </Link>
         </div>
       </section>
 
       <section style={{ marginTop: 16 }} className="section">
         <div className="header-row">
-          <h2 style={{ margin: 0 }}>Sådan fungerer det</h2>
+          <h2 style={{ margin: 0 }}>{t("home.howTitle")}</h2>
         </div>
         <hr className="hr" />
+
         <ol className="poi-list">
-          <li>Vælg en rute under <strong>Se ruter</strong>.</li>
-          <li>Gå til ruteudgangspunktet og tryk <strong>Start</strong>.</li>
-          <li>Telefonen fortæller dig, når du står ved et interessant sted.</li>
+          <li>
+            {t("home.howStep1_pre")}{" "}
+            <strong>{t("home.ctaRoutes")}</strong>
+            {t("home.howStep1_post")}
+          </li>
+
+          <li>{t("home.howStep2")}</li>
+          <li>{t("home.howStep3")}</li>
+
+          <li>
+            {t("home.howStep4_pre")}{" "}
+            <strong>{t("home.start")}</strong>
+            {t("home.howStep4_post")}
+          </li>
+
+          <li>{t("home.howStep5_gps")}</li>
+          <li>{t("home.howStep6")}</li>
         </ol>
       </section>
     </div>

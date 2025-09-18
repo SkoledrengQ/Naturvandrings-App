@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "routeId": 1,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Kristian og jeg vil gerne fortælle jer lidt om Mølleskovens historie og hvordan den er blevet skabt. Jeg har altid været fascineret af isens kræfter og Jyske Ås er faktisk blevet dannet under den sidste istid. Istiden hed Weichsel og begyndte for ca. 117.000 år siden og sluttede for ca. 11.700 år siden. \n\nVil I med en tur op i Mølleskoven og se hvad isen har skabt? Vi starter i den ende der ligger tættest på gården.",
+    "images": [
+      "/img/DMSkilt.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 2,
+    "routeId": 1,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Vi skal bare lige over den lille gangbro og så møder vi starten af en randmoræne. En randmoræne er aflejringer fra en gletsjer. For 15.000 år siden kom der en gletsjer fra Østersøen. Med sig havde den enorme mængder af sand, grus, sten og klippeblokke. \n\nEn gletsjer fungerer lidt ligesom når du skubber en sneskovl hen over jorden, så skubber du sneen foran skovlen. Det samme gør en gletsjer, når den bevæger sig ind over land. \n\nI 3000 år lå gletsjeren og bevægede sig frem og tilbage i Vendsyssel, indtil den smeltede helt for 12.000 år siden. Jyske Ås og Mølleskoven er altså en del af gletsjerens efterladenskaber.",
+    "images": [
+      "/img/SkovturInd3.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 3,
+    "routeId": 1,
+    "title": "Toppen af skrænten",
+    "lat": 57.22094,
+    "lon": 10.28124,
+    "radiusMeters": 12,
+    "text": "Når vi kommer op på toppen af randmorænen, kan I få fornemmelsen af den højderyg der strækker sig hele vejen op til Jyske Ås’ udspring mod nordvest. Der har oprindeligt ikke været alle de slugter her i Mølleskoven, de er blevet skabt gennem tiden af Møllebækken og de omkringliggende kilder, der har arbejdet sig ned igennem sandet og gruset. \n\nMøllebækken udspringer i øvrigt oppe fra Jyske Ås ca. 1,5 km herfra, der hvor Dorfgade krydser Jyske Ås.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 4,
+    "routeId": 1,
+    "title": "Sti langs mark",
+    "lat": 57.22048,
+    "lon": 10.28175,
+    "radiusMeters": 12,
+    "text": "For at komme ned i den anden ende af Mølleskoven, så skal vi ud af skoven og så til højre. Når I kommer ud af skoven, så gør jer den tjeneste lige at kigge ud over marken. Så får I et rigtig godt overblik over det omkringliggende landskab. Vi skal ind af det første hul mellem træerne til højre, ned af skrænten og så til venstre langs vandløbet.",
+    "images": [
+      "/img/Marken2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 5,
+    "routeId": 1,
+    "title": "Bunden af skov ved vandløb",
+    "lat": 57.22088,
+    "lon": 10.28038,
+    "radiusMeters": 12,
+    "text": "Her kan I rigtig fornemme slugterne og se hvordan kilderne arbejder sig igennem randmorænen. Der kan dog være lidt vådt og mudret – så vær opmærksom på hvor I sætter fødderne. \n\nI øvrigt, en anden spændende detalje er at den gang isen smeltede, der var Vendsyssel dækket af hav. Isen havde på grund af sin massive vægt trykket landjorden så meget ned, at den blev dækket af vand. \n\nDet er derfor, at man nogle steder kan finde gammel havbund inde midt i landet. Efter at isen forsvandt, begyndte landjorden lige så stille at hæve sig igen og blev til det Vendsyssel vi kender i dag.",
+    "images": [
+      "/img/MoræneTop2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 6,
+    "routeId": 1,
+    "title": "Sti langs vandløb 1",
+    "lat": 57.22073,
+    "lon": 10.27997,
+    "radiusMeters": 12,
+    "text": "I har nok allerede observeret, at skoven mest består af bøgetræer. Det var faktisk sådan, at i gammel tid der var skoven delt op i overskov og underskov. Overskoven ejede godsejeren, mens bønderne måtte have lov til at tage de andre træer til bl.a. brænde og dyrehegn. \n\nOrdningen med overskov og underskov opstod helt tilbage i 1446 og i 1600-tallet blev det præciseret at overskov bestod af eg, bøg og ask og at alle andre træarter uanset størrelse, var underskov. Loven opstod for at sikre de store træer til bl.a. skibsbyggeri, men loven havde den stik modsatte virkning. Dette prøvede man at ændre på i 1781, hvor den Store Udskiftningsforordning blev lavet. Bønderne mistede herefter retten til underskoven, dog mod kompensation.",
+    "images": [
+      "/img/Bøgen.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 7,
+    "routeId": 1,
+    "title": "Sti langs vandløb 2",
+    "lat": 57.22051,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Jeg ved ikke om I har bemærket det, men rigtig mange af bøgetræerne har knuder på stammen. Det er især noget man ser i Vendsyssel og de træer kaldes også for Vendsyssel Bøge eller Vendsyssel Røller. Jeg har ladet mig fortælle, at man kan dreje nogle flotte skåle ud af knuderne. Knuderne skulle give et rigtig flot spil i træet. Så hvis man skulle falde over en knude en gang og man kender en trædrejer, så var det måske et forsøg værd.",
+    "images": [
+      "/img/Moræne2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 8,
+    "routeId": 1,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "Nå jeg har som sædvanligt snakket alt for meget, det er desværre en af mine dårlige vaner, hvis du spørger min familie. Vi er ved at være nået til vejs ende i vores Mølleskov, nu skal vi bare til højre og så kommer der en gammel gangbro. Den fører hen over vandløbet som løber ud i vores Møllesø. \n\n I øvrigt så kan vi jo takke gletsjeren for, at vi har de helt rigtige forhold til at have både en vandmølle og vindmølle. Uden den havde vi måske ikke kunnet bygge nogle af dem og så har vi ikke kunnet lave strøm, mel eller foder. Det hele hænger sammen i et større puslespil. \n\nHåber at I har fået lidt ny viden og ser på landskabet på en ny måde, næste gang I bevæger jer rundt i landet fra de flade heder til de høje bakkedrag. Tak fordi I ville med mig rundt, det har været rigtig hyggeligt.",
+    "images": [
+      "/img/GangbroRed.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 9,
+    "routeId": 2,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej med jer, Jeg hedder Ellen og det er min storebror Knud. Vi elsker at løbe rundt oppe i Mølleskoven. Her gemmer der sig masser af biller og andre små spændende dyr, hvis man kigger godt efter mellem bladene. Det er næsten som en skattejagt, man finder altid et eller andet deroppe.",
+    "images": [
+      "/img/Stuehus.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 10,
+    "routeId": 2,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Har I lyst til at komme med på en tur? Så følg med. Vi starter ved den gangbro der ligger lige ovre på den anden side af laden. Det er nemlig den aller korteste vej op i skoven. Som Knud plejer at sige ”1-2-3 puf, så er man der”. Så 1-2-3 over gangbroen og op ad skråningen og puf, så er vi der. Det er her vi løber rundt og leger.",
+    "images": [
+      "/img/SkovturInd3.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 11,
+    "routeId": 2,
+    "title": "Toppen af skrænten",
+    "lat": 57.22094,
+    "lon": 10.28124,
+    "radiusMeters": 12,
+    "text": "Når I står helt oppe på toppen af skrænten og kigger ned til højre, så kan I se vandløbet der løber nede i bunden af skoven. Der skal vi ned. Men for at komme derned er vi nødt til at følge stien ud ad skoven og så skal vi dreje til højre og gå langs marken. Husk at kigge ned når I går, der gemmer sig mange små insekter og biller imellem bladene.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 12,
+    "routeId": 2,
+    "title": "Sti",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "Lidt henne ad stien kommer der et hul ind til højre, her skal vi ind og så skal vi bare lige ned ad skrænten. I skal gå forsigtigt for skrænten er lidt stejl at gå på. Nede for enden af skrænten skal I til venstre, her går der en lille sti ved siden af vandløbet.",
+    "images": [
+      "/img/Vandløb.webp",
+      "/img/Moræne2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 13,
+    "routeId": 2,
+    "title": "Sti langs vandløb 1",
+    "lat": 57.22073,
+    "lon": 10.27997,
+    "radiusMeters": 12,
+    "text": "Pas på I ikke får våde fødder, stien er ikke ret bred. Men den er sjov at gå på og så er det her, at tudserne gemmer sig. Knud elsker tudser, han syntes at de ser så kloge ud. Tudserne gemmer sig ofte i kanten af vandløbet mellem bladene og grenene på jorden. Kan du få øje på en? De kan være svære at se for de har samme farve som bladene. I modsætning til frøer, så har tudser en tør, rynket hud med vorter. Lidt ligesom nogle gamle mennesker og så kan de blive meget gamle, helt op til 50 år.",
+    "images": [
+      "/img/TræVedVand.webp",
+      "/img/Skrubtudse.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 14,
+    "routeId": 2,
+    "title": "Sti langs vandløb 2",
+    "lat": 57.22051,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Jeg er mere vild med Skovskarnbassen. Det er en stor, rund, sort bille og når solen skinner på den, får den sådan nogle flotte grønne og blå farver. Skovskarnbassen kravler rundt på jorden mellem bladene og den lever både oppe på skrænterne og nede i bunden af skoven. Skovskarnbassen har vinger, så I skal ikke blive forskrækket, hvis den lige pludselig flyver væk. Nogle gange skal man rode lidt forsigtigt i bladene for at finde den.",
+    "images": [
+      "/img/Skarnbasse.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 15,
+    "routeId": 2,
+    "title": "Sti langs vandløb 3",
+    "lat": 57.22043,
+    "lon": 10.27881,
+    "radiusMeters": 12,
+    "text": "Nogle andre sjove dyr der lever i skoven, er Bænkebidere. Dem kan vi bruge lang tid på at finde, de er nemlig ikke ret store. Bænkebidere lever af døde blade og dødt træ. Så hvis I ser en gammel træstub der er ved at falde fra hinanden, så er der højst sandsynligt Bænkebidere gemt i træet. Ellers gemmer de sig også tit under bladene på jorden. Bænkebidere er faktisk ikke biller men krebsdyr, ligesom rejer og krabber. Ret vildt for de ligner slet ikke hinanden.",
+    "images": [
+      "/img/Bænkebidder.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 16,
+    "routeId": 2,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "Nu er vi snart ved vejs ende på turen. Vi må nemlig ikke løbe længere væk end, at vi kan høre klokken ringe hjemme på gården. Men inden skal vi lige ud på den gamle træbro og kigge efter små dyr i vandløbet. I skal se godt efter, for der er masser af steder de kan gemme sig og vandet løber hurtigt. De sjove, grønne pinde der stikker op af vandet, er Dynd Padderok. De stammer faktisk helt tilbage fra dengang dinosaurerne herskede på jorden. Den gang var Padderokkerne bare meget højere, mindst lige så høje som træerne der står her i skoven. Det siger far i hvert fald. \n\nHov, hvad var det? Jeg kan høre klokken ringe, så er der mad, men inden vi løber hjem, så vil vi gerne sige tak fordi I ville følge med os på tur i skoven. Vi håber at I fik set nogle dyr og at I har fået lyst til at gå på eventyr i andre spændende skove. Vi ses…",
+    "images": [
+      "/img/GangbroRed.webp",
+      "/img/DyndPad.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 17,
+    "routeId": 3,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Go’daw jeg hedder Johanne og jeg er stuepige her hos familien Mølleskov. \n\nJeg har været hos familien Mølleskov i mange år, så jeg har hørt mangt og meget igennem årene. Og der er altså noget om alle de sagn man hører. Hvordan vil I ellers forklare hvordan alle mine spande og koste på uforklarlig vis har været forsvundet, for pludselig at dukke op igen. Det er i hvert fald ikke børnene der har været på spil – jeg har spurgt dem. Næh, de har været forbandet af troldtøj har de. Og ved I hvad jeg så plejer at gøre? Nej ved I hvad, jeg vil hellere vise jer det selv. \n\nVi skal op i skoven og vi tager den korteste vej derop, for vi skal helst være tilbage inden det bliver mørkt. Vi skal nemlig over træbroen og den går lige hen over mosen, hvor Lygtemanden bor.",
+    "images": [
+      "/img/DMSkilt.webp",
+      "/img/SkovturIndgang.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 18,
+    "routeId": 3,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Det er her Lygtemanden gemmer sig og han er et ondt væsen. Når mørket falder på, prøver han at lokke folk ud i mosen, så de ikke kan finde tilbage. Han er en lille indsunken mand klædt i rødt eller blåt tøj. Han er heldigvis nem at narre. Så skulle I møde ham en mørk aften, så kan man enten vende sin sok med vrangen ud af eller give ham nogle mønter og så viser han vejen ud af mosen. \n\nDer var faktisk en mand i udkanten af Øster Brønderslev der havde set ikke kun én, men to lygtemænd. Han kan nemlig dele sig og blive til flere, udspekuleret rad. Han fulgte efter dem, men de forsvandt sporløst ind under en dør i et hus og han så dem aldrig igen. Jeg tror nu godt nok ikke at jeg havde været så modig at følge efter dem, med mindre at de havde stjålet en af mine spande eller koste. \n\nNå, hvor kom vi fra … jo vi skal op ad skrænten og så til venstre. Jeg skulle op og vise jer Øjetræet.",
+    "images": [
+      "/img/VådOmråde.webp",
+      "/img/SkovturInd2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 19,
+    "routeId": 3,
+    "title": "Hultræet",
+    "lat": 57.22094,
+    "lon": 10.28124,
+    "radiusMeters": 12,
+    "text": "Øjetræet står lidt nede af skrænten til højre. Det er et bøgetræ hvor to stammer er vokset sammen undtagen på midten, hvor de har dannet et øje. Et magisk øje, det kan nemlig helbrede Engelsk Syge og rense for troldtøj. Og det er her jeg tager mine spande og koste med op, når de er blevet ramt af troldtøj. Så får de lige en tur gennem hullet og så bliver de på sin plads det næste lange stykke tid. \n\nDer er heldigvis god tid til at det bliver mørkt endnu, så jeg synes at vi skal gå igennem skoven og ned til engen. Vi skal bare følge stien langs marken og nede for enden skal vi til højre ind i skoven. Og så skal vi følge stien ned til den gamle gangbro.",
+    "images": [
+      "/img/Hultræ.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 20,
+    "routeId": 3,
+    "title": "Sti langs mark 1",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "Der er heldigvis meget fredeligt herude - hov var det en hest der vrinskede. Apropos hest, hvis I nogensinde skulle se en hest med et skelethoved, så lad for guds skyld være med at kigge på den. Det er nemlig Helhesten og man kan miste forstanden, hvis man ser den i øjnene. Heldigvis plejer den først at dukke op når det er mørkt. \n\nEn Helhest er det der hedder en kirkevare – det er en hest der er blevet begravet levende under byggeriet af en kirke, for at beskytte kirken mod mørkets kræfter. En anelse makabert hvis I spørger mig. Men en Helhest varsler sygdom og død, hvis den stopper op ved et hus og kigger ind igennem vinduet, på en af sine natlige vandringer.",
+    "images": [
+      "/img/Marken.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 21,
+    "routeId": 3,
+    "title": "Sti langs mark 2",
+    "lat": 57.22042,
+    "lon": 10.28017,
+    "radiusMeters": 12,
+    "text": "Ifølge et lokalt sagn skulle der vandre en Helhest rundt i Pajhede Skov om natten. Hesten og dens ejer blev myrdet ude i skoven under Svenskekrigen. Hestens ejer var en svensk soldat, der havde forgrebet sig på en ung pige her i nærheden. Pigens kæreste og hans venner fandt frem til soldaten og myrdede både ham og hesten og begravede dem efterfølgende ude i skoven. Det er sikkert og vist, selv en skovfoged har set den.",
+    "images": [
+      "/img/Marken2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 22,
+    "routeId": 3,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "For at komme tilbage til Møllegården skal vi over engen ved Møllesøen og her findes nogle væsner I sikkert har hørt om – nemlig Ellefolket. Et meget smukt og forførende folk.",
+    "images": [
+      "/img/GangbroRed.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 23,
+    "routeId": 3,
+    "title": "Engen",
+    "lat": 57.22108,
+    "lon": 10.27854,
+    "radiusMeters": 12,
+    "text": "Ellepigerne plejer at danse herude på engen. Hvis I kommer for tæt på, vil de lave en ring omkring jer og så vil de forhekse jer. Og det er for resten af jeres liv. Ellepiger har hul i ryggen, så I er ikke i tvivl hvis I møder en. Heldigvis er det kun de unge ellepiger der er farlige. Når de bliver gamle, bliver de grimme og får lange hængepatter. De bliver kaldt Slattenpatter og er ikke til fare for nogen som helst. \n\nEllemænd elsker at forføre unge piger der går rundt alene. Her er tricket at tisse i sin træsko, ellemænd er nemlig meget renlige, så de vil straks løbe væk. Mindre kunne måske også godt gøre det. \n\nHold da op som tiden den flyver, jeg skal skynde mig hjem. Har lige fået en ny kost og spand, så jeg skal hjem og se om de står på deres plads eller om de også er blevet ramt af troldtøj. Tak fordi jeg måtte fortælle jer noget om de magiske og farlige væsner vi har her omkring Møllegården. Husk at komme hjem inden det bliver mørkt.",
+    "images": [
+      "/img/Engen.webp",
+      "/img/Engen3.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 24,
+    "routeId": 4,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Margrethe og det her er min mor Ingeborg. Vi elsker begge at bruge naturen i vores mad og til dekorationer på bordene. Selvom turen rundt omkring Møllesøen ikke syner af meget, så har den alligevel meget at byde på af både blomster og bær. \n\nVi går ture hele året rundt, men det er forskelligt hvad vi samler – det afhænger af hvad der blomstrer eller har bær på det pågældende tidspunkt. Men jeg synes at vi skal tage en tur rundt på stien og vi starter oppe ved vindmøllen.",
+    "images": [
+      "/img/DmSkilt.webp",
+      "/img/Møllen.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 25,
+    "routeId": 4,
+    "title": "Vindmøllen",
+    "lat": 57.22267,
+    "lon": 10.28267,
+    "radiusMeters": 12,
+    "text": "Heroppe plejer vi at finde Blåhat og Blåmunke i juni og juli måned. Det er de fineste blå blomster. De minder meget om hinanden, men kronbladene på Blåmunke er meget finere og smallere end dem på Blåhat. Vi plejer at plukke en lille buket og sætte i en vase inde i den blå stue. Det pynter så fint. \n\nUdover Blåhat og Blåmunke findes der også Kamille med den skønneste duft. Min mor elsker kamillete, men blomsterne er også fine som pynt ovenpå en kage, for eksempel en roulade. Kamille blomstrer det meste af sommeren, så der er god mulighed for at samle en masse blomster og tørre dem til te. \n\nI juli – september står her Rejnfan. Den har gule blomster som mest af alt minder om små fine guldknapper. Og så er det vores stuepige Johannes yndlingsblomst. Hun er en anelse overtroisk og det siges, at Rejnfan holder det onde væk. Så vi har ofte tørrede buketter liggende rundt omkring i huset. Men det pynter nu alt sammen, selvom mor synes at det er noget pjat.",
+    "images": [
+      "/img/Blåmunke.webp",
+      "/img/Kamille.webp",
+      "/img/Rejnfan.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 26,
+    "routeId": 4,
+    "title": "Eng 1",
+    "lat": 57.22215,
+    "lon": 10.28057,
+    "radiusMeters": 12,
+    "text": "Fra møllen skal vi over på engen ved søen, vi kan komme igennem klaplågen ovre på den anden side af vejen. Herovre plejer vi at plukke Forglemmigej i juli, dem bruger vi både i buketter men også som pynt på kagen. I skulle tage og prøve, de er så fine med deres bittesmå blå blomster med gul midte. De kan gøre enhver kedelig sirupskage til et lille kunstværk. \n\nEn lidt overset art er græsser, de er rigtig flotte i vaser når de har sat frøstande. Alt efter art og stadie svinger de i farverne fra grønne, rosa nuancer til hvide og brune farver. Mor så meget mærkelig ud i hovedet, en dag jeg havde sat en vase ind på bordet, med kun græsser i. Men nu gør hun det selv. Kan kun anbefale jer at prøve og så er de meget nemme at finde her ude i naturen.",
+    "images": [
+      "/img/Engen2.webp",
+      "/img/Forglemmigej.webp",
+      "/img/Græsser.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 27,
+    "routeId": 4,
+    "title": "Eng 2",
+    "lat": 57.22158,
+    "lon": 10.27871,
+    "radiusMeters": 12,
+    "text": "Nå, vi må hellere komme videre. Selvom jeg elsker engen, så er der også masser at komme efter oppe i skoven. For at komme derop skal vi igennem klaplågen og over den gamle træbro – pas på hvor I går henne, den er ved at være lidt træt og gammel. Hov jeg glemte en plante, nemlig Tusindfryd eller også kaldet Bellis, den der står i græsplænen. Den kan faktisk bruges både til kagepynt, urtete, snaps og de kan sågar syltes. Det har vi dog ikke prøvet endnu, men min mor og jeg overvejer at forsøge.",
+    "images": [
+      "/img/Engen4.webp",
+      "/img/GangbroRed.webp",
+      "/img/Bellis.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 28,
+    "routeId": 4,
+    "title": "Gangbroen",
+    "lat": 57.22121,
+    "lon": 10.28323,
+    "radiusMeters": 12,
+    "text": "Langs gangbroen vokser Pilen, den er så fin om foråret når den får sine små gæslinger og de er så flotte inde i en vase. Den behøver ikke selskab af andre planter. Hvidtjørnen gror også her og udover at være flot i en vase, når den blomstrer, så kan blomsterne også bruges som kagepynt og i snaps. Ville dog ønske at den ikke stak så meget. \n\nNår vi når til enden af broen, så skal vi op ad skråningen og ud ad skoven og så skal vi dreje til venstre – hen til min mors yndlingssted.",
+    "images": [
+      "/img/DyndPad2.webp",
+      "/img/Pil.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 29,
+    "routeId": 4,
+    "title": "Sti ved hindbær",
+    "lat": 57.22042,
+    "lon": 10.28017,
+    "radiusMeters": 12,
+    "text": "Her vokser brombærrene, hindbærrene og hylden. Hele efteråret står hun og sylter på livet løs og laver den lækreste saft.  Favoritten her i huset er hyldeblomstsaft. Omkring Sankt Hans bevæbner vi os med alle de kurve vi kan finde og så går jagten ind på hyldeblomster. Det samme gentager sig så til efteråret, her er det så alskens bær der ryger i kurven. En herlig tid på året.",
+    "images": [
+      "/img/Marken.webp",
+      "/img/Brombær.webp",
+      "/img/Hyldeblomst.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 30,
+    "routeId": 4,
+    "title": "Sti 2",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "For at komme tilbage til Møllegården, så skal vi fortsætte ad stien og så drejer den til venstre ind i skoven igen efter noget tid. Der står også tit nogle fine blomster langs stien, bl.a. Kongepen som har en fin lille gul kurve-blomst. Den lyser op overalt hvor den står i august og september.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 31,
+    "routeId": 4,
+    "title": "Inde i skoven omkring hultræet",
+    "lat": 57.22094,
+    "lon": 10.28124,
+    "radiusMeters": 12,
+    "text": "Inde i skoven hersker Bøgen og der er ikke noget smukkere, end når den springer ud med sine lysegrønne blade om foråret. Det er også her om foråret at Anemonerne og efterfølgende Maj-blomst springer ud med deres hvide blomster. Både bøgegrene, Anemoner og Maj-blomst kan tages med ind og sættes i en vase. Inde i skoven fortsætter vi lige ud og så følger stien rundt til højre og så kommer vi ud på den lille gangbro overfor laden.",
+    "images": [
+      "/img/Hultræ.webp",
+      "/img/Bøgen.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 32,
+    "routeId": 4,
+    "title": "Den lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28323,
+    "radiusMeters": 12,
+    "text": "Her til sidst vil vi lige fortælle om en sidste blomst – I kender den rigtig godt, nemlig Mælkebøtter. Deres blomster er gode til saft, de har sådan en lidt honningagtig smag. Man skal bare bruge mælkebøtteblomster, vand, citron og sukker. En dejlig sød og frisk sommerdrik. \n\nInden vores veje skilles, så vil min mor og jeg gerne sige tusinde tak for jeres selskab. Vi håber at vi har kunnet inspirere til nogle lidt vildere buketter i vaserne og noget finere kagepynt. Og så sørg for at komme ud til efteråret og smag på alle de dejlige bær og nyd efterårets farver inden al ting forsvinder under vinterens hvide dyne.",
+    "images": [
+      "/img/SkovturInd3.webp",
+      "/img/Mælkebøtte.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 33,
+    "routeId": 5,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Erik og jeg er den ældste søn i familien. Jeg vil gerne fortælle jer lidt om Møllesøen. Møllesøen er hele familiens mødested. Her mødes vi de sommerdage hvor vejret er godt og vi er færdige med dagens arbejde. Alle de ansatte på gården er også med, det er så hyggeligt når vi alle kan være sammen. \n\nMøllesøen har noget for alle, der er både fugle, fisk, planter og insekter. Og far kan altid finde et eller andet, der minder ham om noget han har læst i en bog.",
+    "images": [
+      "/img/Stuehus.webp",
+      "/img/MølleSø1.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 34,
+    "routeId": 5,
+    "title": "Vej langs Møllesøen",
+    "lat": 57.22184,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Noget af det første man opdager når man ser søen, er svanerne. Jeg elsker fugle og det er spændende at følge svanerne. Et år fik de hele 7 svællinger, det var ret vildt synes jeg. De har rede ude imellem sivene, så ræven ikke kan komme til dem. \n\nI kan også være heldige at se Isfugl, Fiskeørn, Glente og Rørhøg. Jeg har selv set Isfuglen og Fiskeørnen nogle få gange, de andre fugle er mere almindelige. Hvis I kommer om aftenen, så kan man nogle gange høre Nattergalen synge. \n\nKnud plejer at fiske efter Skaller sammen med møllersvenden Niels. Så sidder de her på kanten langs vejen. Jeg glemmer aldrig dengang Knud skulle kaste snøren ud og krogen endte med at sidde fast i Niels’ hat. Hatten endte ude i søen, hold da op det så sjovt ud. \n\nDer er også Aborre og Gedder i søen. Når solen skinner, plejer gedderne at svømme rundt langs kanten af søen og solbade. Så kan man stå heroppe og se lige ned på dem. Det er helt vildt så stor en Gedde kan blive. Der er også Dammuslinger i søen, de ligger nede på bunden og hjælper med at holde søen ren.",
+    "images": [
+      "/img/Svane.webp",
+      "/img/SvaneSvællinger.webp",
+      "/img/MølleSø3.webp",
+      "/img/Gedde.webp",
+      "/img/Dammusling.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 35,
+    "routeId": 5,
+    "title": "Klaplåge overfor vindmøllen",
+    "lat": 57.22261,
+    "lon": 10.28165,
+    "radiusMeters": 12,
+    "text": "Når vi rigtig skal hygge, så plejer vi at have tæpper med og så sætter vi os på marken med vores madpakker eller hjemmebag. Så sidder vi og snakker og kigger på alt det der er omkring os. Vi kan komme ind på marken igennem klaplågen overfor vindmøllen.",
+    "images": [
+      "/img/Engen2.webp",
+      "/img/MølleSø2.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 36,
+    "routeId": 5,
+    "title": "Vådområde op mod gangbroen",
+    "lat": 57.22134,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Mor og Margrethe plejer at kigge på planter, mens Johanne og Kirstine passer Lille bitte Tove og slapper af. Johanne plejer dog at vågne op når Mor og Margrethe nærmer sig Topstar-tuerne. Så råber hun op om at de ikke må vække troldene. Hun skal ikke risikere, at de gamle historier er sande. Ifølge historierne er græsstråene troldenes hår og resten af trolden gemmer sig nede i jorden, fordi de ikke kan lide solen. Så plejer mor og Margrethe at skynde sig væk igen.",
+    "images": [
+      "/img/Engen5.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 37,
+    "routeId": 5,
+    "title": "Dunhammer",
+    "lat": 57.22245,
+    "lon": 10.28193,
+    "radiusMeters": 12,
+    "text": "En gang havde Margrethe været nede ved søen og plukke Dunhammer, for hun syntes at de store brune toppe ville være så fine inde i stuen. Mor var på familiebesøg i et par dage og da hun kom hjem, var Dunhammerne sprunget ud og der var frø overalt inde i den fine stue. Der var Margrethe ikke så populær og hun kom selv til at fjerne alle frøene igen. Det endte dog med at hun bestak Knud og Ellen med nybagt kage og så hjalp de hende med at gøre rent.",
+    "images": [
+      "/img/DunhammerRed.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 38,
+    "routeId": 5,
+    "title": "Søbred",
+    "lat": 57.22244,
+    "lon": 10.28278,
+    "radiusMeters": 12,
+    "text": "Ellen kigger efter insekter sammen med staldkarlen Aage. I søen er der Blå Mosaikguldsmed, Rød Vandnymfe og Almindelig Vandnymfe. Umiddelbart kan de godt ligne hinanden, men guldsmedens vinger sidder i et kryds mens vandnymfens ligger ned langs dens side, når de sidder og hviler. Man kan tit se dem flyve rundt langs kanten af søen eller mens de solbader på et blad. En dag Ellen og Aage sad og kiggede efter guldsmede, så de en Odder svømme rundt ude i søen. Der blev jeg godt nok lidt misundelig.",
+    "images": [
+      "/img/MølleSø4.webp",
+      "/img/Guldsmed.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  },
+  {
+    "id": 39,
+    "routeId": 5,
+    "title": "Eng",
+    "lat": 57.22245,
+    "lon": 10.28308,
+    "radiusMeters": 12,
+    "text": "Udover Odderen har vi også Harer, de sidder tit ude på engen om morgenen og spiser kløver og græs. Der er også Rådyr og Dådyr, men de går mest ude på markerne omkring gården. \n\nFar plejer at lave lidt af hvert herovre, nogle gange fisker han andre gange kigger han efter insekter med Ellen eller også kigger han på fugle sammen med mig. Blomster interesserer ham ikke, det plejer han at lade damerne om som han siger. Og så er han god til at fortælle en historie eller to om hvordan landskabet er blevet dannet. Nogle gange er det godt, at vi skal være stille når vi kigger efter fugle. \n\nNå, jeg kan se at de andre begynder at pakke sammen, Lille bitte Tove skal snart hjem i seng. Tak fordi I ville med en tur over til søen, det har været rigtig hyggeligt at have jer med.",
+    "images": [
+      "/img/Engen7.webp",
+      "/img/Hare.webp"
+    ],
+    "title_de": "",
+    "title_en": "",
+    "text_de": "",
+    "text_en": ""
+  }
+]

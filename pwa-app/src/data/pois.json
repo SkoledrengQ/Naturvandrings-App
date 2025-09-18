@@ -3,13 +3,17 @@
     "id": 1,
     "routeId": 1,
     "title": "Møllegården",
-    "lat": 57.22140,
+    "lat": 57.2214,
     "lon": 10.28365,
     "radiusMeters": 12,
     "text": "Hej jeg hedder Kristian og jeg vil gerne fortælle jer lidt om Mølleskovens historie og hvordan den er blevet skabt. Jeg har altid været fascineret af isens kræfter og Jyske Ås er faktisk blevet dannet under den sidste istid. Istiden hed Weichsel og begyndte for ca. 117.000 år siden og sluttede for ca. 11.700 år siden. \n\nVil I med en tur op i Mølleskoven og se hvad isen har skabt? Vi starter i den ende der ligger tættest på gården.",
     "images": [
-      "/img/DMSkilt.png"
-    ]
+      "/img/DMSkilt.webp"
+    ],
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Kristian, und ich möchte euch ein wenig über die Geschichte des Mølleskoven erzählen und darüber, wie er entstanden ist. Ich war schon immer von der Kraft des Eises fasziniert, und die Jyske Ås entstand tatsächlich während der letzten Eiszeit. Diese Eiszeit heißt Weichsel, begann vor etwa 117.000 Jahren und endete vor etwa 11.700 Jahren.\n\nHabt ihr Lust, mit hinauf in den Mølleskoven zu kommen und zu sehen, was das Eis geschaffen hat? Wir starten an dem Ende, das am nächsten am Hof liegt.",
+    "text_en": "Hi, my name is Kristian, and I’d like to tell you a bit about the history of Mølleskoven and how it was formed. I’ve always been fascinated by the power of ice, and the Jyske Ås was actually created during the last Ice Age. That ice age is called the Weichsel glaciation; it began about 117,000 years ago and ended around 11,700 years ago.\n\nShall we head up into Mølleskoven to see what the ice created? We’ll start at the end closest to the farm."
   },
   {
     "id": 2,
@@ -20,8 +24,12 @@
     "radiusMeters": 12,
     "text": "Vi skal bare lige over den lille gangbro og så møder vi starten af en randmoræne. En randmoræne er aflejringer fra en gletsjer. For 15.000 år siden kom der en gletsjer fra Østersøen. Med sig havde den enorme mængder af sand, grus, sten og klippeblokke. \n\nEn gletsjer fungerer lidt ligesom når du skubber en sneskovl hen over jorden, så skubber du sneen foran skovlen. Det samme gør en gletsjer, når den bevæger sig ind over land. \n\nI 3000 år lå gletsjeren og bevægede sig frem og tilbage i Vendsyssel, indtil den smeltede helt for 12.000 år siden. Jyske Ås og Mølleskoven er altså en del af gletsjerens efterladenskaber.",
     "images": [
-      "/img/SkovturInd3.png"
-    ]
+      "/img/SkovturInd3.webp"
+    ],
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Wir gehen nur schnell über den kleinen Steg, und dann treffen wir auf den Anfang einer Endmoräne. Eine Endmoräne besteht aus Ablagerungen eines Gletschers. Vor 15.000 Jahren kam ein Gletscher aus der Ostsee. Er brachte enorme Mengen an Sand, Kies, Steinen und Felsblöcken mit sich.\n\nEin Gletscher funktioniert ein bisschen so, als würdest du eine Schneeschaufel über den Boden schieben – der Schnee wird vor der Schaufel hergeschoben. Genauso schiebt ein Gletscher Material vor sich her, wenn er sich über Land bewegt.\n\n3.000 Jahre lang bewegte sich der Gletscher in Vendsyssel vor und zurück, bis er vor 12.000 Jahren völlig abschmolz. Die Jyske Ås und der Mølleskoven sind also Hinterlassenschaften dieses Gletschers.",
+    "text_en": "We just need to cross the little footbridge and then we’ll meet the start of a terminal moraine. A terminal moraine is made of deposits left by a glacier. Fifteen thousand years ago, a glacier came from the Baltic Sea, carrying huge amounts of sand, gravel, stones, and boulders.\n\nA glacier works a bit like pushing a snow shovel along the ground—you push the snow in front of the shovel. A glacier does the same as it moves over land.\n\nFor 3,000 years the glacier advanced and retreated across Vendsyssel, until it finally melted away 12,000 years ago. The Jyske Ås and Mølleskoven are part of what the glacier left behind."
   },
   {
     "id": 3,
@@ -32,8 +40,12 @@
     "radiusMeters": 12,
     "text": "Når vi kommer op på toppen af randmorænen, kan I få fornemmelsen af den højderyg der strækker sig hele vejen op til Jyske Ås’ udspring mod nordvest. Der har oprindeligt ikke været alle de slugter her i Mølleskoven, de er blevet skabt gennem tiden af Møllebækken og de omkringliggende kilder, der har arbejdet sig ned igennem sandet og gruset. \n\nMøllebækken udspringer i øvrigt oppe fra Jyske Ås ca. 1,5 km herfra, der hvor Dorfgade krydser Jyske Ås.",
     "images": [
-      "/img/Moræne1.png"
-    ]
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "Oben an der Böschung",
+    "title_en": "Top of the Slope",
+    "text_de": "Wenn wir oben auf der Endmoräne ankommen, spürt ihr den Höhenrücken, der sich bis zum Ursprung der Jyske Ås nach Nordwesten hinzieht. Ursprünglich gab es hier im Mølleskoven nicht all diese Schluchten – sie wurden im Laufe der Zeit vom Møllebækken und den umliegenden Quellen geschaffen, die sich durch Sand und Kies gegraben haben.\n\nÜbrigens entspringt der Møllebækken oben an der Jyske Ås, etwa 1,5 km von hier, dort, wo die Dorfgade die Jyske Ås kreuzt.",
+    "text_en": "When we reach the top of the terminal moraine, you can sense the ridge that stretches all the way to the source of the Jyske Ås to the northwest. Originally, there weren’t all these ravines in Mølleskoven—they were carved over time by the Møllebækken stream and nearby springs working their way down through the sand and gravel.\n\nBy the way, the Møllebækken rises up on the Jyske Ås about 1.5 km from here, where Dorfgade crosses the Jyske Ås."
   },
   {
     "id": 4,
@@ -44,8 +56,12 @@
     "radiusMeters": 12,
     "text": "For at komme ned i den anden ende af Mølleskoven, så skal vi ud af skoven og så til højre. Når I kommer ud af skoven, så gør jer den tjeneste lige at kigge ud over marken. Så får I et rigtig godt overblik over det omkringliggende landskab. Vi skal ind af det første hul mellem træerne til højre, ned af skrænten og så til venstre langs vandløbet.",
     "images": [
-      "/img/Marken2.png"
-    ]
+      "/img/Marken2.webp"
+    ],
+    "title_de": "Pfad entlang des Feldes",
+    "title_en": "Path Along the Field",
+    "text_de": "Um zum anderen Ende des Mølleskoven hinunterzukommen, müssen wir den Wald verlassen und dann rechts abbiegen. Wenn ihr aus dem Wald tretet, gönnt euch kurz einen Blick über das Feld – so bekommt ihr einen richtig guten Überblick über die umgebende Landschaft. Wir gehen durch die erste Lücke rechts zwischen den Bäumen, hinunter die Böschung und dann links am Bach entlang.",
+    "text_en": "To get down to the other end of Mølleskoven, we leave the forest and turn right. When you come out, do yourself a favor and look out across the field—you’ll get a great overview of the surrounding landscape. We’ll head into the first opening on the right between the trees, go down the slope, and then turn left to follow the stream."
   },
   {
     "id": 5,
@@ -56,8 +72,12 @@
     "radiusMeters": 12,
     "text": "Her kan I rigtig fornemme slugterne og se hvordan kilderne arbejder sig igennem randmorænen. Der kan dog være lidt vådt og mudret – så vær opmærksom på hvor I sætter fødderne. \n\nI øvrigt, en anden spændende detalje er at den gang isen smeltede, der var Vendsyssel dækket af hav. Isen havde på grund af sin massive vægt trykket landjorden så meget ned, at den blev dækket af vand. \n\nDet er derfor, at man nogle steder kan finde gammel havbund inde midt i landet. Efter at isen forsvandt, begyndte landjorden lige så stille at hæve sig igen og blev til det Vendsyssel vi kender i dag.",
     "images": [
-      "/img/MoræneTop2.png"
-    ]
+      "/img/MoræneTop2.webp"
+    ],
+    "title_de": "Unten im Wald am Bach",
+    "title_en": "Forest Floor by the Stream",
+    "text_de": "Hier könnt ihr die Schluchten richtig spüren und sehen, wie sich die Quellen durch die Endmoräne arbeiten. Es kann allerdings etwas nass und matschig sein – achtet also darauf, wo ihr hintretet.\n\nNoch ein spannendes Detail: Als das Eis schmolz, war Vendsyssel vom Meer bedeckt. Aufgrund seines gewaltigen Gewichts hatte das Eis das Land so stark nach unten gedrückt, dass es überflutet wurde.\n\nDarum findet man mancherorts alte Meeresböden mitten im Landesinneren. Nachdem das Eis verschwunden war, hob sich das Land langsam wieder – bis zu dem Vendsyssel, das wir heute kennen.",
+    "text_en": "Here you can really sense the ravines and see how the springs cut their way through the terminal moraine. It can be a bit wet and muddy—so watch your step.\n\nAnother interesting detail: when the ice melted, Vendsyssel was covered by the sea. Because of its massive weight, the ice had pushed the land down so much that it lay under water.\n\nThat’s why in some places you can find ancient seabed right in the middle of the country. After the ice disappeared, the land slowly rose again, becoming the Vendsyssel we know today."
   },
   {
     "id": 6,
@@ -68,8 +88,12 @@
     "radiusMeters": 12,
     "text": "I har nok allerede observeret, at skoven mest består af bøgetræer. Det var faktisk sådan, at i gammel tid der var skoven delt op i overskov og underskov. Overskoven ejede godsejeren, mens bønderne måtte have lov til at tage de andre træer til bl.a. brænde og dyrehegn. \n\nOrdningen med overskov og underskov opstod helt tilbage i 1446 og i 1600-tallet blev det præciseret at overskov bestod af eg, bøg og ask og at alle andre træarter uanset størrelse, var underskov. Loven opstod for at sikre de store træer til bl.a. skibsbyggeri, men loven havde den stik modsatte virkning. Dette prøvede man at ændre på i 1781, hvor den Store Udskiftningsforordning blev lavet. Bønderne mistede herefter retten til underskoven, dog mod kompensation.",
     "images": [
-      "/img/Bøgen.png"
-    ]
+      "/img/Bøgen.webp"
+    ],
+    "title_de": "Pfad am Bach 1",
+    "title_en": "Path Along the Stream 1",
+    "text_de": "Ihr habt sicher schon bemerkt, dass der Wald überwiegend aus Buchen besteht. Früher war der Wald tatsächlich in „Hochwald“ und „Unterholz“ aufgeteilt. Den Hochwald besaß der Gutsbesitzer, während die Bauern die übrigen Bäume z. B. für Brennholz und Viehzäune nutzen durften.\n\nDiese Ordnung entstand bereits 1446, und im 17. Jahrhundert wurde präzisiert, dass Hochwald aus Eiche, Buche und Esche bestand und alle anderen Baumarten – unabhängig von ihrer Größe – Unterholz waren. Das Gesetz sollte große Bäume u. a. für den Schiffbau sichern, hatte aber den gegenteiligen Effekt. 1781 versuchte man das mit der „Store Udskiftningsforordning“ zu ändern. Danach verloren die Bauern das Recht am Unterholz, erhielten aber eine Entschädigung.",
+    "text_en": "You’ve probably noticed that the forest is mostly beech. In earlier times, the forest was divided into “high forest” and “undergrowth.” The landowner owned the high forest, while farmers were allowed to take the other trees for things like firewood and animal fencing.\n\nThis arrangement dates back to 1446, and in the 1600s it was specified that the high forest consisted of oak, beech, and ash, while all other tree species—regardless of size—were classed as undergrowth. The law was intended to secure large trees for uses like shipbuilding but had the opposite effect. In 1781 they tried to change this with the “Store Udskiftningsforordning.” After that, farmers lost the right to the undergrowth, though with compensation."
   },
   {
     "id": 7,
@@ -80,8 +104,12 @@
     "radiusMeters": 12,
     "text": "Jeg ved ikke om I har bemærket det, men rigtig mange af bøgetræerne har knuder på stammen. Det er især noget man ser i Vendsyssel og de træer kaldes også for Vendsyssel Bøge eller Vendsyssel Røller. Jeg har ladet mig fortælle, at man kan dreje nogle flotte skåle ud af knuderne. Knuderne skulle give et rigtig flot spil i træet. Så hvis man skulle falde over en knude en gang og man kender en trædrejer, så var det måske et forsøg værd.",
     "images": [
-      "/img/Moræne2.png"
-    ]
+      "/img/Moræne2.webp"
+    ],
+    "title_de": "Pfad am Bach 2",
+    "title_en": "Path Along the Stream 2",
+    "text_de": "Ich weiß nicht, ob ihr es bemerkt habt, aber viele Buchen hier haben Knollen am Stamm. Das sieht man besonders in Vendsyssel, und diese Bäume werden auch „Vendsyssel-Buchen“ oder „Vendsyssel-Røller“ genannt. Man sagt, dass sich aus diesen Knollen wunderschöne Schalen drechseln lassen – sie sollen ein sehr schönes Spiel im Holz ergeben. Wenn ihr also einmal so eine Knolle findet und einen Holzdrechsler kennt, wäre das vielleicht einen Versuch wert.",
+    "text_en": "I’m not sure if you’ve noticed, but many of the beech trees have burls on their trunks. You see this especially in Vendsyssel, and those trees are called Vendsyssel Beeches or Vendsyssel “Røller.” I’ve been told you can turn beautiful bowls from these burls—the grain looks wonderful. So if you ever come across one and know a woodturner, it might be worth a try."
   },
   {
     "id": 8,
@@ -92,20 +120,28 @@
     "radiusMeters": 12,
     "text": "Nå jeg har som sædvanligt snakket alt for meget, det er desværre en af mine dårlige vaner, hvis du spørger min familie. Vi er ved at være nået til vejs ende i vores Mølleskov, nu skal vi bare til højre og så kommer der en gammel gangbro. Den fører hen over vandløbet som løber ud i vores Møllesø. \n\n I øvrigt så kan vi jo takke gletsjeren for, at vi har de helt rigtige forhold til at have både en vandmølle og vindmølle. Uden den havde vi måske ikke kunnet bygge nogle af dem og så har vi ikke kunnet lave strøm, mel eller foder. Det hele hænger sammen i et større puslespil. \n\nHåber at I har fået lidt ny viden og ser på landskabet på en ny måde, næste gang I bevæger jer rundt i landet fra de flade heder til de høje bakkedrag. Tak fordi I ville med mig rundt, det har været rigtig hyggeligt.",
     "images": [
-      "/img/GangbroRed.png"
-    ]
+      "/img/GangbroRed.webp"
+    ],
+    "title_de": "Der Steg",
+    "title_en": "The Footbridge",
+    "text_de": "So, ich habe wie üblich viel zu viel geredet – leider eine meiner schlechten Angewohnheiten, wenn man meine Familie fragt. Wir sind am Ende unserer Runde im Mølleskoven; jetzt müssen wir nur noch nach rechts, dann kommt ein alter Steg. Er führt über den Bach, der in unsere Møllesø mündet.\n\nÜbrigens können wir dem Gletscher danken, dass wir hier die idealen Bedingungen für sowohl eine Wasser- als auch eine Windmühle haben. Ohne ihn hätten wir vielleicht keine von beiden bauen können – und dann hätten wir keinen Strom, kein Mehl und kein Futter erzeugen können. Alles ist Teil eines größeren Puzzles.\n\nIch hoffe, ihr habt etwas Neues mitgenommen und schaut beim nächsten Spaziergang – von den flachen Heiden bis zu den hohen Hügelrücken – mit anderen Augen auf die Landschaft. Danke, dass ihr mich begleitet habt – es war sehr gemütlich.",
+    "text_en": "Well, as usual I’ve talked far too much—one of my bad habits, according to my family. We’re nearly at the end of our walk in Mølleskoven; we just turn right and we’ll reach an old footbridge. It crosses the stream that flows into our Møllesø.\n\nBy the way, we can thank the glacier for giving us just the right conditions for both a watermill and a windmill. Without it, we might not have been able to build either—and then we couldn’t have made power, flour, or feed. It all fits together like a big puzzle.\n\nI hope you learned something new and will see the landscape differently next time you move across the country—from flat heathlands to high ridges. Thanks for joining me; it’s been a real pleasure."
   },
   {
     "id": 9,
     "routeId": 2,
     "title": "Møllegården",
-    "lat": 57.22140,
+    "lat": 57.2214,
     "lon": 10.28365,
     "radiusMeters": 12,
     "text": "Hej med jer, Jeg hedder Ellen og det er min storebror Knud. Vi elsker at løbe rundt oppe i Mølleskoven. Her gemmer der sig masser af biller og andre små spændende dyr, hvis man kigger godt efter mellem bladene. Det er næsten som en skattejagt, man finder altid et eller andet deroppe.",
     "images": [
-      "/img/Stuehus.png"
-    ]
+      "/img/Stuehus.webp"
+    ],
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo zusammen! Ich heiße Ellen, und das ist mein großer Bruder Knud. Wir lieben es, oben im Mølleskoven herumzurennen. Zwischen den Blättern verstecken sich jede Menge Käfer und andere kleine, spannende Tiere – wenn man genau hinschaut. Es ist fast wie eine Schatzsuche; man findet dort oben immer irgendetwas.",
+    "text_en": "Hi there! I’m Ellen, and this is my big brother Knud. We love running around up in Mølleskoven. If you look closely among the leaves, you’ll find lots of beetles and other small, exciting critters. It’s almost like a treasure hunt—you always find something up there."
   },
   {
     "id": 10,
@@ -116,8 +152,12 @@
     "radiusMeters": 12,
     "text": "Har I lyst til at komme med på en tur? Så følg med. Vi starter ved den gangbro der ligger lige ovre på den anden side af laden. Det er nemlig den aller korteste vej op i skoven. Som Knud plejer at sige ”1-2-3 puf, så er man der”. Så 1-2-3 over gangbroen og op ad skråningen og puf, så er vi der. Det er her vi løber rundt og leger.",
     "images": [
-      "/img/SkovturInd3.png"
-    ]
+      "/img/SkovturInd3.webp"
+    ],
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Habt ihr Lust, uns auf eine kleine Tour zu begleiten? Dann kommt mit. Wir starten an dem Steg direkt auf der anderen Seite der Scheune. Das ist nämlich der allerkürzeste Weg in den Wald. Wie Knud immer sagt: „1–2–3 puf, und schon ist man da.“ Also: 1–2–3 über den Steg, den Hang hinauf – puf, schon sind wir da. Hier rennen wir herum und spielen.",
+    "text_en": "Want to join us for a little trip? Then come along. We’ll start at the footbridge right across from the barn—it’s the very shortest way up into the forest. As Knud always says, “1–2–3—puf, and you’re there.” So, 1–2–3 across the footbridge, up the slope—and puf, here we are. This is where we run around and play."
   },
   {
     "id": 11,
@@ -128,8 +168,12 @@
     "radiusMeters": 12,
     "text": "Når I står helt oppe på toppen af skrænten og kigger ned til højre, så kan I se vandløbet der løber nede i bunden af skoven. Der skal vi ned. Men for at komme derned er vi nødt til at følge stien ud ad skoven og så skal vi dreje til højre og gå langs marken. Husk at kigge ned når I går, der gemmer sig mange små insekter og biller imellem bladene.",
     "images": [
-     "/img/Moræne1.png"
-    ]
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "Oben an der Böschung",
+    "title_en": "Top of the Slope",
+    "text_de": "Wenn ihr ganz oben an der Böschung steht und nach rechts hinunterblickt, seht ihr den Bach, der unten am Waldboden entlangfließt. Dorthin gehen wir hinunter. Um dorthin zu kommen, müssen wir dem Pfad aus dem Wald hinaus folgen, dann rechts abbiegen und am Feld entlanggehen. Schaut beim Gehen nach unten – zwischen den Blättern verstecken sich viele kleine Insekten und Käfer.",
+    "text_en": "When you stand at the very top of the slope and look down to the right, you can see the stream running along the forest floor. That’s where we’re heading. To get there, we need to follow the path out of the forest, then turn right and walk along the field. Remember to look down as you walk—lots of little insects and beetles hide among the leaves."
   },
   {
     "id": 12,
@@ -140,9 +184,13 @@
     "radiusMeters": 12,
     "text": "Lidt henne ad stien kommer der et hul ind til højre, her skal vi ind og så skal vi bare lige ned ad skrænten. I skal gå forsigtigt for skrænten er lidt stejl at gå på. Nede for enden af skrænten skal I til venstre, her går der en lille sti ved siden af vandløbet.",
     "images": [
-     "/img/Vandløb.png",
-     "/img/Moræne2.png"
-    ]
+      "/img/Vandløb.webp",
+      "/img/Moræne2.webp"
+    ],
+    "title_de": "Pfad",
+    "title_en": "Path",
+    "text_de": "Ein Stück weiter kommt rechts eine Öffnung; dort gehen wir hinein und einfach den Hang hinunter. Geht vorsichtig – der Hang ist ein bisschen steil. Unten am Ende des Hangs biegen wir links ab; dort verläuft ein schmaler Pfad neben dem Bach.",
+    "text_en": "A little further along there’s an opening to the right; we’ll go in there and head straight down the slope. Walk carefully—the slope is a bit steep. At the bottom, turn left; there’s a small path running beside the stream."
   },
   {
     "id": 13,
@@ -153,11 +201,15 @@
     "radiusMeters": 12,
     "text": "Pas på I ikke får våde fødder, stien er ikke ret bred. Men den er sjov at gå på og så er det her, at tudserne gemmer sig. Knud elsker tudser, han syntes at de ser så kloge ud. Tudserne gemmer sig ofte i kanten af vandløbet mellem bladene og grenene på jorden. Kan du få øje på en? De kan være svære at se for de har samme farve som bladene. I modsætning til frøer, så har tudser en tør, rynket hud med vorter. Lidt ligesom nogle gamle mennesker og så kan de blive meget gamle, helt op til 50 år.",
     "images": [
-     "/img/TræVedVand.png",
-     "/img/Skrubtudse.png"
-    ]
+      "/img/TræVedVand.webp",
+      "/img/Skrubtudse.webp"
+    ],
+    "title_de": "Pfad am Bach 1",
+    "title_en": "Path Along the Stream 1",
+    "text_de": "Passt auf, dass ihr keine nassen Füße bekommt – der Pfad ist nicht sehr breit. Aber er macht Spaß zu gehen, und hier verstecken sich die Kröten. Knud liebt Kröten; er findet, sie sehen so klug aus. Kröten verstecken sich oft am Rand des Baches zwischen Blättern und Ästen am Boden. Könnt ihr eine entdecken? Sie sind schwer zu sehen, weil sie die gleiche Farbe wie die Blätter haben. Im Gegensatz zu Fröschen haben Kröten eine trockene, runzlige Haut mit Warzen – ein bisschen wie bei manchen alten Menschen – und sie können sehr alt werden, bis zu 50 Jahre.",
+    "text_en": "Be careful not to get your feet wet—the path isn’t very wide. But it’s fun to walk, and this is where the toads hide. Knud loves toads; he thinks they look so wise. Toads often hide at the edge of the stream among the leaves and twigs on the ground. Can you spot one? They can be hard to see because they’re the same color as the leaves. Unlike frogs, toads have dry, wrinkled skin with warts—rather like some elderly people—and they can live to be very old, up to 50 years."
   },
-    {
+  {
     "id": 14,
     "routeId": 2,
     "title": "Sti langs vandløb 2",
@@ -166,8 +218,12 @@
     "radiusMeters": 12,
     "text": "Jeg er mere vild med Skovskarnbassen. Det er en stor, rund, sort bille og når solen skinner på den, får den sådan nogle flotte grønne og blå farver. Skovskarnbassen kravler rundt på jorden mellem bladene og den lever både oppe på skrænterne og nede i bunden af skoven. Skovskarnbassen har vinger, så I skal ikke blive forskrækket, hvis den lige pludselig flyver væk. Nogle gange skal man rode lidt forsigtigt i bladene for at finde den.",
     "images": [
-     "/img/Skarnbasse.png"
-    ]
+      "/img/Skarnbasse.webp"
+    ],
+    "title_de": "Pfad am Bach 2",
+    "title_en": "Path Along the Stream 2",
+    "text_de": "Ich mag den Skovskarnbasse noch lieber. Das ist ein großer, runder, schwarzer Käfer, und wenn die Sonne auf ihn scheint, schimmert er schön grün und blau. Er krabbelt am Boden zwischen den Blättern herum und lebt sowohl an den Hängen als auch unten im Wald. Der Skovskarnbasse hat Flügel – erschreckt also nicht, wenn er plötzlich davonfliegt. Man muss manchmal die Blätter vorsichtig beiseiteschieben, um ihn zu finden.",
+    "text_en": "I’m even more fond of the Skovskarnbasse. It’s a large, round, black beetle, and when the sun hits it, it shows beautiful green and blue hues. It crawls around on the ground among the leaves and lives both on the slopes and down at the forest floor. The Skovskarnbasse has wings, so don’t be startled if it suddenly flies off. Sometimes you have to gently rustle the leaves to find it."
   },
   {
     "id": 15,
@@ -178,8 +234,12 @@
     "radiusMeters": 12,
     "text": "Nogle andre sjove dyr der lever i skoven, er Bænkebidere. Dem kan vi bruge lang tid på at finde, de er nemlig ikke ret store. Bænkebidere lever af døde blade og dødt træ. Så hvis I ser en gammel træstub der er ved at falde fra hinanden, så er der højst sandsynligt Bænkebidere gemt i træet. Ellers gemmer de sig også tit under bladene på jorden. Bænkebidere er faktisk ikke biller men krebsdyr, ligesom rejer og krabber. Ret vildt for de ligner slet ikke hinanden.",
     "images": [
-     "/img/Bænkebidder.png"
-    ]
+      "/img/Bænkebidder.webp"
+    ],
+    "title_de": "Pfad am Bach 3",
+    "title_en": "Path Along the Stream 3",
+    "text_de": "Andere lustige Tiere im Wald sind die Bænkebidere (Kellerasseln). Nach ihnen kann man lange suchen, denn sie sind nicht sehr groß. Sie leben von toten Blättern und abgestorbenem Holz. Wenn ihr also einen alten, zerfallenden Baumstumpf seht, verbergen sich darin höchstwahrscheinlich Bænkebidere. Oft verstecken sie sich auch unter den Blättern am Boden. Übrigens sind Bænkebidere keine Käfer, sondern Krebstiere – so wie Garnelen und Krabben. Ziemlich verrückt, denn sie sehen sich gar nicht ähnlich.",
+    "text_en": "Another fun creature in the forest is the woodlouse (Bænkebidere). We can spend ages looking for them because they’re quite small. Woodlice feed on dead leaves and dead wood. So if you see an old stump falling apart, there are likely woodlice hidden in it. They also often hide under the leaves on the ground. And woodlice aren’t beetles at all—they’re crustaceans, like shrimp and crabs. Pretty wild, since they don’t look alike at all."
   },
   {
     "id": 16,
@@ -190,22 +250,30 @@
     "radiusMeters": 12,
     "text": "Nu er vi snart ved vejs ende på turen. Vi må nemlig ikke løbe længere væk end, at vi kan høre klokken ringe hjemme på gården. Men inden skal vi lige ud på den gamle træbro og kigge efter små dyr i vandløbet. I skal se godt efter, for der er masser af steder de kan gemme sig og vandet løber hurtigt. De sjove, grønne pinde der stikker op af vandet, er Dynd Padderok. De stammer faktisk helt tilbage fra dengang dinosaurerne herskede på jorden. Den gang var Padderokkerne bare meget højere, mindst lige så høje som træerne der står her i skoven. Det siger far i hvert fald. \n\nHov, hvad var det? Jeg kan høre klokken ringe, så er der mad, men inden vi løber hjem, så vil vi gerne sige tak fordi I ville følge med os på tur i skoven. Vi håber at I fik set nogle dyr og at I har fået lyst til at gå på eventyr i andre spændende skove. Vi ses…",
     "images": [
-     "/img/GangbroRed.png",
-     "/img/DyndPad.png"
-    ]
+      "/img/GangbroRed.webp",
+      "/img/DyndPad.webp"
+    ],
+    "title_de": "Der Steg",
+    "title_en": "The Footbridge",
+    "text_de": "Wir sind bald am Ende unserer Runde. Wir dürfen nämlich nicht weiter weglaufen, als dass wir die Glocke vom Hof hören können. Aber vorher gehen wir noch schnell auf die alte Holzbrücke und schauen nach kleinen Tieren im Bach. Schaut gut hin – es gibt viele Verstecke, und das Wasser fließt schnell. Die lustigen grünen Stäbe, die aus dem Wasser ragen, sind Dynd Padderok (Sumpf-Schachtelhalm). Sie stammen tatsächlich aus der Zeit, als die Dinosaurier die Erde beherrschten. Damals waren die Schachtelhalme viel höher – mindestens so hoch wie die Bäume hier im Wald. Sagt Papa jedenfalls.\n\nOh – was war das? Ich höre die Glocke, also gibt es Essen! Bevor wir heimlaufen, möchten wir euch danken, dass ihr uns auf unserer Waldtour begleitet habt. Wir hoffen, ihr habt einige Tiere gesehen und Lust bekommen, andere spannende Wälder zu erkunden. Bis bald …",
+    "text_en": "We’re nearly at the end of our walk. We’re not allowed to run so far that we can’t hear the bell ring back at the farm. But first, let’s step out onto the old wooden bridge and look for small animals in the stream. Keep your eyes peeled—there are lots of hiding places and the water runs fast. Those funny green sticks poking up are Dynd Padderok (marsh horsetail). They actually date back to the time when dinosaurs ruled the Earth. Back then, horsetails were much taller—at least as tall as the trees here in the forest. Or so Dad says.\n\nOh—what was that? I can hear the bell—time to eat! Before we run home, we want to say thanks for coming along with us in the forest. We hope you spotted some animals and feel like adventuring in other exciting woods. See you…"
   },
   {
     "id": 17,
     "routeId": 3,
     "title": "Møllegården",
-    "lat": 57.22140,
+    "lat": 57.2214,
     "lon": 10.28365,
     "radiusMeters": 12,
     "text": "Go’daw jeg hedder Johanne og jeg er stuepige her hos familien Mølleskov. \n\nJeg har været hos familien Mølleskov i mange år, så jeg har hørt mangt og meget igennem årene. Og der er altså noget om alle de sagn man hører. Hvordan vil I ellers forklare hvordan alle mine spande og koste på uforklarlig vis har været forsvundet, for pludselig at dukke op igen. Det er i hvert fald ikke børnene der har været på spil – jeg har spurgt dem. Næh, de har været forbandet af troldtøj har de. Og ved I hvad jeg så plejer at gøre? Nej ved I hvad, jeg vil hellere vise jer det selv. \n\nVi skal op i skoven og vi tager den korteste vej derop, for vi skal helst være tilbage inden det bliver mørkt. Vi skal nemlig over træbroen og den går lige hen over mosen, hvor Lygtemanden bor.",
     "images": [
-      "/img/DMSkilt.png",
-      "/img/SkovturIndgang.png"
-    ]
+      "/img/DMSkilt.webp",
+      "/img/SkovturIndgang.webp"
+    ],
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Guten Tag, ich heiße Johanne und ich bin Hausmädchen bei der Familie Mølleskov.\n\nIch bin seit vielen Jahren bei der Familie und habe in der Zeit so einiges gehört. Und an all den Sagen ist wirklich etwas dran. Wie würdet ihr sonst erklären, dass meine Eimer und Besen auf unerklärliche Weise verschwunden sind – um plötzlich wieder aufzutauchen? Die Kinder waren es jedenfalls nicht – ich habe sie gefragt. Nein, sie waren vom „Troldtøj“ verhext, das waren sie. Und wisst ihr, was ich dann zu tun pflege? Ach, wisst ihr was – ich zeige es euch lieber selbst.\n\nWir gehen hinauf in den Wald, und wir nehmen den kürzesten Weg, denn wir sollten möglichst zurück sein, bevor es dunkel wird. Wir müssen über die Holzbrücke – sie führt direkt über das Moor, in dem der Lygtemand (Irrlicht) wohnt.",
+    "text_en": "Good day, I’m Johanne, the maid here with the Mølleskov family.\n\nI’ve been with the family for many years, and I’ve heard a great deal in that time. And there’s something to all those legends you hear. How else would you explain that my buckets and brooms have mysteriously vanished—only to suddenly reappear? It certainly wasn’t the children—I asked them. No, they were bewitched by “troldtøj,” they were. And do you know what I usually do then? Well, I’d rather show you.\n\nWe’re heading up into the forest, and we’ll take the shortest way, because we should be back before it gets dark. We have to cross the wooden bridge—right over the bog where the “Lygtemand” (will-o’-the-wisp) lives."
   },
   {
     "id": 18,
@@ -216,9 +284,13 @@
     "radiusMeters": 12,
     "text": "Det er her Lygtemanden gemmer sig og han er et ondt væsen. Når mørket falder på, prøver han at lokke folk ud i mosen, så de ikke kan finde tilbage. Han er en lille indsunken mand klædt i rødt eller blåt tøj. Han er heldigvis nem at narre. Så skulle I møde ham en mørk aften, så kan man enten vende sin sok med vrangen ud af eller give ham nogle mønter og så viser han vejen ud af mosen. \n\nDer var faktisk en mand i udkanten af Øster Brønderslev der havde set ikke kun én, men to lygtemænd. Han kan nemlig dele sig og blive til flere, udspekuleret rad. Han fulgte efter dem, men de forsvandt sporløst ind under en dør i et hus og han så dem aldrig igen. Jeg tror nu godt nok ikke at jeg havde været så modig at følge efter dem, med mindre at de havde stjålet en af mine spande eller koste. \n\nNå, hvor kom vi fra … jo vi skal op ad skrænten og så til venstre. Jeg skulle op og vise jer Øjetræet.",
     "images": [
-      "/img/VådOmråde.png",
-      "/img/SkovturInd2.png"
-    ]
+      "/img/VådOmråde.webp",
+      "/img/SkovturInd2.webp"
+    ],
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Hier versteckt sich der Lygtemand, und er ist ein bösartiges Wesen. Wenn die Dunkelheit hereinbricht, versucht er, Menschen ins Moor zu locken, damit sie nicht zurückfinden. Er ist ein kleiner, eingefallener Mann, gekleidet in rote oder blaue Kleidung. Zum Glück ist er leicht hereinzulegen. Wenn ihr ihm an einem dunklen Abend begegnet, könnt ihr entweder eure Socke auf links drehen oder ihm ein paar Münzen geben – dann zeigt er den Weg aus dem Moor.\n\nEin Mann am Rand von Øster Brønderslev hat sogar nicht nur einen, sondern zwei Lygtemænd gesehen. Er kann sich nämlich teilen und zu mehreren werden – ein ausgefuchster Kerl. Der Mann folgte ihnen, doch sie verschwanden spurlos unter einer Haustür, und er sah sie nie wieder. Ich glaube kaum, dass ich so mutig gewesen wäre, ihnen zu folgen – es sei denn, sie hätten einen meiner Eimer oder Besen gestohlen.\n\nSo, wo waren wir … genau: Wir gehen den Hang hinauf und dann links. Ich wollte euch nämlich das „Augen-Baum“ zeigen.",
+    "text_en": "This is where the Lygtemand hides, and he’s a malicious being. When darkness falls, he tries to lure people out into the bog so they can’t find their way back. He’s a small, sunken-looking man dressed in red or blue. Fortunately, he’s easy to trick. If you meet him on a dark evening, you can turn your sock inside out or give him a few coins, and he’ll show you the way out of the bog.\n\nA man on the edge of Øster Brønderslev actually saw not just one but two Lygtemænd. He can divide himself and become several—cunning fellow. The man followed them, but they vanished without a trace under a door to a house, and he never saw them again. I don’t think I would have been so brave as to follow—unless they’d stolen one of my buckets or brooms.\n\nNow, where were we… yes, we’ll go up the slope and then turn left. I’m going to show you the Eye Tree."
   },
   {
     "id": 19,
@@ -229,8 +301,12 @@
     "radiusMeters": 12,
     "text": "Øjetræet står lidt nede af skrænten til højre. Det er et bøgetræ hvor to stammer er vokset sammen undtagen på midten, hvor de har dannet et øje. Et magisk øje, det kan nemlig helbrede Engelsk Syge og rense for troldtøj. Og det er her jeg tager mine spande og koste med op, når de er blevet ramt af troldtøj. Så får de lige en tur gennem hullet og så bliver de på sin plads det næste lange stykke tid. \n\nDer er heldigvis god tid til at det bliver mørkt endnu, så jeg synes at vi skal gå igennem skoven og ned til engen. Vi skal bare følge stien langs marken og nede for enden skal vi til højre ind i skoven. Og så skal vi følge stien ned til den gamle gangbro.",
     "images": [
-      "/img/Hultræ.png"
-    ]
+      "/img/Hultræ.webp"
+    ],
+    "title_de": "Der hohle Baum",
+    "title_en": "The Hollow Tree",
+    "text_de": "Der Augenbaum steht ein Stück den Hang hinunter auf der rechten Seite. Es ist eine Buche, bei der zwei Stämme zusammengewachsen sind – außer in der Mitte, wo sie ein Auge gebildet haben. Ein magisches Auge: Es soll die Englische Krankheit (Rachitis) heilen und Trollzauber vertreiben. Hierher bringe ich meine Eimer und Besen, wenn sie vom Trollwerk betroffen wurden. Einmal durch das Loch gesteckt, bleiben sie anschließend lange Zeit an ihrem Platz.\n\nZum Glück ist es noch eine Weile bis zur Dämmerung, also gehen wir durch den Wald hinunter zur Wiese. Wir folgen einfach dem Pfad am Feld entlang, und am Ende biegen wir rechts in den Wald ab. Dann folgen wir dem Weg hinunter bis zur alten Fußbrücke.",
+    "text_en": "The Eye Tree stands a little way down the slope to the right. It’s a beech where two trunks have grown together except in the middle, where they have formed an eye. A magical eye—it can cure rickets and cleanse away troll magic. This is where I bring my buckets and brooms when they’ve been struck by troll mischief. They get a quick pass through the hole, and then they stay in their place for a good long while.\n\nLuckily, it’s still a while before dusk, so I think we should walk through the forest and down to the meadow. We’ll just follow the path along the field, and at the far end we’ll turn right into the woods. Then we follow the path down to the old footbridge."
   },
   {
     "id": 20,
@@ -241,8 +317,12 @@
     "radiusMeters": 12,
     "text": "Der er heldigvis meget fredeligt herude - hov var det en hest der vrinskede. Apropos hest, hvis I nogensinde skulle se en hest med et skelethoved, så lad for guds skyld være med at kigge på den. Det er nemlig Helhesten og man kan miste forstanden, hvis man ser den i øjnene. Heldigvis plejer den først at dukke op når det er mørkt. \n\nEn Helhest er det der hedder en kirkevare – det er en hest der er blevet begravet levende under byggeriet af en kirke, for at beskytte kirken mod mørkets kræfter. En anelse makabert hvis I spørger mig. Men en Helhest varsler sygdom og død, hvis den stopper op ved et hus og kigger ind igennem vinduet, på en af sine natlige vandringer.",
     "images": [
-      "/img/Marken.png"
-    ]
+      "/img/Marken.webp"
+    ],
+    "title_de": "Pfad am Feld 1",
+    "title_en": "Path Along the Field 1",
+    "text_de": "Hier draußen ist es zum Glück sehr friedlich – oh, hat da gerade ein Pferd gewiehert? Apropos Pferd: Wenn ihr jemals ein Pferd mit einem Totenschädel als Kopf seht, dann schaut es um Himmels willen nicht an. Das ist die Helhesten, und wer ihr in die Augen blickt, kann den Verstand verlieren. Zum Glück zeigt sie sich meist erst nach Einbruch der Dunkelheit.\n\nEine Helhesten ist ein sogenanntes Kirchenopfer (ein Bauopfer) – ein Pferd, das beim Bau einer Kirche lebendig unter das Fundament begraben wurde, um die Kirche vor den Kräften der Finsternis zu schützen. Ziemlich makaber, wenn ihr mich fragt. Außerdem soll die Helhesten Krankheit und Tod ankündigen, wenn sie bei einem Haus stehen bleibt und in der Nacht durch das Fenster hineinschaut.",
+    "text_en": "It’s wonderfully peaceful out here—oh, was that a horse neighing? Speaking of horses: if you ever see a horse with a skull for a head, for heaven’s sake don’t look at it. That’s the Helhesten, and meeting its gaze can drive you mad. Fortunately, it usually appears only after dark.\n\nA Helhesten is what’s called a church sacrifice—a horse buried alive beneath a church during construction to protect it from the forces of darkness. A bit macabre, if you ask me. And the Helhesten is said to foretell illness and death if it stops by a house and looks in through the window on its nightly wanderings."
   },
   {
     "id": 21,
@@ -253,8 +333,12 @@
     "radiusMeters": 12,
     "text": "Ifølge et lokalt sagn skulle der vandre en Helhest rundt i Pajhede Skov om natten. Hesten og dens ejer blev myrdet ude i skoven under Svenskekrigen. Hestens ejer var en svensk soldat, der havde forgrebet sig på en ung pige her i nærheden. Pigens kæreste og hans venner fandt frem til soldaten og myrdede både ham og hesten og begravede dem efterfølgende ude i skoven. Det er sikkert og vist, selv en skovfoged har set den.",
     "images": [
-      "/img/Marken2.png"
-    ]
+      "/img/Marken2.webp"
+    ],
+    "title_de": "Pfad am Feld 2",
+    "title_en": "Path Along the Field 2",
+    "text_de": "Einer örtlichen Sage nach streift eine Helhesten nachts durch den Pajhede-Wald. Das Pferd und sein Besitzer wurden während des Schwedischen Krieges im Wald ermordet. Der Besitzer war ein schwedischer Soldat, der sich an einem jungen Mädchen hier in der Nähe vergangen hatte. Der Freund des Mädchens und seine Kameraden fanden den Soldaten, töteten sowohl ihn als auch das Pferd und begruben beide anschließend im Wald. So heißt es – sogar ein Forstaufseher will sie gesehen haben.",
+    "text_en": "According to a local legend, a Helhesten wanders Pajhede Forest at night. The horse and its owner were murdered in the woods during the Swedish War. The owner was a Swedish soldier who had assaulted a young girl nearby. The girl’s sweetheart and his friends found the soldier, killed both him and the horse, and buried them in the forest. That’s how the story goes—even a forest warden has seen it."
   },
   {
     "id": 22,
@@ -265,8 +349,12 @@
     "radiusMeters": 12,
     "text": "For at komme tilbage til Møllegården skal vi over engen ved Møllesøen og her findes nogle væsner I sikkert har hørt om – nemlig Ellefolket. Et meget smukt og forførende folk.",
     "images": [
-      "/img/GangbroRed.png"
-    ]
+      "/img/GangbroRed.webp"
+    ],
+    "title_de": "Die Fußbrücke",
+    "title_en": "The Footbridge",
+    "text_de": "Um zur Møllegården zurückzukehren, müssen wir über die Wiese am Mühlensee. Dort gibt es Wesen, von denen ihr sicher schon gehört habt – das Ellevolk, ein sehr schönes und verführerisches Volk.",
+    "text_en": "To get back to Møllegården we have to cross the meadow by the mill pond, where you’ll find beings you’ve probably heard of—the Ellefolk, a very beautiful and seductive folk."
   },
   {
     "id": 23,
@@ -277,22 +365,30 @@
     "radiusMeters": 12,
     "text": "Ellepigerne plejer at danse herude på engen. Hvis I kommer for tæt på, vil de lave en ring omkring jer og så vil de forhekse jer. Og det er for resten af jeres liv. Ellepiger har hul i ryggen, så I er ikke i tvivl hvis I møder en. Heldigvis er det kun de unge ellepiger der er farlige. Når de bliver gamle, bliver de grimme og får lange hængepatter. De bliver kaldt Slattenpatter og er ikke til fare for nogen som helst. \n\nEllemænd elsker at forføre unge piger der går rundt alene. Her er tricket at tisse i sin træsko, ellemænd er nemlig meget renlige, så de vil straks løbe væk. Mindre kunne måske også godt gøre det. \n\nHold da op som tiden den flyver, jeg skal skynde mig hjem. Har lige fået en ny kost og spand, så jeg skal hjem og se om de står på deres plads eller om de også er blevet ramt af troldtøj. Tak fordi jeg måtte fortælle jer noget om de magiske og farlige væsner vi har her omkring Møllegården. Husk at komme hjem inden det bliver mørkt.",
     "images": [
-      "/img/Engen.png",
-      "/img/Engen3.png"
-    ]
+      "/img/Engen.webp",
+      "/img/Engen3.webp"
+    ],
+    "title_de": "Die Wiese",
+    "title_en": "The Meadow",
+    "text_de": "Die Elfenmädchen tanzen gewöhnlich hier draußen auf der Wiese. Wenn ihr ihnen zu nahe kommt, bilden sie einen Ring um euch und verhexen euch – und das für den Rest eures Lebens. Elfenmädchen haben eine Vertiefung im Rücken; ihr erkennt sie also sofort. Zum Glück sind nur die jungen Elfenmädchen gefährlich. Wenn sie alt werden, werden sie hässlich und ihre Brüste hängen herab. Man nennt sie dann „Slattenpatter“, und sie sind für niemanden gefährlich.\n\nElfenmänner verführen gerne junge Mädchen, die allein unterwegs sind. Der Trick ist, in den Holzschuh zu urinieren; Elfenmänner sind sehr reinlich und laufen dann sofort davon. Weniger könnte vielleicht auch schon reichen.\n\nMeine Güte, wie die Zeit vergeht – ich muss mich beeilen. Ich habe gerade einen neuen Besen und Eimer bekommen und will nachsehen, ob sie an ihrem Platz stehen oder ob sie auch vom Trollwerk betroffen sind. Danke, dass ich euch von den magischen und gefährlichen Wesen rund um die Møllegården erzählen durfte. Denkt daran, vor Einbruch der Dunkelheit nach Hause zu gehen.",
+    "text_en": "The elf maidens usually dance out here on the meadow. If you get too close, they’ll form a ring around you and bewitch you—for the rest of your life. Elf maidens have a hollow in their backs, so you’ll know one when you meet her. Fortunately, only the young elf maidens are dangerous. As they grow old, they turn ugly and their breasts hang low. People call them “Slattenpatter,” and they’re harmless to anyone.\n\nElf men love to seduce young girls walking alone. The trick is to pee in your wooden shoe; elf men are very fastidious, so they’ll run off at once. Lesser measures might also do.\n\nGoodness, how time flies—I must hurry home. I’ve just got a new broom and bucket, and I want to see if they’re in their place or if they too have been struck by troll mischief. Thank you for listening to the tales of the magical and dangerous beings around Møllegården. Remember to get home before dark."
   },
   {
     "id": 24,
     "routeId": 4,
     "title": "Møllegården",
-    "lat": 57.22140,
+    "lat": 57.2214,
     "lon": 10.28365,
     "radiusMeters": 12,
     "text": "Hej jeg hedder Margrethe og det her er min mor Ingeborg. Vi elsker begge at bruge naturen i vores mad og til dekorationer på bordene. Selvom turen rundt omkring Møllesøen ikke syner af meget, så har den alligevel meget at byde på af både blomster og bær. \n\nVi går ture hele året rundt, men det er forskelligt hvad vi samler – det afhænger af hvad der blomstrer eller har bær på det pågældende tidspunkt. Men jeg synes at vi skal tage en tur rundt på stien og vi starter oppe ved vindmøllen.",
     "images": [
-      "/img/DmSkilt.png",
-      "/img/Møllen.png"
-    ]
+      "/img/DmSkilt.webp",
+      "/img/Møllen.webp"
+    ],
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Margrethe und das ist meine Mutter Ingeborg. Wir beide lieben es, die Natur für unser Essen und als Dekoration auf dem Tisch zu nutzen. Auch wenn der Rundweg um den Mühlensee klein wirkt, gibt es hier doch viele Blumen und Beeren zu entdecken.\n\nWir spazieren das ganze Jahr über, aber wir sammeln Unterschiedliches – je nachdem, was gerade blüht oder Beeren trägt. Ich finde, wir sollten den Pfad entlanggehen; wir beginnen oben an der Windmühle.",
+    "text_en": "Hello, my name is Margrethe and this is my mother Ingeborg. We both love using nature in our cooking and as decoration on the table. Even though the walk around the mill pond doesn’t look like much, it still offers plenty of flowers and berries.\n\nWe go for walks all year round, but what we gather depends on what’s in bloom or bearing fruit at the time. I think we should take a stroll along the path, starting up by the windmill."
   },
   {
     "id": 25,
@@ -303,10 +399,14 @@
     "radiusMeters": 12,
     "text": "Heroppe plejer vi at finde Blåhat og Blåmunke i juni og juli måned. Det er de fineste blå blomster. De minder meget om hinanden, men kronbladene på Blåmunke er meget finere og smallere end dem på Blåhat. Vi plejer at plukke en lille buket og sætte i en vase inde i den blå stue. Det pynter så fint. \n\nUdover Blåhat og Blåmunke findes der også Kamille med den skønneste duft. Min mor elsker kamillete, men blomsterne er også fine som pynt ovenpå en kage, for eksempel en roulade. Kamille blomstrer det meste af sommeren, så der er god mulighed for at samle en masse blomster og tørre dem til te. \n\nI juli – september står her Rejnfan. Den har gule blomster som mest af alt minder om små fine guldknapper. Og så er det vores stuepige Johannes yndlingsblomst. Hun er en anelse overtroisk og det siges, at Rejnfan holder det onde væk. Så vi har ofte tørrede buketter liggende rundt omkring i huset. Men det pynter nu alt sammen, selvom mor synes at det er noget pjat.",
     "images": [
-      "/img/Blåmunke.png",
-      "/img/Kamille.png",
-      "/img/Rejnfan.png"
-    ]
+      "/img/Blåmunke.webp",
+      "/img/Kamille.webp",
+      "/img/Rejnfan.webp"
+    ],
+    "title_de": "Die Windmühle",
+    "title_en": "The Windmill",
+    "text_de": "Hier oben finden wir im Juni und Juli oft Blåhat und Blåmunke – wunderschöne blaue Blumen. Sie ähneln einander sehr, doch die Blütenblätter der Blåmunke sind feiner und schmaler als die der Blåhat. Wir pflücken gern einen kleinen Strauß und stellen ihn in der blauen Stube in eine Vase – das sieht so hübsch aus.\n\nNeben Blåhat und Blåmunke gibt es hier auch Kamille mit dem herrlichsten Duft. Meine Mutter liebt Kamillentee, aber die Blüten sind auch als Kuchendekoration hübsch, zum Beispiel auf einer Roulade. Kamille blüht den größten Teil des Sommers, daher kann man viele Blüten sammeln und für Tee trocknen.\n\nVon Juli bis September steht hier auch Rejnfan (Rainfarn). Er hat gelbe Blüten, die an kleine goldene Knöpfe erinnern. Das ist das Lieblingsblümchen unserer Stubenmädchen Johanne. Sie ist ein wenig abergläubisch, und man sagt, dass Rainfarn das Böse fernhält. Deshalb liegen bei uns oft getrocknete Sträuße im Haus. Hübsch ist es allemal – auch wenn Mutter meint, das sei Unsinn.",
+    "text_en": "Up here we usually find Blåhat and Blåmunke in June and July—the prettiest blue flowers. They look much alike, but the petals of Blåmunke are finer and narrower than those of Blåhat. We like to pick a small bouquet and put it in a vase in the blue parlour—it looks lovely.\n\nBesides Blåhat and Blåmunke, there’s also chamomile with the most wonderful scent. My mother loves chamomile tea, but the flowers are also pretty as cake decoration, for example on a roulade. Chamomile blooms for most of the summer, so there’s plenty of opportunity to gather blossoms and dry them for tea.\n\nFrom July to September you’ll also find tansy (Rejnfan). Its yellow flowers look like tiny golden buttons. It’s our maid Johanne’s favourite flower. She’s a bit superstitious, and people say tansy keeps evil away. So we often have dried bunches around the house. It all looks lovely, even if mother thinks it’s nonsense."
   },
   {
     "id": 26,
@@ -317,10 +417,14 @@
     "radiusMeters": 12,
     "text": "Fra møllen skal vi over på engen ved søen, vi kan komme igennem klaplågen ovre på den anden side af vejen. Herovre plejer vi at plukke Forglemmigej i juli, dem bruger vi både i buketter men også som pynt på kagen. I skulle tage og prøve, de er så fine med deres bittesmå blå blomster med gul midte. De kan gøre enhver kedelig sirupskage til et lille kunstværk. \n\nEn lidt overset art er græsser, de er rigtig flotte i vaser når de har sat frøstande. Alt efter art og stadie svinger de i farverne fra grønne, rosa nuancer til hvide og brune farver. Mor så meget mærkelig ud i hovedet, en dag jeg havde sat en vase ind på bordet, med kun græsser i. Men nu gør hun det selv. Kan kun anbefale jer at prøve og så er de meget nemme at finde her ude i naturen.",
     "images": [
-      "/img/Engen2.png",
-      "/img/Forglemmigej.png",
-      "/img/Græsser.png"
-    ]
+      "/img/Engen2.webp",
+      "/img/Forglemmigej.webp",
+      "/img/Græsser.webp"
+    ],
+    "title_de": "Wiese 1",
+    "title_en": "Meadow 1",
+    "text_de": "Von der Mühle gehen wir hinüber zur Wiese am See; durch das Schwingtor auf der anderen Straßenseite kommen wir hinein. Hier pflücken wir im Juli oft Vergissmeinnicht (Forglemmigej) – wir verwenden sie sowohl für Sträuße als auch als Kuchendeko. Probiert es aus: Die winzigen blauen Blüten mit gelber Mitte sind so hübsch. Sie machen selbst einen schlichten Sirupkuchen zu einem kleinen Kunstwerk.\n\nOft übersehen werden die Gräser. Wenn sie Samenstände tragen, sehen sie in Vasen großartig aus. Je nach Art und Stadium reichen die Farben von Grün über Rosatöne bis hin zu Weiß und Braun. Mutter schaute ziemlich merkwürdig, als ich einmal eine Vase nur mit Gräsern auf den Tisch stellte – aber inzwischen macht sie es selbst. Sehr empfehlenswert und hier draußen leicht zu finden.",
+    "text_en": "From the mill we’ll head over to the meadow by the lake; we can get in through the little gate on the other side of the road. Over here we usually pick forget-me-nots (Forglemmigej) in July; we use them both in bouquets and as cake decoration. You should try it—the tiny blue flowers with yellow centers are so pretty. They can turn any plain syrup cake into a little work of art.\n\nA somewhat overlooked group is the grasses. When they’ve set seed heads, they look wonderful in vases. Depending on species and stage, the colors range from green and rosy shades to white and brown. Mother looked rather puzzled the day I put a vase on the table with only grasses—but now she does it herself. Highly recommended, and very easy to find out here in nature."
   },
   {
     "id": 27,
@@ -331,10 +435,14 @@
     "radiusMeters": 12,
     "text": "Nå, vi må hellere komme videre. Selvom jeg elsker engen, så er der også masser at komme efter oppe i skoven. For at komme derop skal vi igennem klaplågen og over den gamle træbro – pas på hvor I går henne, den er ved at være lidt træt og gammel. Hov jeg glemte en plante, nemlig Tusindfryd eller også kaldet Bellis, den der står i græsplænen. Den kan faktisk bruges både til kagepynt, urtete, snaps og de kan sågar syltes. Det har vi dog ikke prøvet endnu, men min mor og jeg overvejer at forsøge.",
     "images": [
-      "/img/Engen4.png",
-      "/img/GangbroRed.png",
-      "/img/Bellis.png"
-    ]
+      "/img/Engen4.webp",
+      "/img/GangbroRed.webp",
+      "/img/Bellis.webp"
+    ],
+    "title_de": "Wiese 2",
+    "title_en": "Meadow 2",
+    "text_de": "Weiter geht’s. So sehr ich die Wiese liebe, gibt es im Wald oben auch viel zu entdecken. Um hinaufzukommen, gehen wir durch das Schwingtor und über die alte Holzbrücke – achtet darauf, wo ihr hintretet, sie ist schon ein wenig müde und alt. Ach, eine Pflanze hätte ich beinahe vergessen: die Tausendschönchen, auch Gänseblümchen (Bellis). Man kann sie tatsächlich für Kuchendeko, Kräutertee, Schnaps und sogar eingelegt verwenden. Das haben wir zwar noch nicht probiert, aber Mutter und ich überlegen es.",
+    "text_en": "Let’s move on. Much as I love the meadow, there’s plenty to discover up in the forest. To get there we go through the gate and over the old wooden bridge—watch your step, it’s getting a bit tired and old. Oh, I forgot one plant: the daisy (Tusindfryd/Bellis). You can actually use it for cake decoration, herbal tea, schnapps, and even pickling. We haven’t tried that yet, but mother and I are considering it."
   },
   {
     "id": 28,
@@ -345,9 +453,13 @@
     "radiusMeters": 12,
     "text": "Langs gangbroen vokser Pilen, den er så fin om foråret når den får sine små gæslinger og de er så flotte inde i en vase. Den behøver ikke selskab af andre planter. Hvidtjørnen gror også her og udover at være flot i en vase, når den blomstrer, så kan blomsterne også bruges som kagepynt og i snaps. Ville dog ønske at den ikke stak så meget. \n\nNår vi når til enden af broen, så skal vi op ad skråningen og ud ad skoven og så skal vi dreje til venstre – hen til min mors yndlingssted.",
     "images": [
-      "/img/DyndPad2.png",
-      "/img/Pil.png"
-    ]
+      "/img/DyndPad2.webp",
+      "/img/Pil.webp"
+    ],
+    "title_de": "Die Fußbrücke",
+    "title_en": "The Footbridge",
+    "text_de": "Entlang der Stegbrücke wächst die Weide; im Frühling, wenn sie ihre weichen Kätzchen bekommt, sieht sie in der Vase wunderschön aus – ganz ohne Begleitgrün. Hier wächst auch der Weißdorn, der nicht nur in der Vase hübsch ist, wenn er blüht, sondern dessen Blüten sich auch als Kuchendeko und für Schnaps eignen. Ich wünschte nur, er würde nicht so stechen.\n\nAm Ende der Brücke gehen wir den Hang hinauf aus dem Wald hinaus und biegen dann links ab – zu Mutters Lieblingsplatz.",
+    "text_en": "Along the footbridge grows the willow; in spring, when it gets its soft catkins, it looks beautiful in a vase—no other plants needed. Hawthorn also grows here and, besides looking lovely in a vase when it blooms, its flowers can be used for cake decoration and in schnapps. I just wish it didn’t prick so much.\n\nWhen we reach the end of the bridge, we go up the slope and out of the woods, then turn left—toward my mother’s favourite spot."
   },
   {
     "id": 29,
@@ -358,10 +470,14 @@
     "radiusMeters": 12,
     "text": "Her vokser brombærrene, hindbærrene og hylden. Hele efteråret står hun og sylter på livet løs og laver den lækreste saft.  Favoritten her i huset er hyldeblomstsaft. Omkring Sankt Hans bevæbner vi os med alle de kurve vi kan finde og så går jagten ind på hyldeblomster. Det samme gentager sig så til efteråret, her er det så alskens bær der ryger i kurven. En herlig tid på året.",
     "images": [
-      "/img/Marken.png",
-      "/img/Brombær.png",
-      "/img/Hyldeblomst.png"
-    ]
+      "/img/Marken.webp",
+      "/img/Brombær.webp",
+      "/img/Hyldeblomst.webp"
+    ],
+    "title_de": "Pfad bei den Himbeeren",
+    "title_en": "Path by the Raspberries",
+    "text_de": "Hier wachsen Brombeeren, Himbeeren und Holunder. Den ganzen Herbst über kocht Mutter eifrig ein und macht den leckersten Saft. Der Favorit im Haus ist Holunderblütensirup. Um Johanni bewaffnen wir uns mit allen Körben, die wir finden können, und ziehen los auf Holunderblütenjagd. Im Herbst wiederholt sich das Ganze – dann landen alle möglichen Beeren im Korb. Eine herrliche Jahreszeit.",
+    "text_en": "Blackberries, raspberries, and elder grow here. All autumn long she’s busy preserving and making the most delicious cordials. The household favourite is elderflower cordial. Around Midsummer we arm ourselves with every basket we can find and go hunting for elderflowers. The same repeats in autumn—then all sorts of berries go into the basket. A wonderful time of year."
   },
   {
     "id": 30,
@@ -372,8 +488,12 @@
     "radiusMeters": 12,
     "text": "For at komme tilbage til Møllegården, så skal vi fortsætte ad stien og så drejer den til venstre ind i skoven igen efter noget tid. Der står også tit nogle fine blomster langs stien, bl.a. Kongepen som har en fin lille gul kurve-blomst. Den lyser op overalt hvor den står i august og september.",
     "images": [
-      "/img/Moræne1.png"
-    ]
+      "/img/Moræne1.webp"
+    ],
+    "title_de": "Pfad 2",
+    "title_en": "Path 2",
+    "text_de": "Um zur Møllegården zurückzukehren, folgen wir dem Pfad weiter; nach einiger Zeit biegt er wieder links in den Wald ein. Entlang des Weges stehen oft hübsche Blumen, darunter Kongepen mit einer kleinen gelben Korbblüte. Im August und September leuchtet sie überall dort, wo sie wächst.",
+    "text_en": "To get back to Møllegården we continue along the path, which after a while turns left back into the forest. There are often lovely flowers along the way, including Kongepen with its small yellow composite flower. It brightens up everywhere it grows in August and September."
   },
   {
     "id": 31,
@@ -384,9 +504,13 @@
     "radiusMeters": 12,
     "text": "Inde i skoven hersker Bøgen og der er ikke noget smukkere, end når den springer ud med sine lysegrønne blade om foråret. Det er også her om foråret at Anemonerne og efterfølgende Maj-blomst springer ud med deres hvide blomster. Både bøgegrene, Anemoner og Maj-blomst kan tages med ind og sættes i en vase. Inde i skoven fortsætter vi lige ud og så følger stien rundt til højre og så kommer vi ud på den lille gangbro overfor laden.",
     "images": [
-      "/img/Hultræ.png",
-      "/img/Bøgen.png"
-    ]
+      "/img/Hultræ.webp",
+      "/img/Bøgen.webp"
+    ],
+    "title_de": "Im Wald beim hohlen Baum",
+    "title_en": "In the Forest near the Hollow Tree",
+    "text_de": "Im Wald herrscht die Buche, und nichts ist schöner, als wenn sie im Frühling mit ihren hellgrünen Blättern austreibt. Ebenfalls im Frühling blühen hier die Anemonen und danach die Maj-blomst, beide mit weißen Blüten. Buchenäste, Anemonen und Maj-blomst kann man mitnehmen und in eine Vase stellen. Im Wald gehen wir geradeaus weiter, folgen dann dem Pfad nach rechts und gelangen zur kleinen Stegbrücke gegenüber der Scheune.",
+    "text_en": "In the forest the beech reigns, and nothing is more beautiful than its fresh light-green leaves in spring. This is also where, in spring, the anemones and later the ‘Maj-blomst’ bloom with their white flowers. You can take beech branches, anemones, and Maj-blomst indoors and put them in a vase. In the forest we go straight on, then follow the path around to the right and come out at the little footbridge opposite the barn."
   },
   {
     "id": 32,
@@ -397,22 +521,30 @@
     "radiusMeters": 12,
     "text": "Her til sidst vil vi lige fortælle om en sidste blomst – I kender den rigtig godt, nemlig Mælkebøtter. Deres blomster er gode til saft, de har sådan en lidt honningagtig smag. Man skal bare bruge mælkebøtteblomster, vand, citron og sukker. En dejlig sød og frisk sommerdrik. \n\nInden vores veje skilles, så vil min mor og jeg gerne sige tusinde tak for jeres selskab. Vi håber at vi har kunnet inspirere til nogle lidt vildere buketter i vaserne og noget finere kagepynt. Og så sørg for at komme ud til efteråret og smag på alle de dejlige bær og nyd efterårets farver inden al ting forsvinder under vinterens hvide dyne.",
     "images": [
-      "/img/SkovturInd3.png",
-      "/img/Mælkebøtte.png"
-    ]
+      "/img/SkovturInd3.webp",
+      "/img/Mælkebøtte.webp"
+    ],
+    "title_de": "Die kleine Fußbrücke",
+    "title_en": "The Little Footbridge",
+    "text_de": "Zum Schluss noch eine letzte Blume – ihr kennt sie alle: den Löwenzahn. Aus den Blüten lässt sich ein Sirup kochen, der ein wenig nach Honig schmeckt. Man braucht nur Löwenzahnblüten, Wasser, Zitrone und Zucker. Ein herrlich süßes und frisches Sommergetränk.\n\nBevor sich unsere Wege trennen, möchten meine Mutter und ich uns ganz herzlich für eure Gesellschaft bedanken. Wir hoffen, wir konnten euch zu etwas wilderen Vasensträußen und hübscherer Kuchendeko inspirieren. Und geht im Herbst hinaus, kostet die vielen leckeren Beeren und genießt die Farben, bevor alles unter der weißen Decke des Winters verschwindet.",
+    "text_en": "Lastly, one more flower you know very well: the dandelion. Its blossoms make a lovely syrup with a faint honey taste. You only need dandelion flowers, water, lemon, and sugar—a sweet, refreshing summer drink.\n\nBefore we part ways, my mother and I want to thank you warmly for your company. We hope we’ve inspired you to make slightly wilder bouquets for your vases and finer cake decorations. And be sure to get out in autumn to taste all the delicious berries and enjoy the colours before everything disappears under winter’s white blanket."
   },
   {
     "id": 33,
     "routeId": 5,
     "title": "Møllegården",
-    "lat": 57.22140,
+    "lat": 57.2214,
     "lon": 10.28365,
     "radiusMeters": 12,
     "text": "Hej jeg hedder Erik og jeg er den ældste søn i familien. Jeg vil gerne fortælle jer lidt om Møllesøen. Møllesøen er hele familiens mødested. Her mødes vi de sommerdage hvor vejret er godt og vi er færdige med dagens arbejde. Alle de ansatte på gården er også med, det er så hyggeligt når vi alle kan være sammen. \n\nMøllesøen har noget for alle, der er både fugle, fisk, planter og insekter. Og far kan altid finde et eller andet, der minder ham om noget han har læst i en bog.",
     "images": [
-      "/img/Stuehus.png",
-      "/img/MølleSø1.png"
-    ]
+      "/img/Stuehus.webp",
+      "/img/MølleSø1.webp"
+    ],
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Erik und bin der älteste Sohn der Familie. Ich möchte euch ein wenig über den Mühlensee erzählen. Der Mühlensee ist unser Treffpunkt. An warmen Sommertagen, wenn die Arbeit getan ist, kommen wir alle hier zusammen – auch die Angestellten des Hofes. Es ist so gemütlich, wenn wir alle beisammen sind.\n\nDer Mühlensee hat für jeden etwas: Vögel, Fische, Pflanzen und Insekten. Und Vater findet immer etwas, das ihn an ein Buch erinnert, das er gelesen hat.",
+    "text_en": "Hello, my name is Erik and I’m the eldest son in the family. I’d like to tell you a bit about the mill pond. It’s the meeting place for the whole family. On summer days when the weather is fine and the day’s work is done, we all gather here—farmhands included. It’s so cosy when we can all be together.\n\nThe mill pond has something for everyone: birds, fish, plants, and insects. And father can always find something that reminds him of a book he’s read."
   },
   {
     "id": 34,
@@ -423,12 +555,16 @@
     "radiusMeters": 12,
     "text": "Noget af det første man opdager når man ser søen, er svanerne. Jeg elsker fugle og det er spændende at følge svanerne. Et år fik de hele 7 svællinger, det var ret vildt synes jeg. De har rede ude imellem sivene, så ræven ikke kan komme til dem. \n\nI kan også være heldige at se Isfugl, Fiskeørn, Glente og Rørhøg. Jeg har selv set Isfuglen og Fiskeørnen nogle få gange, de andre fugle er mere almindelige. Hvis I kommer om aftenen, så kan man nogle gange høre Nattergalen synge. \n\nKnud plejer at fiske efter Skaller sammen med møllersvenden Niels. Så sidder de her på kanten langs vejen. Jeg glemmer aldrig dengang Knud skulle kaste snøren ud og krogen endte med at sidde fast i Niels’ hat. Hatten endte ude i søen, hold da op det så sjovt ud. \n\nDer er også Aborre og Gedder i søen. Når solen skinner, plejer gedderne at svømme rundt langs kanten af søen og solbade. Så kan man stå heroppe og se lige ned på dem. Det er helt vildt så stor en Gedde kan blive. Der er også Dammuslinger i søen, de ligger nede på bunden og hjælper med at holde søen ren.",
     "images": [
-      "/img/Svane.png",
-      "/img/SvaneSvællinger.png",
-      "/img/MølleSø3.png",
-      "/img/Gedde.png",
-      "/img/Dammusling.png"
-    ]
+      "/img/Svane.webp",
+      "/img/SvaneSvællinger.webp",
+      "/img/MølleSø3.webp",
+      "/img/Gedde.webp",
+      "/img/Dammusling.webp"
+    ],
+    "title_de": "Weg am Mühlensee",
+    "title_en": "Road Along the Mill Pond",
+    "text_de": "Das Erste, was einem am See auffällt, sind die Schwäne. Ich liebe Vögel, und es ist spannend, die Schwäne zu beobachten. In einem Jahr hatten sie ganze sieben Junge – ziemlich erstaunlich, finde ich. Sie nisten draußen zwischen den Schilfen, damit der Fuchs nicht an sie herankommt.\n\nMit etwas Glück seht ihr auch Eisvogel, Fischadler, Rotmilan und Rohrweihe. Den Eisvogel und den Fischadler habe ich selbst ein paar Mal gesehen; die anderen sind häufiger. Abends kann man manchmal die Nachtigall singen hören.\n\nKnud angelt hier am Wegrand oft Rotaugen zusammen mit dem Müllergesellen Niels. Ich vergesse nie, wie Knud einmal auswarf und der Haken in Niels’ Hut hängenblieb. Der Hut landete im See – das sah köstlich aus.\n\nIm See gibt es außerdem Barsche und Hechte. Wenn die Sonne scheint, schwimmen die Hechte gern am Ufer entlang und sonnen sich – von hier oben kann man sie gut sehen. Unglaublich, wie groß ein Hecht werden kann. Es gibt auch Teichmuscheln; sie liegen am Grund und helfen, den See sauber zu halten.",
+    "text_en": "One of the first things you notice at the lake is the swans. I love birds, and it’s exciting to follow the swans. One year they had seven cygnets—pretty wild, if you ask me. Their nest is out among the reeds so the fox can’t reach them.\n\nWith a bit of luck you might also see kingfisher, osprey, kite, and marsh harrier. I’ve seen the kingfisher and the osprey a few times; the others are more common. If you come in the evening, you can sometimes hear the nightingale sing.\n\nKnud often fishes for roach here along the roadside with the miller’s apprentice Niels. I’ll never forget the time Knud cast his line and the hook got stuck in Niels’s hat. The hat ended up in the lake—it looked hilarious.\n\nThere are also perch and pike in the lake. When the sun is shining, the pike like to cruise along the shore and sunbathe; from up here you can look straight down at them. It’s amazing how big a pike can get. There are also pond mussels on the bottom, helping to keep the water clean."
   },
   {
     "id": 35,
@@ -439,58 +575,78 @@
     "radiusMeters": 12,
     "text": "Når vi rigtig skal hygge, så plejer vi at have tæpper med og så sætter vi os på marken med vores madpakker eller hjemmebag. Så sidder vi og snakker og kigger på alt det der er omkring os. Vi kan komme ind på marken igennem klaplågen overfor vindmøllen.",
     "images": [
-      "/img/Engen2.png",
-      "/img/MølleSø2.png"
-    ]
+      "/img/Engen2.webp",
+      "/img/MølleSø2.webp"
+    ],
+    "title_de": "Schwingtor gegenüber der Windmühle",
+    "title_en": "Gate Opposite the Windmill",
+    "text_de": "Wenn wir es uns richtig gemütlich machen wollen, nehmen wir Decken mit und setzen uns mit Broten oder selbstgebackenem Kuchen auf die Wiese. Dann sitzen wir da, reden und schauen uns alles um uns herum an. Auf die Wiese kommen wir durch das Schwingtor gegenüber der Windmühle.",
+    "text_en": "When we really want to get cosy, we bring blankets and sit on the field with our packed lunches or home baking. We sit and chat and take in everything around us. We can enter the field through the little gate opposite the windmill."
   },
-  {
-    "id": 36,
-    "routeId": 5,
-    "title": "Vådområde op mod gangbroen",
-    "lat": 57.22134,
-    "lon": 10.27913,
-    "radiusMeters": 12,
-    "text": "Mor og Margrethe plejer at kigge på planter, mens Johanne og Kirstine passer Lille bitte Tove og slapper af. Johanne plejer dog at vågne op når Mor og Margrethe nærmer sig Topstar-tuerne. Så råber hun op om at de ikke må vække troldene. Hun skal ikke risikere, at de gamle historier er sande. Ifølge historierne er græsstråene troldenes hår og resten af trolden gemmer sig nede i jorden, fordi de ikke kan lide solen. Så plejer mor og Margrethe at skynde sig væk igen.",
-    "images": [
-      "/img/Engen5.png"
-    ]
-  },
-  {
-    "id": 37,
-    "routeId": 5,
-    "title": "Dunhammer",
-    "lat": 57.22245,
-    "lon": 10.28193,
-    "radiusMeters": 12,
-    "text": "En gang havde Margrethe været nede ved søen og plukke Dunhammer, for hun syntes at de store brune toppe ville være så fine inde i stuen. Mor var på familiebesøg i et par dage og da hun kom hjem, var Dunhammerne sprunget ud og der var frø overalt inde i den fine stue. Der var Margrethe ikke så populær og hun kom selv til at fjerne alle frøene igen. Det endte dog med at hun bestak Knud og Ellen med nybagt kage og så hjalp de hende med at gøre rent.",
-    "images": [
-      "/img/DunhammerRed.png"
-    ]
-  },
-  {
-    "id": 38,
-    "routeId": 5,
-    "title": "Søbred",
-    "lat": 57.22244,
-    "lon": 10.28278,
-    "radiusMeters": 12,
-    "text": "Ellen kigger efter insekter sammen med staldkarlen Aage. I søen er der Blå Mosaikguldsmed, Rød Vandnymfe og Almindelig Vandnymfe. Umiddelbart kan de godt ligne hinanden, men guldsmedens vinger sidder i et kryds mens vandnymfens ligger ned langs dens side, når de sidder og hviler. Man kan tit se dem flyve rundt langs kanten af søen eller mens de solbader på et blad. En dag Ellen og Aage sad og kiggede efter guldsmede, så de en Odder svømme rundt ude i søen. Der blev jeg godt nok lidt misundelig.",
-    "images": [
-      "/img/MølleSø4.png",
-      "/img/Guldsmed.png"
-    ]
-  },
-  {
-    "id": 39,
-    "routeId": 5,
-    "title": "Eng",
-    "lat": 57.22245,
-    "lon": 10.28308,
-    "radiusMeters": 12,
-    "text": "Udover Odderen har vi også Harer, de sidder tit ude på engen om morgenen og spiser kløver og græs. Der er også Rådyr og Dådyr, men de går mest ude på markerne omkring gården. \n\nFar plejer at lave lidt af hvert herovre, nogle gange fisker han andre gange kigger han efter insekter med Ellen eller også kigger han på fugle sammen med mig. Blomster interesserer ham ikke, det plejer han at lade damerne om som han siger. Og så er han god til at fortælle en historie eller to om hvordan landskabet er blevet dannet. Nogle gange er det godt, at vi skal være stille når vi kigger efter fugle. \n\nNå, jeg kan se at de andre begynder at pakke sammen, Lille bitte Tove skal snart hjem i seng. Tak fordi I ville med en tur over til søen, det har været rigtig hyggeligt at have jer med.",
-    "images": [
-      "/img/Engen7.png",
-      "/img/Hare.png"
-    ]
-  }
+{
+  "id": 36,
+  "routeId": 5,
+  "title": "Vådområde op mod gangbroen",
+  "lat": 57.22134,
+  "lon": 10.27913,
+  "radiusMeters": 12,
+  "text": "Mor og Margrethe plejer at kigge på planter, mens Johanne og Kirstine passer Lille bitte Tove og slapper af. Johanne plejer dog at vågne op når Mor og Margrethe nærmer sig Topstar-tuerne. Så råber hun op om at de ikke må vække troldene. Hun skal ikke risikere, at de gamle historier er sande. Ifølge historierne er græsstråene troldenes hår og resten af trolden gemmer sig nede i jorden, fordi de ikke kan lide solen. Så plejer mor og Margrethe at skynde sig væk igen.",
+  "images": [
+    "/img/Engen5.webp"
+  ],
+  "title_de": "Feuchtgebiet in Richtung Steg",
+  "title_en": "Wetland toward the Footbridge",
+  "text_de": "Mutter und Margrethe schauen sich meist die Pflanzen an, während Johanne und Kirstine sich um die kleine Tove kümmern und ausruhen. Johanne wird jedoch wachsam, sobald Mutter und Margrethe sich den Topstar-Horsten nähern. Dann ruft sie, man dürfe die Trolle nicht wecken. Sie will nicht riskieren, dass die alten Geschichten wahr sind. Den Geschichten zufolge sind die Grashalme das Haar der Trolle, und der Rest des Trolls versteckt sich in der Erde, weil sie die Sonne nicht mögen. Also beeilen sich Mutter und Margrethe gewöhnlich, schnell weiterzugehen.",
+  "text_en": "Mother and Margrethe usually look at plants while Johanne and Kirstine take care of little Tove and relax. However, Johanne perks up when Mother and Margrethe get close to the Topstar tussocks. Then she shouts that they mustn’t wake the trolls. She won’t risk the old stories being true. According to the stories, the blades of grass are the trolls’ hair, and the rest of the troll hides down in the ground because they don’t like the sun. So Mother and Margrethe usually hurry away again."
+},
+{
+  "id": 37,
+  "routeId": 5,
+  "title": "Dunhammer",
+  "lat": 57.22245,
+  "lon": 10.28193,
+  "radiusMeters": 12,
+  "text": "En gang havde Margrethe været nede ved søen og plukke Dunhammer, for hun syntes at de store brune toppe ville være så fine inde i stuen. Mor var på familiebesøg i et par dage og da hun kom hjem, var Dunhammerne sprunget ud og der var frø overalt inde i den fine stue. Der var Margrethe ikke så populær og hun kom selv til at fjerne alle frøene igen. Det endte dog med at hun bestak Knud og Ellen med nybagt kage og så hjalp de hende med at gøre rent.",
+  "images": [
+    "/img/DunhammerRed.webp"
+  ],
+  "title_de": "Rohrkolben",
+  "title_en": "Cattail",
+  "text_de": "Einmal war Margrethe zum See hinuntergegangen, um Rohrkolben zu pflücken, weil sie meinte, die großen braunen Kolben würden im Wohnzimmer hübsch aussehen. Mutter war ein paar Tage zu Familienbesuch, und als sie heimkam, waren die Rohrkolben aufgeplatzt und überall im feinen Wohnzimmer lagen Samen. Margrethe war da nicht besonders beliebt und musste alle Samen selbst entfernen. Am Ende bestach sie jedoch Knud und Ellen mit frisch gebackenem Kuchen, und dann halfen sie ihr beim Aufräumen.",
+  "text_en": "Once, Margrethe went down to the lake to pick cattails because she thought the big brown spikes would look lovely in the parlor. Mother was away visiting family for a couple of days, and when she came home, the cattails had burst and there were seeds everywhere in the fine parlor. Margrethe wasn’t very popular then and had to remove all the seeds herself. In the end she bribed Knud and Ellen with freshly baked cake, and they helped her clean up."
+},
+{
+  "id": 38,
+  "routeId": 5,
+  "title": "Søbred",
+  "lat": 57.22244,
+  "lon": 10.28278,
+  "radiusMeters": 12,
+  "text": "Ellen kigger efter insekter sammen med staldkarlen Aage. I søen er der Blå Mosaikguldsmed, Rød Vandnymfe og Almindelig Vandnymfe. Umiddelbart kan de godt ligne hinanden, men guldsmedens vinger sidder i et kryds mens vandnymfens ligger ned langs dens side, når de sidder og hviler. Man kan tit se dem flyve rundt langs kanten af søen eller mens de solbader på et blad. En dag Ellen og Aage sad og kiggede efter guldsmede, så de en Odder svømme rundt ude i søen. Der blev jeg godt nok lidt misundelig.",
+  "images": [
+    "/img/MølleSø4.webp",
+    "/img/Guldsmed.webp"
+  ],
+  "title_de": "Seeufer",
+  "title_en": "Lakeshore",
+  "text_de": "Ellen sucht zusammen mit dem Stallburschen Aage nach Insekten. Im See gibt es blaue Mosaiklibellen, rote Wasserjungfern und gewöhnliche Wasserjungfern. Auf den ersten Blick können sie sich ähneln, doch die Flügel einer Libelle stehen im Kreuz, während die der Wasserjungfer beim Sitzen entlang des Körpers anliegen. Oft sieht man sie am Uferrand entlangfliegen oder auf einem Blatt in der Sonne sitzen. Eines Tages, als Ellen und Aage nach Libellen Ausschau hielten, sahen sie einen Otter im See schwimmen. Da war ich ziemlich neidisch.",
+  "text_en": "Ellen looks for insects together with the stable lad Aage. In the lake there are blue mosaic dragonflies, red damselflies, and common damselflies. At first glance they can look alike, but a dragonfly’s wings rest in a cross, whereas a damselfly’s wings lie along its body when it sits and rests. You can often see them flying along the edge of the lake or sunbathing on a leaf. One day, while Ellen and Aage were watching for dragonflies, they saw an otter swimming around out on the lake. I was quite envious."
+},
+{
+  "id": 39,
+  "routeId": 5,
+  "title": "Eng",
+  "lat": 57.22245,
+  "lon": 10.28308,
+  "radiusMeters": 12,
+  "text": "Udover Odderen har vi også Harer, de sidder tit ude på engen om morgenen og spiser kløver og græs. Der er også Rådyr og Dådyr, men de går mest ude på markerne omkring gården. \n\nFar plejer at lave lidt af hvert herovre, nogle gange fisker han andre gange kigger han efter insekter med Ellen eller også kigger han på fugle sammen med mig. Blomster interesserer ham ikke, det plejer han at lade damerne om som han siger. Og så er han god til at fortælle en historie eller to om hvordan landskabet er blevet dannet. Nogle gange er det godt, at vi skal være stille når vi kigger efter fugle. \n\nNå, jeg kan se at de andre begynder at pakke sammen, Lille bitte Tove skal snart hjem i seng. Tak fordi I ville med en tur over til søen, det har været rigtig hyggeligt at have jer med.",
+  "images": [
+    "/img/Engen7.webp",
+    "/img/Hare.webp"
+  ],
+  "title_de": "Wiese",
+  "title_en": "Meadow",
+  "text_de": "Neben dem Otter haben wir hier auch Hasen; sie sitzen morgens oft auf der Wiese und fressen Klee und Gras. Es gibt auch Rehe und Damhirsche, aber die halten sich meist auf den Feldern rund um den Hof auf.\n\nVater macht hier drüben gewöhnlich ein bisschen von allem – manchmal angelt er, manchmal sucht er mit Ellen nach Insekten oder er beobachtet mit mir Vögel. Blumen interessieren ihn nicht; das überlässt er, wie er sagt, den Damen. Und er kann gut die eine oder andere Geschichte darüber erzählen, wie die Landschaft entstanden ist. Manchmal ist es ganz gut, dass wir beim Vogelbeobachten still sein müssen.\n\nSo, ich sehe, die anderen fangen an zusammenzupacken – die kleine Tove muss bald ins Bett. Vielen Dank, dass ihr uns an den See begleitet habt; es war sehr schön, euch dabeizuhaben.",
+  "text_en": "Besides the otter we also have hares; they often sit out on the meadow in the morning eating clover and grass. There are also roe deer and fallow deer, but they mostly roam the fields around the farm.\n\nFather usually does a bit of everything over here—sometimes he fishes, other times he looks for insects with Ellen, or he birdwatches with me. Flowers don’t interest him; he leaves that to the ladies, as he says. And he’s good at telling a story or two about how the landscape was formed. Sometimes it’s good that we have to be quiet when we’re watching birds.\n\nWell, I can see the others are starting to pack up—little Tove needs to get home to bed soon. Thank you for coming along to the lake; it’s been really lovely having you with us."
+}
 ]
