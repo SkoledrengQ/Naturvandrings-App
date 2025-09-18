@@ -1,8 +1,7 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { loadRoutes, loadPois } from "../lib/data";
 import type { Route, Poi } from "../lib/data";
-import { insideRadius } from "../lib/geo"; // beholdt som i din fil (selvom den ikke bruges)
 import MapView from "../components/MapView";
 import StoryOverlay from "../components/StoryOverlay";
 import { useHeader } from "../contexts/HeaderContext";
@@ -54,7 +53,7 @@ export default function RouteRun() {
   const [geoError, setGpsError] = useState(false);
 
   // Remember user’s place even when overlay is closed and GPS is off
-const [cursorIndex, setCursorIndex] = useState(0);
+  const [cursorIndex, setCursorIndex] = useState(0);
 
   // UI/state
   const [muted, setMuted] = useState(false);
@@ -82,14 +81,19 @@ const [cursorIndex, setCursorIndex] = useState(0);
     return [lat, lon] as [number, number];
   }, [posBuffer]);
 
-// Language (live i18n)
-const { lang, t } = useLanguage();
+  // Language (live i18n)
+  const { lang, t } = useLanguage();
 
-// Hent data (reloader når lang eller routeId ændres)
-useEffect(() => {
-  loadRoutes(lang).then(rs => setRoute(rs.find(r => r.id === routeId) || null));
-  loadPois(lang).then(all => setPois(all.filter(p => p.routeId === routeId)));
-}, [routeId, lang]);
+  // Hent data (reloader når lang eller routeId ændres)
+  useEffect(() => {
+    loadRoutes(lang).then(rs => setRoute(rs.find(r => r.id === routeId) || null));
+    loadPois(lang).then(all => setPois(all.filter(p => p.routeId === routeId)));
+  }, [routeId, lang]);
+
+  // Når routeId ændres, nulstil cursor til start
+  useEffect(() => {
+    setCursorIndex(0);
+  }, [routeId]);
 
   // Holder skærmen vågen under ruten
   useWakeLock(true);
@@ -140,13 +144,6 @@ useEffect(() => {
       setDwellStart(null);
       return;
     }
-
-    // Hvis vi har en aktiv POI, så sæt cursor til den
-    useEffect(() => {
-      if (!activePoiId) return;
-      const idx = orderedPois.findIndex(p => p.id === activePoiId);
-      if (idx >= 0) setCursorIndex(idx);
-    }, [activePoiId, orderedPois]);
 
     // Hvis vi allerede har en aktiv POI, hold fast indtil vi er ud over exit-radius
     if (activePoiId) {
@@ -201,6 +198,13 @@ useEffect(() => {
     }
   }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart]);
 
+    // Hvis vi har en aktiv POI, så sæt cursor til den
+    useEffect(() => {
+      if (!activePoiId) return;
+      const idx = orderedPois.findIndex(p => p.id === activePoiId);
+      if (idx >= 0) setCursorIndex(idx);
+    }, [activePoiId, orderedPois]);
+
   // Afledte værdier
   const activePoi = activePoiId ? byId.get(activePoiId) ?? null : null;
   const shownPoi  = shownPoiId ? byId.get(shownPoiId) ?? null : null;
@@ -214,6 +218,10 @@ useEffect(() => {
     }
     return Math.min(cursorIndex, Math.max(orderedPois.length - 1, 0));
   }, [shownPoiId, activePoiId, cursorIndex, orderedPois]);
+
+
+  const isFirst = currentIndex === 0;
+  const isLast  = orderedPois.length > 0 && currentIndex === orderedPois.length - 1;
 
   // Sprogtekst (brug samme t)
   const progressText = t("run.progress", {
@@ -288,23 +296,23 @@ useEffect(() => {
     );
 
   // Preload næste POI's billede
-useEffect(() => {
-  const next = orderedPois[currentIndex + 1];
-  const src = next?.images?.[0];
-  if (!src) return;
-  const img = new Image();
-  img.src = src;
-}, [currentIndex, orderedPois]);
+  useEffect(() => {
+    const next = orderedPois[currentIndex + 1];
+    const src = next?.images?.[0];
+    if (!src) return;
+    const img = new Image();
+    img.src = src;
+  }, [currentIndex, orderedPois]);
 
-// Preload næste POI's lyd
-useEffect(() => {
-  const next = orderedPois[currentIndex + 1];
-  const audioSrc = (next as any)?.audio as string | undefined;
-  if (!audioSrc) return;
-  const a = new Audio();
-  a.preload = "auto";
-  a.src = audioSrc;
-}, [currentIndex, orderedPois]);
+  // Preload næste POI's lyd
+  useEffect(() => {
+    const next = orderedPois[currentIndex + 1];
+    const audioSrc = (next as any)?.audio as string | undefined;
+    if (!audioSrc) return;
+    const a = new Audio();
+    a.preload = "auto";
+    a.src = audioSrc;
+  }, [currentIndex, orderedPois]);
 
   // Global Header: titel + mute-knap + overlay-variant
   const { /* eslint-disable-line @typescript-eslint/no-unused-vars */ } = { };
@@ -470,29 +478,57 @@ useEffect(() => {
           borderTop: "1px solid rgba(255,255,255,.14)"
         }}
       >
-        <button
-          onClick={stopRun}
-          style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#c93a3a", color: "#fff" }}
-        >
-          {t("run.stop")}
-        </button>
+        {/* Venstre: Stop skjules på sidste stop */}
+        {!isLast && (
+          <button
+            onClick={stopRun}
+            style={{
+              minHeight: 44, padding: "10px 14px", borderRadius: 12,
+              border: "1px solid rgba(255,255,255,.18)", background: "#c93a3a", color: "#fff"
+            }}
+          >
+            {t("run.stop")}
+          </button>
+        )}
 
         <div style={{ display: "grid", gridAutoFlow: "column", gap: 8, alignItems: "center", justifyContent: "end" }}>
-          <button
-            onClick={goPrev}
-            disabled={currentIndex === 0}
-            style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff" }}
-          >
-            {t("run.prev")}
-          </button>
+          {/* Tilbage skjules helt på første stop */}
+          {!isFirst && (
+            <button
+              onClick={goPrev}
+              style={{
+                minHeight: 44, padding: "10px 14px", borderRadius: 12,
+                border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff"
+              }}
+            >
+              {t("run.prev")}
+            </button>
+          )}
+
           <div style={{ color: "#cfcfcf", minWidth: 44, textAlign: "center" }}>{progressText}</div>
-          <button
-            onClick={goNext}
-            disabled={currentIndex >= orderedPois.length - 1}
-            style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff" }}
-          >
-            {t("run.next")}
-          </button>
+
+          {/* Frem → eller Afslut på sidste stop */}
+          {!isLast ? (
+            <button
+              onClick={goNext}
+              style={{
+                minHeight: 44, padding: "10px 14px", borderRadius: 12,
+                border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff"
+              }}
+            >
+              {t("run.next")}
+            </button>
+          ) : (
+            <button
+              onClick={stopRun}
+              style={{
+                minHeight: 44, padding: "10px 14px", borderRadius: 12,
+                border: "1px solid rgba(255,255,255,.18)", background: "#c93a3a", color: "#fff"
+              }}
+            >
+              {t("run.finish")}
+            </button>
+          )}
         </div>
       </nav>
 

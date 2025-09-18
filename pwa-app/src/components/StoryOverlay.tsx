@@ -18,6 +18,7 @@ const overlayPadding = {
   padding:
     "max(12px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) max(12px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px))",
 };
+
 // Brug 100dvh, men med fallback til 92vh for ældre browsere
 const panelMaxHeight =
   "min(92vh, calc(100dvh - max(12px, env(safe-area-inset-top,0px)) - max(12px, env(safe-area-inset-bottom,0px))))";
@@ -40,6 +41,19 @@ export default function StoryOverlay({ poi, onClose }: Props) {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [count, onClose]);
+
+  // Loopende navigation til pile + swipe
+  const goNext = () => {
+    if (count > 1) setIdx(i => (i + 1) % count);
+  };
+  const goPrev = () => {
+    if (count > 1) setIdx(i => (i - 1 + count) % count);
+  };
+
+  // Swipe (touch)
+  const [touchStart, setTouchStart] = useState<{ x: number; y: number; at: number } | null>(null);
+  const SWIPE_THRESHOLD_PX = 40; // min. vandret bevægelse
+  const SWIPE_MAX_MS = 600;      // max varighed
 
   const activeSrc = images[idx];
   const activeAlt = imageAlts[idx] || title || "Billede";
@@ -97,13 +111,16 @@ export default function StoryOverlay({ poi, onClose }: Props) {
             onClick={onClose}
             aria-label={t("common.close")}
             className="btn"
-            style={{ minHeight: 36,
+            style={{
+              minHeight: 36,
               padding: "6px 12px",
               background: "#1e66ff",
               color: "#fff",
-              borderColor: "#1a55d6" }}
+              borderColor: "#1a55d6"
+            }}
           >
-            {t("common.close")} <span aria-hidden>✕</span>
+            {t("common.close")}
+            <span aria-hidden style={{ marginLeft: 6 }}>✕</span>
           </button>
         </div>
 
@@ -126,6 +143,27 @@ export default function StoryOverlay({ poi, onClose }: Props) {
                   borderRadius: 12,
                   overflow: "hidden",
                 }}
+                onTouchStart={(e) => {
+                  if (e.touches.length !== 1) return;
+                  const t = e.touches[0];
+                  setTouchStart({ x: t.clientX, y: t.clientY, at: performance.now() });
+                }}
+                onTouchEnd={(e) => {
+                  if (!touchStart) return;
+                  const dt = performance.now() - touchStart.at;
+                  const end = e.changedTouches?.[0];
+                  if (!end) return;
+
+                  const dx = end.clientX - touchStart.x;
+                  const dy = end.clientY - touchStart.y;
+                  setTouchStart(null);
+
+                  // Kun vandrette, hurtige swipes
+                  if (dt <= SWIPE_MAX_MS && Math.abs(dx) >= SWIPE_THRESHOLD_PX && Math.abs(dx) > Math.abs(dy)) {
+                    if (dx < 0) goNext(); // swipe venstre → næste
+                    else goPrev();        // swipe højre  → forrige
+                  }
+                }}
               >
                 <img
                   src={activeSrc}
@@ -134,16 +172,18 @@ export default function StoryOverlay({ poi, onClose }: Props) {
                 />
                 {count > 1 && (
                   <>
+                    {/* ← loopende forrige */}
                     <button
                       aria-label="Forrige billede"
-                      onClick={() => setIdx((i) => Math.max(0, i - 1))}
+                      onClick={goPrev}
                       style={navBtnStyle("left")}
                     >
                       ‹
                     </button>
+                    {/* ← loopende næste */}
                     <button
                       aria-label="Næste billede"
-                      onClick={() => setIdx((i) => Math.min(count - 1, i + 1))}
+                      onClick={goNext}
                       style={navBtnStyle("right")}
                     >
                       ›
