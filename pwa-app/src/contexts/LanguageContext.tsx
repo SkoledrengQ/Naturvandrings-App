@@ -67,6 +67,7 @@ const MESSAGES: Record<LangCode, Dict> = {
       stop: "Stop",
       progress: "{cur}/{total}",
       start: "Start fortælling: {title}",
+      reopen: "Genåbn fortælling",
       finish: "Afslut",
     },
     gps: {
@@ -127,6 +128,7 @@ const MESSAGES: Record<LangCode, Dict> = {
       stop: "Beenden",
       progress: "{cur}/{total}",
       start: "Erzählung starten: {title}",
+      reopen: "Erzählung erneut öffnen",
       finish: "Beenden",
     },
     gps: {
@@ -187,6 +189,7 @@ const MESSAGES: Record<LangCode, Dict> = {
       stop: "Stop",
       progress: "{cur}/{total}",
       start: "Start story: {title}",
+      reopen: "Reopen story",
       finish: "Finish",
     },
     gps: {

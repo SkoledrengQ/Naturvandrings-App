@@ -42,6 +42,7 @@ function effectiveEnterRadius(p: Poi, acc: number | null) {
 export default function RouteRun() {
   const { id } = useParams();
   const routeId = Number(id);
+  const STORAGE_KEY = `run:${routeId}`;
 
   // Data
   const [route, setRoute] = useState<Route | null>(null);
@@ -94,6 +95,18 @@ export default function RouteRun() {
   useEffect(() => {
     setCursorIndex(0);
   }, [routeId]);
+
+  // Genindlæs run-state fra sessionStorage
+  useEffect(() => {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    const s = JSON.parse(raw);
+    if (typeof s.cursorIndex === "number") setCursorIndex(s.cursorIndex);
+    if (Array.isArray(s.visited)) setVisited(new Set<number>(s.visited));
+    if (typeof s.shownPoiId === "number") setShownPoiId(s.shownPoiId);
+  } catch {}
+}, [STORAGE_KEY]);
 
   // Holder skærmen vågen under ruten
   useWakeLock(true);
@@ -164,39 +177,39 @@ export default function RouteRun() {
       }
     }
 
-    // Find første POI i rækkefølgen, hvor vi er inde i enter-radius
-    let candidate: Poi | null = null;
+    // Saml alle POI'er der er inden for enter-radius
+    const inRange: { p: Poi; dist: number }[] = [];
     for (const p of orderedPois) {
       const enterR = effectiveEnterRadius(p, accuracyM);
       const dist = distanceMeters(smoothedPos, [p.lat, p.lon]);
-      if (dist <= enterR) {
-        candidate = p;
-        break;
-      }
+      if (dist <= enterR) inRange.push({ p, dist });
     }
 
-    if (!candidate) {
+    if (inRange.length === 0) {
       // Ikke inde i nogen – nulstil dwell men bevar aktiv=null (håndteres ovenfor)
       setDwellTargetId(null);
       setDwellStart(null);
       return;
     }
 
-    // Dwell logik – vi er inde i kandidatens enter-radius
-    if (dwellTargetId !== candidate.id) {
-      setDwellTargetId(candidate.id);
+    // Foretræk POI'er vi IKKE har besøgt endnu. Hvis alle er besøgt, tag den nærmeste.
+    const notVisited = inRange.filter(x => !visited.has(x.p.id));
+    const pick = (notVisited.length > 0 ? notVisited : inRange)
+      .sort((a, b) => a.dist - b.dist)[0]!.p;
+
+    // Dwell-logik på den valgte kandidat
+    if (dwellTargetId !== pick.id) {
+      setDwellTargetId(pick.id);
       setDwellStart(performance.now());
       return;
     }
 
-    // Samme kandidat – tjek om dwell-tiden er opfyldt
     const now = performance.now();
     if (dwellStart && now - dwellStart >= DWELL_MS) {
-      setActivePoiId((prev) => (prev === candidate!.id ? prev : candidate!.id));
-      // Når vi bliver aktive, kan vi nulstille dwell
+      setActivePoiId(prev => (prev === pick.id ? prev : pick.id));
       setDwellStart(now);
     }
-  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart]);
+  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart, visited]);
 
     // Hvis vi har en aktiv POI, så sæt cursor til den
     useEffect(() => {
@@ -314,6 +327,19 @@ export default function RouteRun() {
     a.src = audioSrc;
   }, [currentIndex, orderedPois]);
 
+  // Gem run-state i sessionStorage
+  useEffect(() => {
+  try {
+    sessionStorage.setItem(STORAGE_KEY, JSON.stringify({
+      cursorIndex,
+      visited: [...visited],
+      shownPoiId: shownPoiId ?? null,
+      v: 1
+    }));
+  } catch {}
+}, [STORAGE_KEY, cursorIndex, visited, shownPoiId]);
+
+
   // Global Header: titel + mute-knap + overlay-variant
   const { /* eslint-disable-line @typescript-eslint/no-unused-vars */ } = { };
   useEffect(() => {
@@ -355,7 +381,9 @@ export default function RouteRun() {
     setVisited(prev => new Set(prev).add(orderedPois[nextIdx].id));
   };
 
+  // Stop ruten og gå tilbage + clear sessionStorage
   const stopRun = () => {
+    try { sessionStorage.removeItem(STORAGE_KEY); } catch {}
     window.history.back();
   };
 
@@ -446,25 +474,6 @@ export default function RouteRun() {
         </div>
       )}
 
-      {/* “Start fortælling” hvis i radius men overlay ikke åbent */}
-      {activePoi && !shownPoi && (!AUTO_OPEN_ON_ENTER || dismissedPoiId === activePoi.id) && (
-        <div style={{ position: "fixed", left: 0, right: 0, bottom: 112, display: "flex", justifyContent: "center", zIndex: 60 }}>
-          <button
-            onClick={() => {
-              setShownPoiId(activePoi.id);
-              setVisited(prev => new Set(prev).add(activePoi.id));
-            }}
-            style={{
-              padding: "12px 16px", borderRadius: 12, border: "none",
-              background: "#1d4ed8", color: "white", fontSize: 16,
-              boxShadow: "0 6px 20px rgba(0,0,0,.25)"
-            }}
-          >
-            {t("run.start", { title: activePoi.title })}
-          </button>
-        </div>
-      )}
-
       {/* BOTTOMBAR */}
       <nav
         aria-label="Rutekontrol"
@@ -491,45 +500,59 @@ export default function RouteRun() {
           </button>
         )}
 
-        <div style={{ display: "grid", gridAutoFlow: "column", gap: 8, alignItems: "center", justifyContent: "end" }}>
-          {/* Tilbage skjules helt på første stop */}
-          {!isFirst && (
-            <button
-              onClick={goPrev}
-              style={{
-                minHeight: 44, padding: "10px 14px", borderRadius: 12,
-                border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff"
-              }}
-            >
-              {t("run.prev")}
-            </button>
-          )}
+      <div style={{ display: "grid", gridAutoFlow: "column", gap: 8, alignItems: "center", justifyContent: "end" }}>
+        {/* Åbn fortælling igen – kun når man står i et POI, har lukket overlayet og vi IKKE viser manual-start */}
+        {activePoi && !shownPoi && !shouldShowManualStart && (
+          <button
+            onClick={() => {
+              if (!activePoi) return;
+              setShownPoiId(activePoi.id);
+              setVisited(prev => new Set(prev).add(activePoi.id));
+            }}
+            style={{
+              minHeight: 44,
+              padding: "8px 10px",
+              borderRadius: 12,
+              border: "1px solid rgba(255,255,255,.18)",
+              background: "transparent",
+              color: "#fff",
+              opacity: 0.9
+            }}
+          >
+            {t("run.reopen")}
+          </button>
+        )}
 
-          <div style={{ color: "#cfcfcf", minWidth: 44, textAlign: "center" }}>{progressText}</div>
+        {!isFirst && (
+          <button
+            onClick={goPrev}
+            style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff" }}
+          >
+            {t("run.prev")}
+          </button>
+        )}
 
-          {/* Frem → eller Afslut på sidste stop */}
-          {!isLast ? (
+        <div style={{ color: "#cfcfcf", minWidth: 44, textAlign: "center" }}>{progressText}</div>
+
+        {/* Frem skjules hvis manual start vises; ellers vis. På sidste stop viser vi i stedet Afslut */}
+        {isLast ? (
+          <button
+            onClick={stopRun}
+            style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#c93a3a", color: "#fff" }}
+          >
+            {t("run.finish")}
+          </button>
+        ) : (
+          !shouldShowManualStart && (
             <button
               onClick={goNext}
-              style={{
-                minHeight: 44, padding: "10px 14px", borderRadius: 12,
-                border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff"
-              }}
+              style={{ minHeight: 44, padding: "10px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,.18)", background: "#1a1a1a", color: "#fff" }}
             >
               {t("run.next")}
             </button>
-          ) : (
-            <button
-              onClick={stopRun}
-              style={{
-                minHeight: 44, padding: "10px 14px", borderRadius: 12,
-                border: "1px solid rgba(255,255,255,.18)", background: "#c93a3a", color: "#fff"
-              }}
-            >
-              {t("run.finish")}
-            </button>
-          )}
-        </div>
+          )
+        )}
+      </div>
       </nav>
 
       {/* Overlay med fortælling */}
