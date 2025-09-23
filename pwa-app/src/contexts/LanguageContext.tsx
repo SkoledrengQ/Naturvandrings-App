@@ -71,8 +71,10 @@ const MESSAGES: Record<LangCode, Dict> = {
       finish: "Afslut",
     },
     gps: {
-      warningTitle: "GPS-advarsel",
-      couldNotGet: "Kunne ikke hente position.",
+      warningTitle: "GPS utilgængelig",
+      couldNotGet: "Kunne ikke hente din position.",
+      enableBtn: "Aktivér GPS",
+      iosHint: "På iPhone: Tillad placering for Safari og slå 'Præcis lokation' til i Indstillinger."
     },
   },
 
@@ -132,8 +134,10 @@ const MESSAGES: Record<LangCode, Dict> = {
       finish: "Beenden",
     },
     gps: {
-      warningTitle: "GPS-Warnung",
+      warningTitle: "GPS nicht verfügbar",
       couldNotGet: "Position konnte nicht ermittelt werden.",
+      enableBtn: "GPS aktivieren",
+      iosHint: "Auf dem iPhone: Standort für Safari erlauben und „Genauer Standort“ in den Einstellungen aktivieren."
     },
   },
 

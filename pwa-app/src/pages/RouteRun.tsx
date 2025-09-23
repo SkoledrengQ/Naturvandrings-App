@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import { loadRoutes, loadPois } from "../lib/data";
 import type { Route, Poi } from "../lib/data";
@@ -52,6 +52,9 @@ export default function RouteRun() {
   const [userPos, setUserPos] = useState<[number, number] | null>(null);
   const [accuracyM, setAccuracyM] = useState<number | null>(null);
   const [geoError, setGpsError] = useState(false);
+  const watchRef = useRef<number | null>(null);
+  const hasGeo = typeof navigator !== "undefined" && "geolocation" in navigator;
+  const badAccuracy = typeof accuracyM === "number" && accuracyM >= ACCURACY_BAD_THRESHOLD;
 
   // Remember user’s place even when overlay is closed and GPS is off
   const [cursorIndex, setCursorIndex] = useState(0);
@@ -113,29 +116,19 @@ export default function RouteRun() {
 
   // GPS watch
   useEffect(() => {
-    if (!("geolocation" in navigator)) {
+    if (!hasGeo) {
       setGpsError(true);
       return;
     }
-    const watchId = navigator.geolocation.watchPosition(
-      (pos) => {
-        setGpsError(false);
-        const cur: [number, number] = [pos.coords.latitude, pos.coords.longitude];
-        setUserPos(cur);
-        setAccuracyM(typeof pos.coords.accuracy === "number" ? pos.coords.accuracy : null);
-
-        // Opbyg glat buffer til geofence (ikke til kort-markør hvis du vil have den super “live”)
-        setPosBuffer(prev => {
-          const next = [...prev, cur];
-          if (next.length > SMOOTH_N) next.shift();
-          return next;
-        });
-      },
-      () => setGpsError(true),
-      { enableHighAccuracy: true, timeout: 12000, maximumAge: 2000 }
-    );
-    return () => navigator.geolocation.clearWatch(watchId);
-  }, []);
+    startGeoWatch();
+    return () => {
+      if (watchRef.current != null) {
+        try { navigator.geolocation.clearWatch(watchRef.current); } catch {}
+        watchRef.current = null;
+      }
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hasGeo]);
 
   // Map helpers
   const byId = useMemo(() => new Map(pois.map(p => [p.id, p])), [pois]);
@@ -294,8 +287,49 @@ export default function RouteRun() {
 
   const firstPoi = orderedPois[0] ?? null;
 
-  const hasGeo = typeof navigator !== "undefined" && "geolocation" in navigator;
-  const badAccuracy = typeof accuracyM === "number" && accuracyM >= ACCURACY_BAD_THRESHOLD;
+  function startGeoWatch() {
+  if (!hasGeo) return;
+  // ryd evt. tidligere watch
+  if (watchRef.current != null) {
+    try { navigator.geolocation.clearWatch(watchRef.current); } catch {}
+    watchRef.current = null;
+  }
+  watchRef.current = navigator.geolocation.watchPosition(
+    (pos) => {
+      setGpsError(false);
+      const cur: [number, number] = [pos.coords.latitude, pos.coords.longitude];
+      setUserPos(cur);
+      setAccuracyM(typeof pos.coords.accuracy === "number" ? pos.coords.accuracy : null);
+      setPosBuffer(prev => {
+        const next = [...prev, cur];
+        if (next.length > SMOOTH_N) next.shift();
+        return next;
+      });
+    },
+    () => setGpsError(true),
+    { enableHighAccuracy: true, timeout: 12000, maximumAge: 2000 }
+  );
+}
+
+function requestGpsPermissionOnce() {
+  if (!hasGeo) return;
+  // One-shot der udløser iOS-prompt pga. bruger-klik
+  navigator.geolocation.getCurrentPosition(
+    () => {
+      setGpsError(false);
+      startGeoWatch(); // efter tilladelse: kør watch “live”
+    },
+    () => {
+      setGpsError(true);
+    },
+    { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 }
+  );
+}
+
+const isIOS = typeof navigator !== "undefined" &&
+  (/iP(hone|ad|od)/i.test(navigator.userAgent) ||
+   (navigator.platform === "MacIntel" && (navigator as any).maxTouchPoints > 1));
+  
 
   const shouldShowManualStart =
     !shownPoi &&                  // intet overlay åbent
@@ -400,28 +434,50 @@ export default function RouteRun() {
         />
       </div>
 
-      {/* GPS-advarsel */}
-      {geoError && (
-        <div
-          style={{
-            position: "fixed",
-            left: "50%",
-            transform: "translateX(-50%)",
-            top: "calc(var(--headerH, 76px) + 8px)",
-            zIndex: 80,
-            maxWidth: "min(720px, calc(100vw - 24px))",
-            background: "rgba(0,0,0,.65)",
-            border: "1px solid rgba(255,200,0,.55)",
-            color: "#fff",
-            padding: "10px 12px",
-            borderRadius: 12,
-            boxShadow: "0 8px 24px rgba(0,0,0,.25)",
-            backdropFilter: "blur(2px)",
-          }}
-        >
-          <strong>{t("gps.warningTitle")}</strong>: {t("gps.couldNotGet")}
+          {/* GPS-advarsel */}
+          {geoError && (
+      <div
+        style={{
+          position: "fixed",
+          left: "50%",
+          transform: "translateX(-50%)",
+          top: "calc(var(--headerH, 76px) + 8px)",
+          zIndex: 80,
+          maxWidth: "min(720px, calc(100vw - 24px))",
+          background: "rgba(0,0,0,.65)",
+          border: "1px solid rgba(255,200,0,.55)",
+          color: "#fff",
+          padding: "10px 12px",
+          borderRadius: 12,
+          boxShadow: "0 8px 24px rgba(0,0,0,.25)",
+          backdropFilter: "blur(2px)",
+        }}
+      >
+        <div style={{ display: "grid", gap: 8 }}>
+          <div>
+            <strong>{t("gps.warningTitle")}</strong>: {t("gps.couldNotGet")}
+          </div>
+
+          {hasGeo && (
+            <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+              <button
+                onClick={requestGpsPermissionOnce}
+                className="btn btn-primary"
+                style={{ padding: "6px 10px", minHeight: 36 }}
+              >
+                {t("gps.enableBtn")}
+              </button>
+
+              {isIOS && (
+                <small style={{ opacity: 0.9 }}>
+                  {t("gps.iosHint")}
+                </small>
+              )}
+            </div>
+          )}
         </div>
-      )}
+      </div>
+    )}
 
       {/* Vis current GPS accuracy – hjælper i support/felt */}
       {accuracyM != null && (
