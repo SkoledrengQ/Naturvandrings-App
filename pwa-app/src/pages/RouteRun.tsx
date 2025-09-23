@@ -53,6 +53,8 @@ export default function RouteRun() {
   const [accuracyM, setAccuracyM] = useState<number | null>(null);
   const [geoError, setGpsError] = useState(false);
   const watchRef = useRef<number | null>(null);
+  const [gpsBtnClicked, setGpsBtnClicked] = useState(false);
+  const [gpsRequesting, setGpsRequesting] = useState(false);
   const hasGeo = typeof navigator !== "undefined" && "geolocation" in navigator;
   const badAccuracy = typeof accuracyM === "number" && accuracyM >= ACCURACY_BAD_THRESHOLD;
 
@@ -313,14 +315,19 @@ export default function RouteRun() {
 
 function requestGpsPermissionOnce() {
   if (!hasGeo) return;
-  // One-shot der udløser iOS-prompt pga. bruger-klik
+  setGpsRequesting(true);
+
   navigator.geolocation.getCurrentPosition(
     () => {
       setGpsError(false);
-      startGeoWatch(); // efter tilladelse: kør watch “live”
+      setGpsRequesting(false);
+      // after permission granted, start the continuous watch
+      startGeoWatch();
     },
     () => {
+      // still blocked/denied or failed
       setGpsError(true);
+      setGpsRequesting(false);
     },
     { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 }
   );
@@ -436,48 +443,59 @@ const isIOS = typeof navigator !== "undefined" &&
 
           {/* GPS-advarsel */}
           {geoError && (
-      <div
-        style={{
-          position: "fixed",
-          left: "50%",
-          transform: "translateX(-50%)",
-          top: "calc(var(--headerH, 76px) + 8px)",
-          zIndex: 80,
-          maxWidth: "min(720px, calc(100vw - 24px))",
-          background: "rgba(0,0,0,.65)",
-          border: "1px solid rgba(255,200,0,.55)",
-          color: "#fff",
-          padding: "10px 12px",
-          borderRadius: 12,
-          boxShadow: "0 8px 24px rgba(0,0,0,.25)",
-          backdropFilter: "blur(2px)",
-        }}
-      >
-        <div style={{ display: "grid", gap: 8 }}>
-          <div>
-            <strong>{t("gps.warningTitle")}</strong>: {t("gps.couldNotGet")}
-          </div>
+            <div
+              style={{
+                position: "fixed",
+                left: "50%",
+                transform: "translateX(-50%)",
+                top: "calc(var(--headerH, 76px) + 8px)",
+                zIndex: 80,
+                maxWidth: "min(720px, calc(100vw - 24px))",
+                background: "rgba(0,0,0,.65)",
+                border: "1px solid rgba(255,200,0,.55)",
+                color: "#fff",
+                padding: "10px 12px",
+                borderRadius: 12,
+                boxShadow: "0 8px 24px rgba(0,0,0,.25)",
+                backdropFilter: "blur(2px)",
+                display: "flex",
+                alignItems: "center",
+                gap: 10
+              }}
+            >
+              <div>
+                <strong>{t("gps.warningTitle")}</strong>: {t("gps.couldNotGet")}
+              </div>
 
-          {hasGeo && (
-            <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-              <button
-                onClick={requestGpsPermissionOnce}
-                className="btn btn-primary"
-                style={{ padding: "6px 10px", minHeight: 36 }}
-              >
-                {t("gps.enableBtn")}
-              </button>
-
-              {isIOS && (
-                <small style={{ opacity: 0.9 }}>
-                  {t("gps.iosHint")}
-                </small>
+              {/* Show "Aktivér GPS" only until first click */}
+              {!gpsBtnClicked && (
+                <button
+                  onClick={() => {
+                    setGpsBtnClicked(true);   // hide button immediately after click
+                    requestGpsPermissionOnce();
+                  }}
+                  disabled={gpsRequesting}
+                  style={{
+                    marginLeft: 8,
+                    minHeight: 32,
+                    padding: "6px 10px",
+                    borderRadius: 8,
+                    border: "none",
+                    background: "#1e66ff",
+                    color: "#fff",
+                    cursor: gpsRequesting ? "default" : "pointer",
+                    opacity: gpsRequesting ? 0.8 : 1
+                  }}
+                >
+                  {gpsRequesting ? (t("gps.requesting") ?? "Beder om lokation…")
+                                : (t("gps.activate")   ?? "Aktivér GPS")}
+                </button>
+              )}
+                {isIOS && !gpsBtnClicked && (
+                <small style={{ opacity: 0.9 }}>{t("gps.iosHint")}</small>
               )}
             </div>
           )}
-        </div>
-      </div>
-    )}
 
       {/* Vis current GPS accuracy – hjælper i support/felt */}
       {accuracyM != null && (
