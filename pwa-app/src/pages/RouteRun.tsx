@@ -488,7 +488,7 @@ const isIOS = typeof navigator !== "undefined" &&
                   }}
                 >
                   {gpsRequesting ? (t("gps.requesting") ?? "Beder om lokation…")
-                                : (t("gps.activate")   ?? "Aktivér GPS")}
+                                : (t("gps.enableBtn")   ?? "Aktivér GPS")}
                 </button>
               )}
                 {isIOS && !gpsBtnClicked && (
