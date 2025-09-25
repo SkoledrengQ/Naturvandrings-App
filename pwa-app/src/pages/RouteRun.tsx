@@ -8,7 +8,12 @@ import { useHeader } from "../contexts/HeaderContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import useWakeLock from "../hooks/useWakeLock";
 
-const AUTO_OPEN_ON_ENTER = true; // Sæt til false hvis auto popup ikke ønskes
+const AUTO_OPEN_ON_ENTER = true; // Story overlay auto popup
+const GOOD_ACC_THRESHOLD   = 40;     // m – hvad vi regner som “god”
+const STABLE_WINDOW_MS     = 8000;   // ms – hvor lang tid vi kigger tilbage
+const STABLE_MIN_GOOD      = 2;      // mindst 2 gode fixes
+const MAX_SPREAD_M         = 25;     // målinger skal ligge tæt (varians)
+const BAD_PERSIST_MS       = 10000;  // hvor længe dårlig GPS må vare før fallback
 
 /** Lille distance-helper */
 function distanceMeters(a: [number, number], b: [number, number]) {
@@ -44,6 +49,9 @@ export default function RouteRun() {
   const routeId = Number(id);
   const STORAGE_KEY = `run:${routeId}`;
 
+  // Holder skærmen vågen under ruten
+  useWakeLock(true);
+
   // Data
   const [route, setRoute] = useState<Route | null>(null);
   const [pois, setPois] = useState<Poi[]>([]);
@@ -56,7 +64,6 @@ export default function RouteRun() {
   const [gpsBtnClicked, setGpsBtnClicked] = useState(false);
   const [gpsRequesting, setGpsRequesting] = useState(false);
   const hasGeo = typeof navigator !== "undefined" && "geolocation" in navigator;
-  const badAccuracy = typeof accuracyM === "number" && accuracyM >= ACCURACY_BAD_THRESHOLD;
 
   // Remember user’s place even when overlay is closed and GPS is off
   const [cursorIndex, setCursorIndex] = useState(0);
@@ -113,8 +120,18 @@ export default function RouteRun() {
   } catch {}
 }, [STORAGE_KEY]);
 
-  // Holder skærmen vågen under ruten
-  useWakeLock(true);
+
+  // De forskellige modes – manual, warming (venter på stabil GPS), auto
+  type RunMode = "manual" | "warming" | "auto";
+  const [mode, setMode] = useState<RunMode>("manual");
+  const [showAutoToast, setShowAutoToast] = useState(false);
+
+  type StabSample = { lat: number; lon: number; acc: number; ts: number };
+  const stabBufRef = useRef<StabSample[]>([]);
+  const badSinceRef = useRef<number | null>(null);
+  const downgradePendingRef = useRef(false);
+  const prevModeRef = useRef<RunMode>(mode);
+
 
   // GPS watch
   useEffect(() => {
@@ -144,9 +161,9 @@ export default function RouteRun() {
   const [dwellTargetId, setDwellTargetId] = useState<number | null>(null);
   const [dwellStart, setDwellStart] = useState<number | null>(null);
 
-  // Geofence (dynamisk enter, hysterese exit, dwell)
+  // Geofence - Deaktiver geofence hvis vi ingen stabil position har, GPS fejl, eller accuracy er dårlig
   useEffect(() => {
-    if (!smoothedPos || orderedPois.length === 0) {
+    if (mode !== "auto" || !smoothedPos || orderedPois.length === 0) {
       setActivePoiId(null);
       setDwellTargetId(null);
       setDwellStart(null);
@@ -204,7 +221,7 @@ export default function RouteRun() {
       setActivePoiId(prev => (prev === pick.id ? prev : pick.id));
       setDwellStart(now);
     }
-  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart, visited]);
+  }, [smoothedPos, accuracyM, orderedPois, activePoiId, byId, dwellTargetId, dwellStart, visited, mode]);
 
     // Hvis vi har en aktiv POI, så sæt cursor til den
     useEffect(() => {
@@ -270,6 +287,25 @@ export default function RouteRun() {
     }
   }, [activePoiId, dismissedPoiId]);
 
+  useEffect(() => {
+    const prev = prevModeRef.current;
+    if ((prev === "manual" || prev === "warming") && mode === "auto") {
+      setShowAutoToast(true);
+      const t = setTimeout(() => setShowAutoToast(false), 2500);
+      prevModeRef.current = mode;
+      return () => clearTimeout(t);
+    }
+    prevModeRef.current = mode;
+  }, [mode]);
+
+  useEffect(() => {
+  if (!shownPoi && downgradePendingRef.current) {
+    setMode("manual");
+    downgradePendingRef.current = false;
+    badSinceRef.current = null;
+  }
+  }, [shownPoi]);
+
   /* Beregn “næste” og et lille segment (aktuelt til næste) – GPS-uafhængigt */
   const nextIndex = useMemo(() => {
     if (orderedPois.length < 2) return null;
@@ -287,31 +323,82 @@ export default function RouteRun() {
     ] as [[number, number], [number, number]];
   }, [orderedPois, currentIndex, nextIndex]);
 
-  const firstPoi = orderedPois[0] ?? null;
 
   function startGeoWatch() {
-  if (!hasGeo) return;
-  // ryd evt. tidligere watch
-  if (watchRef.current != null) {
-    try { navigator.geolocation.clearWatch(watchRef.current); } catch {}
-    watchRef.current = null;
+    if (!hasGeo) return;
+    if (watchRef.current != null) {
+      try { navigator.geolocation.clearWatch(watchRef.current); } catch {}
+      watchRef.current = null;
+    }
+    watchRef.current = navigator.geolocation.watchPosition(
+      (pos) => {
+        setGpsError(false);
+        const cur: [number, number] = [pos.coords.latitude, pos.coords.longitude];
+        const acc = typeof pos.coords.accuracy === "number" ? pos.coords.accuracy : null;
+
+        setUserPos(cur);
+        setAccuracyM(acc);
+
+        // Glat buffer (til visning/geofence)
+        setPosBuffer(prev => {
+          const next = [...prev, cur];
+          if (next.length > SMOOTH_N) next.shift();
+          return next;
+        });
+
+        const now = Date.now();
+
+        // --- dårlig-GPS overvågning (til fallback) ---
+        if (acc != null && acc >= ACCURACY_BAD_THRESHOLD) {
+          if (badSinceRef.current == null) badSinceRef.current = now;
+        } else {
+          badSinceRef.current = null;
+        }
+
+        // --- stabilitets-sampling (auto-opgradering) ---
+        // hold kun samples i STABLE_WINDOW_MS
+        stabBufRef.current = stabBufRef.current.filter(s => now - s.ts <= STABLE_WINDOW_MS);
+
+        const good = acc != null && acc <= GOOD_ACC_THRESHOLD;
+        if (good) {
+          stabBufRef.current.push({ lat: cur[0], lon: cur[1], acc, ts: now });
+        }
+
+        if (mode !== "auto") {
+          // forsøg at opgradere til auto
+          const arr = stabBufRef.current;
+          if (arr.length >= STABLE_MIN_GOOD) {
+            const latAvg = arr.reduce((s, a) => s + a.lat, 0) / arr.length;
+            const lonAvg = arr.reduce((s, a) => s + a.lon, 0) / arr.length;
+            let maxD = 0;
+            for (const s of arr) {
+              const d = distanceMeters([latAvg, lonAvg], [s.lat, s.lon]);
+              if (d > maxD) maxD = d;
+            }
+            if (maxD <= MAX_SPREAD_M) {
+              setMode("auto");
+            } else if (mode === "manual") {
+              setMode("warming"); // visuel hint om at vi leder efter godt signal
+            }
+          } else if (mode === "manual" && (acc ?? 9999) < 9999) {
+            setMode("warming");
+          }
+        } else {
+          // i auto-tilstand: evaluer om vi skal fallback til manual ved vedvarende dårlig GPS
+          if (badSinceRef.current != null && now - badSinceRef.current >= BAD_PERSIST_MS) {
+            if (shownPoi == null) {
+              setMode("manual");
+              badSinceRef.current = null;
+            } else {
+              downgradePendingRef.current = true; // vent til overlay er lukket
+            }
+          }
+        }
+      },
+      () => setGpsError(true),
+      { enableHighAccuracy: true, timeout: 12000, maximumAge: 2000 }
+    );
   }
-  watchRef.current = navigator.geolocation.watchPosition(
-    (pos) => {
-      setGpsError(false);
-      const cur: [number, number] = [pos.coords.latitude, pos.coords.longitude];
-      setUserPos(cur);
-      setAccuracyM(typeof pos.coords.accuracy === "number" ? pos.coords.accuracy : null);
-      setPosBuffer(prev => {
-        const next = [...prev, cur];
-        if (next.length > SMOOTH_N) next.shift();
-        return next;
-      });
-    },
-    () => setGpsError(true),
-    { enableHighAccuracy: true, timeout: 12000, maximumAge: 2000 }
-  );
-}
 
 function requestGpsPermissionOnce() {
   if (!hasGeo) return;
@@ -338,16 +425,13 @@ const isIOS = typeof navigator !== "undefined" &&
    (navigator.platform === "MacIntel" && (navigator as any).maxTouchPoints > 1));
   
 
-  const shouldShowManualStart =
-    !shownPoi &&                  // intet overlay åbent
-    !!firstPoi &&                 // har en første POI
-    !visited.has(firstPoi.id) &&  // første er ikke vist endnu
-    !activePoi &&                 // ikke allerede i radius (ellers har du en anden knap)
-    (
-      !hasGeo ||                  // ingen geolocation på enheden
-      geoError ||                 // afvist/fejl fra watchPosition
-      badAccuracy                 // meget dårlig nøjagtighed (>= 100 m)
-    );
+const firstPoi = orderedPois[0] ?? null;
+
+const shouldShowManualStart =
+  !shownPoi &&
+  !!firstPoi &&
+  !visited.has(firstPoi.id) &&
+  mode !== "auto";
 
   // Preload næste POI's billede
   useEffect(() => {
@@ -466,7 +550,6 @@ const isIOS = typeof navigator !== "undefined" &&
               <div>
                 <strong>{t("gps.warningTitle")}</strong>: {t("gps.couldNotGet")}
               </div>
-
               {/* Show "Aktivér GPS" only until first click */}
               {!gpsBtnClicked && (
                 <button
@@ -496,21 +579,42 @@ const isIOS = typeof navigator !== "undefined" &&
               )}
             </div>
           )}
-
+          {showAutoToast && (
+        <div style={{
+          position: "fixed",
+          left: "50%", transform: "translateX(-50%)",
+          top: "calc(var(--headerH, 76px) + 48px)",
+          zIndex: 85,
+          background: "rgba(16,185,129,.95)",
+          color: "#fff",
+          borderRadius: 10,
+          padding: "8px 12px",
+          boxShadow: "0 8px 24px rgba(0,0,0,.25)"
+        }}>
+          {t("gps.autoOn") ?? "GPS stabil – automatisk guiding er slået til"}
+        </div>
+      )}
       {/* Vis current GPS accuracy – hjælper i support/felt */}
       {accuracyM != null && (
-        <div
-          style={{
-            position: "fixed", right: 12, top: 56, zIndex: 60,
-            background: "rgba(0,0,0,.55)",
-            color: "#fff",
-            border: "1px solid rgba(255,255,255,.18)",
-            borderRadius: 8,
-            padding: "6px 10px"
-          }}
-        >
-          GPS ±{Math.round(accuracyM)} m
-        </div>
+      <div
+        style={{
+          position: "fixed",
+          right: 12,
+          top: 56,
+          zIndex: 60,
+          background: "rgba(0,0,0,.55)",
+          color: "#fff",
+          border: "1px solid rgba(255,255,255,.18)",
+          borderRadius: 8,
+          padding: "6px 10px"
+        }}
+      >
+        GPS {accuracyM != null ? `±${Math.round(accuracyM)} m` : "—"} • {
+          mode === "auto"    ? (t("gps.modeAuto")    ?? "Auto")
+        : mode === "warming" ? (t("gps.modeWarming") ?? "Finder signal…")
+                            : (t("gps.modeManual")  ?? "Manuel")
+        }
+      </div>
       )}
 
       {/* Manuel start-knap (hvis GPS ikke virker eller er meget unøjagtig) */}
