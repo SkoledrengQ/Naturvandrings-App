@@ -68,9 +68,6 @@ export default function RouteRun() {
   // Remember user’s place even when overlay is closed and GPS is off
   const [cursorIndex, setCursorIndex] = useState(0);
 
-  // UI/state
-  const [muted, setMuted] = useState(false);
-
   // Header (global)
   const { setTitle, setRightNode, setVariant } = useHeader();
 
@@ -471,23 +468,12 @@ const shouldShowManualStart =
     setTitle(route?.title ?? "");
     setVariant("overlay");
 
-    const btn = (
-      <button
-        onClick={() => setMuted(m => !m)}
-        aria-label={muted ? "Slå voiceover til" : "Slå voiceover fra"}
-        className="mute-btn"
-      >
-        <span aria-hidden="true">{muted ? "🔇" : "🔊"}</span>
-      </button>
-    );
-    setRightNode(btn);
-
     return () => {
       setTitle(null);
       setRightNode(null);
       setVariant("solid");
     };
-  }, [route?.title, muted, setTitle, setRightNode, setVariant]);
+  }, [route?.title, setTitle, setRightNode, setVariant]);
 
   // UI-handlers
   const goPrev = () => {
