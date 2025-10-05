@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { HeaderProvider } from "./contexts/HeaderContext";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import RoutesList from "./pages/RoutesList";
 import RouteDetail from "./pages/RouteDetail";
 import RouteRun from "./pages/RouteRun";
@@ -18,6 +19,7 @@ export default function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/routes" element={<RoutesList />} />
           <Route path="/routes/:id" element={<RouteDetail />} />
           <Route path="/routes/:id/run" element={<RouteRun />} />
