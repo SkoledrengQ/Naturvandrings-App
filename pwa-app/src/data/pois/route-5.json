@@ -1,0 +1,129 @@
+[
+  {
+    "id": 33,
+    "routeId": 5,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Erik og jeg er den ældste søn i familien. Jeg vil gerne fortælle jer lidt om Møllesøen. Møllesøen er hele familiens mødested. Her mødes vi de sommerdage hvor vejret er godt og vi er færdige med dagens arbejde. Alle de ansatte på gården er også med, det er så hyggeligt når vi alle kan være sammen. \n\nMøllesøen har noget for alle, der er både fugle, fisk, planter og insekter. Og far kan altid finde et eller andet, der minder ham om noget han har læst i en bog.",
+    "images": [
+      "/img/Stuehus.webp",
+      "/img/MølleSø1.webp"
+    ],
+    "audio": "/audio/route5/R5_POI1.mp3",
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Erik und bin der älteste Sohn der Familie. Ich möchte euch ein wenig über den Mühlensee erzählen. Der Mühlensee ist unser Treffpunkt. An warmen Sommertagen, wenn die Arbeit getan ist, kommen wir alle hier zusammen – auch die Angestellten des Hofes. Es ist so gemütlich, wenn wir alle beisammen sind.\n\nDer Mühlensee hat für jeden etwas: Vögel, Fische, Pflanzen und Insekten. Und Vater findet immer etwas, das ihn an ein Buch erinnert, das er gelesen hat.",
+    "text_en": "Hello, my name is Erik and I’m the eldest son in the family. I’d like to tell you a bit about the mill pond. It’s the meeting place for the whole family. On summer days when the weather is fine and the day’s work is done, we all gather here—farmhands included. It’s so cosy when we can all be together.\n\nThe mill pond has something for everyone: birds, fish, plants, and insects. And father can always find something that reminds him of a book he’s read."
+  },
+  {
+    "id": 34,
+    "routeId": 5,
+    "title": "Vej langs Møllesøen",
+    "lat": 57.22184,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Noget af det første man opdager når man ser søen, er svanerne. Jeg elsker fugle og det er spændende at følge svanerne. Et år fik de hele 7 svællinger, det var ret vildt synes jeg. De har rede ude imellem sivene, så ræven ikke kan komme til dem. \n\nI kan også være heldige at se Isfugl, Fiskeørn, Glente og Rørhøg. Jeg har selv set Isfuglen og Fiskeørnen nogle få gange, de andre fugle er mere almindelige. Hvis I kommer om aftenen, så kan man nogle gange høre Nattergalen synge. \n\nKnud plejer at fiske efter Skaller sammen med møllersvenden Niels. Så sidder de her på kanten langs vejen. Jeg glemmer aldrig dengang Knud skulle kaste snøren ud og krogen endte med at sidde fast i Niels’ hat. Hatten endte ude i søen, hold da op det så sjovt ud. \n\nDer er også Aborre og Gedder i søen. Når solen skinner, plejer gedderne at svømme rundt langs kanten af søen og solbade. Så kan man stå heroppe og se lige ned på dem. Det er helt vildt så stor en Gedde kan blive. Der er også Dammuslinger i søen, de ligger nede på bunden og hjælper med at holde søen ren.",
+    "images": [
+      "/img/Svane.webp",
+      "/img/SvaneSvællinger.webp",
+      "/img/MølleSø3.webp",
+      "/img/Gedde.webp",
+      "/img/Dammusling.webp"
+    ],
+    "audio": "/audio/route5/R5_POI2.mp3",
+    "title_de": "Weg am Mühlensee",
+    "title_en": "Road Along the Mill Pond",
+    "text_de": "Das Erste, was einem am See auffällt, sind die Schwäne. Ich liebe Vögel, und es ist spannend, die Schwäne zu beobachten. In einem Jahr hatten sie ganze sieben Junge – ziemlich erstaunlich, finde ich. Sie nisten draußen zwischen den Schilfen, damit der Fuchs nicht an sie herankommt.\n\nMit etwas Glück seht ihr auch Eisvogel, Fischadler, Rotmilan und Rohrweihe. Den Eisvogel und den Fischadler habe ich selbst ein paar Mal gesehen; die anderen sind häufiger. Abends kann man manchmal die Nachtigall singen hören.\n\nKnud angelt hier am Wegrand oft Rotaugen zusammen mit dem Müllergesellen Niels. Ich vergesse nie, wie Knud einmal auswarf und der Haken in Niels’ Hut hängenblieb. Der Hut landete im See – das sah köstlich aus.\n\nIm See gibt es außerdem Barsche und Hechte. Wenn die Sonne scheint, schwimmen die Hechte gern am Ufer entlang und sonnen sich – von hier oben kann man sie gut sehen. Unglaublich, wie groß ein Hecht werden kann. Es gibt auch Teichmuscheln; sie liegen am Grund und helfen, den See sauber zu halten.",
+    "text_en": "One of the first things you notice at the lake is the swans. I love birds, and it’s exciting to follow the swans. One year they had seven cygnets—pretty wild, if you ask me. Their nest is out among the reeds so the fox can’t reach them.\n\nWith a bit of luck you might also see kingfisher, osprey, kite, and marsh harrier. I’ve seen the kingfisher and the osprey a few times; the others are more common. If you come in the evening, you can sometimes hear the nightingale sing.\n\nKnud often fishes for roach here along the roadside with the miller’s apprentice Niels. I’ll never forget the time Knud cast his line and the hook got stuck in Niels’s hat. The hat ended up in the lake—it looked hilarious.\n\nThere are also perch and pike in the lake. When the sun is shining, the pike like to cruise along the shore and sunbathe; from up here you can look straight down at them. It’s amazing how big a pike can get. There are also pond mussels on the bottom, helping to keep the water clean."
+  },
+  {
+    "id": 35,
+    "routeId": 5,
+    "title": "Klaplåge overfor vindmøllen",
+    "lat": 57.22261,
+    "lon": 10.28165,
+    "radiusMeters": 12,
+    "text": "Når vi rigtig skal hygge, så plejer vi at have tæpper med og så sætter vi os på marken med vores madpakker eller hjemmebag. Så sidder vi og snakker og kigger på alt det der er omkring os. Vi kan komme ind på marken igennem klaplågen overfor vindmøllen.",
+    "images": [
+      "/img/Engen2.webp",
+      "/img/MølleSø2.webp"
+    ],
+    "audio": "/audio/route5/R5_POI3.mp3",
+    "title_de": "Schwingtor gegenüber der Windmühle",
+    "title_en": "Gate Opposite the Windmill",
+    "text_de": "Wenn wir es uns richtig gemütlich machen wollen, nehmen wir Decken mit und setzen uns mit Broten oder selbstgebackenem Kuchen auf die Wiese. Dann sitzen wir da, reden und schauen uns alles um uns herum an. Auf die Wiese kommen wir durch das Schwingtor gegenüber der Windmühle.",
+    "text_en": "When we really want to get cosy, we bring blankets and sit on the field with our packed lunches or home baking. We sit and chat and take in everything around us. We can enter the field through the little gate opposite the windmill."
+  },
+  {
+    "id": 36,
+    "routeId": 5,
+    "title": "Vådområde op mod gangbroen",
+    "lat": 57.22134,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Mor og Margrethe plejer at kigge på planter, mens Johanne og Kirstine passer Lille bitte Tove og slapper af. Johanne plejer dog at vågne op når Mor og Margrethe nærmer sig Topstar-tuerne. Så råber hun op om at de ikke må vække troldene. Hun skal ikke risikere, at de gamle historier er sande. Ifølge historierne er græsstråene troldenes hår og resten af trolden gemmer sig nede i jorden, fordi de ikke kan lide solen. Så plejer mor og Margrethe at skynde sig væk igen.",
+    "images": [
+        "/img/Engen5.webp"
+    ],
+    "audio": "/audio/route5/R5_POI4.mp3",
+    "title_de": "Feuchtgebiet in Richtung Steg",
+    "title_en": "Wetland toward the Footbridge",
+    "text_de": "Mutter und Margrethe schauen sich meist die Pflanzen an, während Johanne und Kirstine sich um die kleine Tove kümmern und ausruhen. Johanne wird jedoch wachsam, sobald Mutter und Margrethe sich den Topstar-Horsten nähern. Dann ruft sie, man dürfe die Trolle nicht wecken. Sie will nicht riskieren, dass die alten Geschichten wahr sind. Den Geschichten zufolge sind die Grashalme das Haar der Trolle, und der Rest des Trolls versteckt sich in der Erde, weil sie die Sonne nicht mögen. Also beeilen sich Mutter und Margrethe gewöhnlich, schnell weiterzugehen.",
+    "text_en": "Mother and Margrethe usually look at plants while Johanne and Kirstine take care of little Tove and relax. However, Johanne perks up when Mother and Margrethe get close to the Topstar tussocks. Then she shouts that they mustn’t wake the trolls. She won’t risk the old stories being true. According to the stories, the blades of grass are the trolls’ hair, and the rest of the troll hides down in the ground because they don’t like the sun. So Mother and Margrethe usually hurry away again."
+  },
+  {
+    "id": 37,
+    "routeId": 5,
+    "title": "Dunhammer",
+    "lat": 57.22245,
+    "lon": 10.28193,
+    "radiusMeters": 12,
+    "text": "En gang havde Margrethe været nede ved søen og plukke Dunhammer, for hun syntes at de store brune toppe ville være så fine inde i stuen. Mor var på familiebesøg i et par dage og da hun kom hjem, var Dunhammerne sprunget ud og der var frø overalt inde i den fine stue. Der var Margrethe ikke så populær og hun kom selv til at fjerne alle frøene igen. Det endte dog med at hun bestak Knud og Ellen med nybagt kage og så hjalp de hende med at gøre rent.",
+    "images": [
+        "/img/DunhammerRed.webp"
+    ],
+    "audio": "/audio/route5/R5_POI5.mp3",
+    "title_de": "Rohrkolben",
+    "title_en": "Cattail",
+    "text_de": "Einmal war Margrethe zum See hinuntergegangen, um Rohrkolben zu pflücken, weil sie meinte, die großen braunen Kolben würden im Wohnzimmer hübsch aussehen. Mutter war ein paar Tage zu Familienbesuch, und als sie heimkam, waren die Rohrkolben aufgeplatzt und überall im feinen Wohnzimmer lagen Samen. Margrethe war da nicht besonders beliebt und musste alle Samen selbst entfernen. Am Ende bestach sie jedoch Knud und Ellen mit frisch gebackenem Kuchen, und dann halfen sie ihr beim Aufräumen.",
+    "text_en": "Once, Margrethe went down to the lake to pick cattails because she thought the big brown spikes would look lovely in the parlor. Mother was away visiting family for a couple of days, and when she came home, the cattails had burst and there were seeds everywhere in the fine parlor. Margrethe wasn’t very popular then and had to remove all the seeds herself. In the end she bribed Knud and Ellen with freshly baked cake, and they helped her clean up."
+  },
+  {
+    "id": 38,
+    "routeId": 5,
+    "title": "Søbred",
+    "lat": 57.22244,
+    "lon": 10.28278,
+    "radiusMeters": 12,
+    "text": "Ellen kigger efter insekter sammen med staldkarlen Aage. I søen er der Blå Mosaikguldsmed, Rød Vandnymfe og Almindelig Vandnymfe. Umiddelbart kan de godt ligne hinanden, men guldsmedens vinger sidder i et kryds mens vandnymfens ligger ned langs dens side, når de sidder og hviler. Man kan tit se dem flyve rundt langs kanten af søen eller mens de solbader på et blad. En dag Ellen og Aage sad og kiggede efter guldsmede, så de en Odder svømme rundt ude i søen. Der blev jeg godt nok lidt misundelig.",
+    "images": [
+        "/img/MølleSø4.webp",
+        "/img/Guldsmed.webp"
+    ],
+    "audio": "/audio/route5/R5_POI6.mp3",
+    "title_de": "Seeufer",
+    "title_en": "Lakeshore",
+    "text_de": "Ellen sucht zusammen mit dem Stallburschen Aage nach Insekten. Im See gibt es blaue Mosaiklibellen, rote Wasserjungfern und gewöhnliche Wasserjungfern. Auf den ersten Blick können sie sich ähneln, doch die Flügel einer Libelle stehen im Kreuz, während die der Wasserjungfer beim Sitzen entlang des Körpers anliegen. Oft sieht man sie am Uferrand entlangfliegen oder auf einem Blatt in der Sonne sitzen. Eines Tages, als Ellen und Aage nach Libellen Ausschau hielten, sahen sie einen Otter im See schwimmen. Da war ich ziemlich neidisch.",
+    "text_en": "Ellen looks for insects together with the stable lad Aage. In the lake there are blue mosaic dragonflies, red damselflies, and common damselflies. At first glance they can look alike, but a dragonfly’s wings rest in a cross, whereas a damselfly’s wings lie along its body when it sits and rests. You can often see them flying along the edge of the lake or sunbathing on a leaf. One day, while Ellen and Aage were watching for dragonflies, they saw an otter swimming around out on the lake. I was quite envious."
+  },
+  {
+    "id": 39,
+    "routeId": 5,
+    "title": "Eng",
+    "lat": 57.22245,
+    "lon": 10.28308,
+    "radiusMeters": 12,
+    "text": "Udover Odderen har vi også Harer, de sidder tit ude på engen om morgenen og spiser kløver og græs. Der er også Rådyr og Dådyr, men de går mest ude på markerne omkring gården. \n\nFar plejer at lave lidt af hvert herovre, nogle gange fisker han andre gange kigger han efter insekter med Ellen eller også kigger han på fugle sammen med mig. Blomster interesserer ham ikke, det plejer han at lade damerne om som han siger. Og så er han god til at fortælle en historie eller to om hvordan landskabet er blevet dannet. Nogle gange er det godt, at vi skal være stille når vi kigger efter fugle. \n\nNå, jeg kan se at de andre begynder at pakke sammen, Lille bitte Tove skal snart hjem i seng. Tak fordi I ville med en tur over til søen, det har været rigtig hyggeligt at have jer med.",
+    "images": [
+        "/img/Engen7.webp",
+        "/img/Hare.webp"
+    ],
+    "audio": "/audio/route5/R5_POI7.mp3",
+    "title_de": "Wiese",
+    "title_en": "Meadow",
+    "text_de": "Neben dem Otter haben wir hier auch Hasen; sie sitzen morgens oft auf der Wiese und fressen Klee und Gras. Es gibt auch Rehe und Damhirsche, aber die halten sich meist auf den Feldern rund um den Hof auf.\n\nVater macht hier drüben gewöhnlich ein bisschen von allem – manchmal angelt er, manchmal sucht er mit Ellen nach Insekten oder er beobachtet mit mir Vögel. Blumen interessieren ihn nicht; das überlässt er, wie er sagt, den Damen. Und er kann gut die eine oder andere Geschichte darüber erzählen, wie die Landschaft entstanden ist. Manchmal ist es ganz gut, dass wir beim Vogelbeobachten still sein müssen.\n\nSo, ich sehe, die anderen fangen an zusammenzupacken – die kleine Tove muss bald ins Bett. Vielen Dank, dass ihr uns an den See begleitet habt; es war sehr schön, euch dabeizuhaben.",
+    "text_en": "Besides the otter we also have hares; they often sit out on the meadow in the morning eating clover and grass. There are also roe deer and fallow deer, but they mostly roam the fields around the farm.\n\nFather usually does a bit of everything over here—sometimes he fishes, other times he looks for insects with Ellen, or he birdwatches with me. Flowers don’t interest him; he leaves that to the ladies, as he says. And he’s good at telling a story or two about how the landscape was formed. Sometimes it’s good that we have to be quiet when we’re watching birds.\n\nWell, I can see the others are starting to pack up—little Tove needs to get home to bed soon. Thank you for coming along to the lake; it’s been really lovely having you with us."
+  }
+]

@@ -3,7 +3,7 @@ import { defineConfig, loadEnv, type UserConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import basicSsl from '@vitejs/plugin-basic-ssl';
 import type { ServerOptions } from 'https';
-import { VitePWA } from 'vite-plugin-pwa'; // ← NYT
+import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), 'VITE_');
@@ -27,8 +27,6 @@ export default defineConfig(({ mode }) => {
           display: 'standalone',
           background_color: '#f3f6fb',
           theme_color: '#2fb36d',
-          // Hvis du IKKE lægger ikon-filer i /public endnu, kan du midlertidigt
-          // kommentere "icons" ud. Ellers opret filerne navngivet som nedenfor.
           icons: [
             { src: '/pwa-192.png', sizes: '192x192', type: 'image/png' },
             { src: '/pwa-512.png', sizes: '512x512', type: 'image/png' },
@@ -36,20 +34,22 @@ export default defineConfig(({ mode }) => {
           ]
         },
         workbox: {
-          // Precacher kun JS/CSS/HTML/ico/svg – men IGNORÉR alt i /img/
+          // Precacher kun JS/CSS/HTML/ico/svg/png – men ignorerer alt i /img/
           globPatterns: ['**/*.{js,css,html,ico,svg,png}'],
-          globIgnores: ['**/img/**'],            // <- vigtigt: store galleri-billeder precaches ikke
-          maximumFileSizeToCacheInBytes: 6 * 1024 * 1024, // lidt luft til evt. store ikoner (valgfrit)
+          globIgnores: ['**/img/**'],
+          maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
+          cleanupOutdatedCaches: true,
 
           runtimeCaching: [
-            // Rutedata
+            // Rutedata: routes.json + rute-splittede POIs /data/pois/route-*.json
             {
               urlPattern: ({ url }) =>
-                url.pathname.endsWith('/routes.json') || url.pathname.endsWith('/pois.json'),
+                url.pathname.endsWith('/data/routes.json') ||
+                /\/data\/pois\/route-\d+\.json$/.test(url.pathname),
               handler: 'StaleWhileRevalidate',
               options: { cacheName: 'content' }
             },
-            // Billeder i /img – cache first (hurtigt i felten)
+            // Billeder i /img – cache first
             {
               urlPattern: ({ url }) => url.pathname.startsWith('/img/'),
               handler: 'CacheFirst',
@@ -72,7 +72,7 @@ export default defineConfig(({ mode }) => {
       })
     ],
     server: {
-      https: httpsOpt,             // ← ikke boolean
+      https: httpsOpt,
       host: exposeHost ? true : false,
     },
   };

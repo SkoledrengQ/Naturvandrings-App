@@ -1,0 +1,141 @@
+[
+    {
+    "id": 9,
+    "routeId": 2,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej med jer, Jeg hedder Ellen og det er min storebror Knud. Vi elsker at løbe rundt oppe i Mølleskoven. Her gemmer der sig masser af biller og andre små spændende dyr, hvis man kigger godt efter mellem bladene. Det er næsten som en skattejagt, man finder altid et eller andet deroppe. Kom med - vi skal hen over den lille gangbro tæt ved bænken.",
+    "images": [
+      "/img/Stuehus.webp"
+    ],
+    "audio": "/audio/route2/R2_POI1.mp3",
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo zusammen! Ich heiße Ellen, und das ist mein großer Bruder Knud. Wir lieben es, oben im Mølleskoven herumzurennen. Zwischen den Blättern verstecken sich jede Menge Käfer und andere kleine, spannende Tiere – wenn man genau hinschaut. Es ist fast wie eine Schatzsuche; man findet dort oben immer irgendetwas. Kommt mit – wir gehen über den kleinen Steg in der Nähe der Bank.",
+    "text_en": "Hi there! I’m Ellen, and this is my big brother Knud. We love running around up in Mølleskoven. If you look closely among the leaves, you’ll find lots of beetles and other small, exciting critters. It’s almost like a treasure hunt—you always find something up there. Come along — we’ll head over the little footbridge near the bench."
+  },
+  {
+    "id": 10,
+    "routeId": 2,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Har I lyst til at komme med på en tur? Så følg med herover gangbroen. Det er nemlig den aller korteste vej op i skoven. Som Knud plejer at sige ”1-2-3 puf, så er man der”. Så 1-2-3 over gangbroen og op ad skråningen og puf, så er vi der. Det er her vi løber rundt og leger. \n\nNår vi løber op ad skråningen, så går vi til venstre for det nedfaldne træ.",
+    "images": [
+      "/img/SkovturInd3.webp"
+    ],
+    "audio": "/audio/route2/R2_POI2.mp3",
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Habt ihr Lust, mit auf eine kleine Tour zu kommen? Dann folgt uns hier über die Stegbrücke. Das ist nämlich der allerkürzeste Weg hinauf in den Wald. Wie Knud immer sagt: „1–2–3 – puf, und schon ist man da.“ Also: 1–2–3 über die Brücke und den Hang hinauf – puf, schon sind wir da. Hier rennen wir herum und spielen.\n\nWenn wir den Hang hinauflaufen, gehen wir links am umgestürzten Baum vorbei.",
+    "text_en": "Would you like to come along for a little trip? Then follow us across the footbridge here. It’s the very shortest way up into the forest. As Knud likes to say, “1–2–3—puf, and you’re there.” So: 1–2–3 across the footbridge and up the slope—and puf, here we are. This is where we run around and play.\n\nAs we run up the slope, we keep to the left of the fallen tree."
+  },
+  {
+    "id": 11,
+    "routeId": 2,
+    "title": "Toppen af skrænten",
+    "lat": 57.22096,
+    "lon": 10.28172,
+    "radiusMeters": 12,
+    "text": "Når I står helt oppe på toppen af skrænten og kigger ned til højre, så kan I se vandløbet der løber nede i bunden af skoven. Der skal vi ned. Men for at komme derned er vi nødt til at følge stien ud ad skoven og så skal vi dreje til højre og gå langs marken. Husk at kigge ned når I går, der gemmer sig mange små insekter og biller imellem bladene.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "audio": "/audio/route2/R2_POI3.mp3",
+    "title_de": "Oben an der Böschung",
+    "title_en": "Top of the Slope",
+    "text_de": "Wenn ihr ganz oben an der Böschung steht und nach rechts hinunterblickt, seht ihr den Bach, der unten am Waldboden entlangfließt. Dorthin gehen wir hinunter. Um dorthin zu kommen, müssen wir dem Pfad aus dem Wald hinaus folgen, dann rechts abbiegen und am Feld entlanggehen. Schaut beim Gehen nach unten – zwischen den Blättern verstecken sich viele kleine Insekten und Käfer.",
+    "text_en": "When you stand at the very top of the slope and look down to the right, you can see the stream running along the forest floor. That’s where we’re heading. To get there, we need to follow the path out of the forest, then turn right and walk along the field. Remember to look down as you walk—lots of little insects and beetles hide among the leaves."
+  },
+  {
+    "id": 12,
+    "routeId": 2,
+    "title": "Sti",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "Lidt henne ad stien kommer der et hul ind til højre, her skal vi ind og så skal vi bare lige ned ad skrænten. I skal gå forsigtigt for skrænten er lidt stejl at gå på. Nede for enden af skrænten skal vi til venstre, her går der en lille sti ved siden af vandløbet.",
+    "images": [
+      "/img/Vandløb.webp",
+      "/img/Moræne2.webp"
+    ],
+    "audio": "/audio/route2/R2_POI4.mp3",
+    "title_de": "Pfad",
+    "title_en": "Path",
+    "text_de": "Ein Stück weiter kommt rechts eine Öffnung; dort gehen wir hinein und einfach den Hang hinunter. Geht vorsichtig – der Hang ist ein bisschen steil. Unten am Ende des Hangs biegen wir links ab; dort verläuft ein schmaler Pfad neben dem Bach.",
+    "text_en": "A little further along there’s an opening to the right; we’ll go in there and head straight down the slope. Walk carefully—the slope is a bit steep. At the bottom, turn left; there’s a small path running beside the stream."
+  },
+  {
+    "id": 13,
+    "routeId": 2,
+    "title": "Sti langs vandløb 1",
+    "lat": 57.22073,
+    "lon": 10.27997,
+    "radiusMeters": 12,
+    "text": "Pas på I ikke får våde fødder, stien er ikke ret bred. Men den er sjov at gå på og så er det her, at tudserne gemmer sig. Knud elsker tudser, han syntes at de ser så kloge ud. Tudserne gemmer sig ofte i kanten af vandløbet mellem bladene og grenene på jorden. Kan du få øje på en? De kan være svære at se for de har samme farve som bladene. I modsætning til frøer, så har tudser en tør, rynket hud med vorter. Lidt ligesom nogle gamle mennesker og så kan de blive meget gamle, helt op til 50 år.",
+    "images": [
+      "/img/TræVedVand.webp",
+      "/img/Skrubtudse.webp"
+    ],
+    "audio": "/audio/route2/R2_POI5.mp3",
+    "title_de": "Pfad am Bach 1",
+    "title_en": "Path Along the Stream 1",
+    "text_de": "Passt auf, dass ihr keine nassen Füße bekommt – der Pfad ist nicht sehr breit. Aber er macht Spaß zu gehen, und hier verstecken sich die Kröten. Knud liebt Kröten; er findet, sie sehen so klug aus. Kröten verstecken sich oft am Rand des Baches zwischen Blättern und Ästen am Boden. Könnt ihr eine entdecken? Sie sind schwer zu sehen, weil sie die gleiche Farbe wie die Blätter haben. Im Gegensatz zu Fröschen haben Kröten eine trockene, runzlige Haut mit Warzen – ein bisschen wie bei manchen alten Menschen – und sie können sehr alt werden, bis zu 50 Jahre.",
+    "text_en": "Be careful not to get your feet wet—the path isn’t very wide. But it’s fun to walk, and this is where the toads hide. Knud loves toads; he thinks they look so wise. Toads often hide at the edge of the stream among the leaves and twigs on the ground. Can you spot one? They can be hard to see because they’re the same color as the leaves. Unlike frogs, toads have dry, wrinkled skin with warts—rather like some elderly people—and they can live to be very old, up to 50 years."
+  },
+  {
+    "id": 14,
+    "routeId": 2,
+    "title": "Sti langs vandløb 2",
+    "lat": 57.22051,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Jeg er mere vild med Skovskarnbassen. Det er en stor, rund, sort bille og når solen skinner på den, får den sådan nogle flotte grønne og blå farver. Skovskarnbassen kravler rundt på jorden mellem bladene og den lever både oppe på skrænterne og nede i bunden af skoven. Skovskarnbassen har vinger, så I skal ikke blive forskrækket, hvis den lige pludselig flyver væk. Nogle gange skal man rode lidt forsigtigt i bladene for at finde den.",
+    "images": [
+      "/img/Skarnbasse.webp"
+    ],
+    "audio": "/audio/route2/R2_POI6.mp3",
+    "title_de": "Pfad am Bach 2",
+    "title_en": "Path Along the Stream 2",
+    "text_de": "Ich mag den Skovskarnbasse noch lieber. Das ist ein großer, runder, schwarzer Käfer, und wenn die Sonne auf ihn scheint, schimmert er schön grün und blau. Er krabbelt am Boden zwischen den Blättern herum und lebt sowohl an den Hängen als auch unten im Wald. Der Skovskarnbasse hat Flügel – erschreckt also nicht, wenn er plötzlich davonfliegt. Man muss manchmal die Blätter vorsichtig beiseiteschieben, um ihn zu finden.",
+    "text_en": "I’m even more fond of the Skovskarnbasse. It’s a large, round, black beetle, and when the sun hits it, it shows beautiful green and blue hues. It crawls around on the ground among the leaves and lives both on the slopes and down at the forest floor. The Skovskarnbasse has wings, so don’t be startled if it suddenly flies off. Sometimes you have to gently rustle the leaves to find it."
+  },
+  {
+    "id": 15,
+    "routeId": 2,
+    "title": "Sti langs vandløb 3",
+    "lat": 57.22043,
+    "lon": 10.27881,
+    "radiusMeters": 12,
+    "text": "Nogle andre sjove dyr der lever i skoven, er Bænkebidere. Dem kan vi bruge lang tid på at finde, de er nemlig ikke ret store. Bænkebidere lever af døde blade og dødt træ. Så hvis I ser en gammel træstub der er ved at falde fra hinanden, så er der højst sandsynligt Bænkebidere gemt i træet. Ellers gemmer de sig også tit under bladene på jorden. Bænkebidere er faktisk ikke biller men krebsdyr, ligesom rejer og krabber. Ret vildt for de ligner slet ikke hinanden.",
+    "images": [
+      "/img/Bænkebidder.webp"
+    ],
+    "audio": "/audio/route2/R2_POI7.mp3",
+    "title_de": "Pfad am Bach 3",
+    "title_en": "Path Along the Stream 3",
+    "text_de": "Andere lustige Tiere im Wald sind die Bænkebidere (Kellerasseln). Nach ihnen kann man lange suchen, denn sie sind nicht sehr groß. Sie leben von toten Blättern und abgestorbenem Holz. Wenn ihr also einen alten, zerfallenden Baumstumpf seht, verbergen sich darin höchstwahrscheinlich Bænkebidere. Oft verstecken sie sich auch unter den Blättern am Boden. Übrigens sind Bænkebidere keine Käfer, sondern Krebstiere – so wie Garnelen und Krabben. Ziemlich verrückt, denn sie sehen sich gar nicht ähnlich.",
+    "text_en": "Another fun creature in the forest is the woodlouse (Bænkebidere). We can spend ages looking for them because they’re quite small. Woodlice feed on dead leaves and dead wood. So if you see an old stump falling apart, there are likely woodlice hidden in it. They also often hide under the leaves on the ground. And woodlice aren’t beetles at all—they’re crustaceans, like shrimp and crabs. Pretty wild, since they don’t look alike at all."
+  },
+  {
+    "id": 16,
+    "routeId": 2,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "Nu er vi snart ved vejs ende på turen. Vi må nemlig ikke løbe længere væk end, at vi kan høre klokken ringe hjemme på gården. Men inden skal vi lige ud på den gamle træbro og kigge efter små dyr i vandløbet. I skal se godt efter, for der er masser af steder de kan gemme sig og vandet løber hurtigt. De sjove, grønne pinde der stikker op af vandet, er Dynd Padderok. De stammer faktisk helt tilbage fra dengang dinosaurerne herskede på jorden. Den gang var Padderokkerne bare meget højere, mindst lige så høje som træerne der står her i skoven. Det siger far i hvert fald. \n\nHov, hvad var det? Jeg kan høre klokken ringe, så er der mad, men inden vi løber hjem, så vil vi gerne sige tak fordi I ville følge med os på tur i skoven. Vi håber at I fik set nogle dyr og at I har fået lyst til at gå på eventyr i andre spændende skove. Vi ses…",
+    "images": [
+      "/img/GangbroRed.webp",
+      "/img/DyndPad.webp"
+    ],
+    "audio": "/audio/route2/R2_POI8.mp3",
+    "title_de": "Der Steg",
+    "title_en": "The Footbridge",
+    "text_de": "Wir sind bald am Ende unserer Runde. Wir dürfen nämlich nicht weiter weglaufen, als dass wir die Glocke vom Hof hören können. Aber vorher gehen wir noch schnell auf die alte Holzbrücke und schauen nach kleinen Tieren im Bach. Schaut gut hin – es gibt viele Verstecke, und das Wasser fließt schnell. Die lustigen grünen Stäbe, die aus dem Wasser ragen, sind Dynd Padderok (Sumpf-Schachtelhalm). Sie stammen tatsächlich aus der Zeit, als die Dinosaurier die Erde beherrschten. Damals waren die Schachtelhalme viel höher – mindestens so hoch wie die Bäume hier im Wald. Sagt Papa jedenfalls.\n\nOh – was war das? Ich höre die Glocke, also gibt es Essen! Bevor wir heimlaufen, möchten wir euch danken, dass ihr uns auf unserer Waldtour begleitet habt. Wir hoffen, ihr habt einige Tiere gesehen und Lust bekommen, andere spannende Wälder zu erkunden. Bis bald …",
+    "text_en": "We’re nearly at the end of our walk. We’re not allowed to run so far that we can’t hear the bell ring back at the farm. But first, let’s step out onto the old wooden bridge and look for small animals in the stream. Keep your eyes peeled—there are lots of hiding places and the water runs fast. Those funny green sticks poking up are Dynd Padderok (marsh horsetail). They actually date back to the time when dinosaurs ruled the Earth. Back then, horsetails were much taller—at least as tall as the trees here in the forest. Or so Dad says.\n\nOh—what was that? I can hear the bell—time to eat! Before we run home, we want to say thanks for coming along with us in the forest. We hope you spotted some animals and feel like adventuring in other exciting woods. See you…"
+  }
+]

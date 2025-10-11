@@ -1,0 +1,124 @@
+[
+    {
+    "id": 17,
+    "routeId": 3,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Go’daw jeg hedder Johanne og jeg er stuepige her hos familien Mølleskov. \n\nJeg har været hos familien Mølleskov i mange år, så jeg har hørt mangt og meget igennem årene. Og der er altså noget om alle de sagn man hører. Hvordan vil I ellers forklare hvordan alle mine spande og koste på uforklarlig vis har været forsvundet, for pludselig at dukke op igen. Det er i hvert fald ikke børnene der har været på spil – jeg har spurgt dem. Næh, de har været forbandet af troldtøj har de. Og ved I hvad jeg så plejer at gøre? Nej ved I hvad, jeg vil hellere vise jer det selv. \n\nVi skal op i skoven og vi tager den korteste vej derop, for vi skal helst være tilbage inden det bliver mørkt. Vi skal nemlig over træbroen og den går lige hen over mosen, hvor Lygtemanden bor.",
+    "images": [
+      "/img/DMSkilt.webp",
+      "/img/SkovturIndgang.webp"
+    ],
+    "audio": "/audio/route3/R3_POI1.mp3",
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Guten Tag, ich heiße Johanne und ich bin Hausmädchen bei der Familie Mølleskov.\n\nIch bin seit vielen Jahren bei der Familie und habe in der Zeit so einiges gehört. Und an all den Sagen ist wirklich etwas dran. Wie würdet ihr sonst erklären, dass meine Eimer und Besen auf unerklärliche Weise verschwunden sind – um plötzlich wieder aufzutauchen? Die Kinder waren es jedenfalls nicht – ich habe sie gefragt. Nein, sie waren vom „Troldtøj“ verhext, das waren sie. Und wisst ihr, was ich dann zu tun pflege? Ach, wisst ihr was – ich zeige es euch lieber selbst.\n\nWir gehen hinauf in den Wald, und wir nehmen den kürzesten Weg, denn wir sollten möglichst zurück sein, bevor es dunkel wird. Wir müssen über die Holzbrücke – sie führt direkt über das Moor, in dem der Lygtemand (Irrlicht) wohnt.",
+    "text_en": "Good day, I’m Johanne, the maid here with the Mølleskov family.\n\nI’ve been with the family for many years, and I’ve heard a great deal in that time. And there’s something to all those legends you hear. How else would you explain that my buckets and brooms have mysteriously vanished—only to suddenly reappear? It certainly wasn’t the children—I asked them. No, they were bewitched by “troldtøj,” they were. And do you know what I usually do then? Well, I’d rather show you.\n\nWe’re heading up into the forest, and we’ll take the shortest way, because we should be back before it gets dark. We have to cross the wooden bridge—right over the bog where the “Lygtemand” (will-o’-the-wisp) lives."
+  },
+  {
+    "id": 18,
+    "routeId": 3,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Det er her Lygtemanden gemmer sig og han er et ondt væsen. Når mørket falder på, prøver han at lokke folk ud i mosen, så de ikke kan finde tilbage. Han er en lille indsunken mand klædt i rødt eller blåt tøj. Han er heldigvis nem at narre. Så skulle I møde ham en mørk aften, så kan man enten vende sin sok med vrangen ud af eller give ham nogle mønter og så viser han vejen ud af mosen. \n\nDer var faktisk en mand i udkanten af Øster Brønderslev der havde set ikke kun én, men to lygtemænd. Han kan nemlig dele sig og blive til flere, udspekuleret rad. Han fulgte efter dem, men de forsvandt sporløst ind under en dør i et hus og han så dem aldrig igen. Jeg tror nu godt nok ikke at jeg havde været så modig at følge efter dem, med mindre at de havde stjålet en af mine spande eller koste. \n\nNå, hvor kom vi fra … jo vi skal op ad skrænten og så til venstre ved det nedfalende træ. Jeg skulle op og vise jer Øjetræet.",
+    "images": [
+      "/img/VådOmråde.webp",
+      "/img/SkovturInd2.webp"
+    ],
+    "audio": "/audio/route3/R3_POI2.mp3",
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Hier versteckt sich der Lygtemand, und er ist ein böses Wesen. Wenn die Dunkelheit hereinbricht, versucht er, Menschen ins Moor zu locken, damit sie nicht mehr zurückfinden. Er ist ein kleiner, eingefallener Mann, gekleidet in Rot oder Blau. Zum Glück kann man ihn leicht hereinlegen. Begegnet ihr ihm an einem dunklen Abend, könnt ihr entweder eure Socke auf links drehen oder ihm ein paar Münzen geben – dann zeigt er euch den Weg aus dem Moor.\n\nEs gab sogar einen Mann am Rand von Øster Brønderslev, der nicht nur einen, sondern zwei Lygtemænd gesehen hat. Er kann sich nämlich teilen und zu mehreren werden – ein gerissener Bursche. Der Mann folgte ihnen, doch sie verschwanden spurlos unter einer Haustür, und er sah sie nie wieder. Ich glaube kaum, dass ich so mutig gewesen wäre, ihnen zu folgen – es sei denn, sie hätten mir einen meiner Eimer oder Besen gestohlen.\n\nSo, wo waren wir … genau: Wir gehen den Hang hinauf und dann links am umgestürzten Baum vorbei. Ich wollte euch den Augenbaum zeigen.",
+    "text_en": "This is where the Lygtemand hides, and he’s a malicious being. When darkness falls, he tries to lure people into the bog so they can’t find their way back. He’s a small, sunken-looking man dressed in red or blue. Fortunately, he’s easy to trick. If you meet him on a dark evening, you can turn your sock inside out or give him a few coins, and he’ll show you the way out of the bog.\n\nThere was actually a man on the edge of Øster Brønderslev who saw not just one but two Lygtemænd. He can split himself and become several—a cunning fellow. The man followed them, but they vanished without a trace under a door to a house, and he never saw them again. I don’t think I’d have been brave enough to follow them—unless they’d stolen one of my buckets or brooms.\n\nNow, where were we… right: we’ll go up the slope and then left by the fallen tree. I was going to show you the Eye Tree."
+  },
+  {
+    "id": 19,
+    "routeId": 3,
+    "title": "Hultræet",
+    "lat": 57.22096,
+    "lon": 10.28172,
+    "radiusMeters": 12,
+    "text": "Øjetræet står lidt nede af skrænten til højre. Det er et bøgetræ hvor to stammer er vokset sammen undtagen på midten, hvor de har dannet et øje. Et magisk øje, det kan nemlig helbrede Engelsk Syge og rense for troldtøj. Og det er her jeg tager mine spande og koste med op, når de er blevet ramt af troldtøj. Så får de lige en tur gennem hullet og så bliver de på sin plads det næste lange stykke tid. \n\nDer er heldigvis god tid til at det bliver mørkt endnu, så jeg synes at vi skal gå igennem skoven og ned til engen. Vi skal bare følge stien langs marken og nede for enden skal vi til højre ind i skoven. Og så skal vi følge stien ned til den gamle gangbro.",
+    "images": [
+      "/img/Hultræ.webp"
+    ],
+    "audio": "/audio/route3/R3_POI3.mp3",
+    "title_de": "Der hohle Baum",
+    "title_en": "The Hollow Tree",
+    "text_de": "Der Augenbaum steht ein Stück den Hang hinunter auf der rechten Seite. Es ist eine Buche, bei der zwei Stämme zusammengewachsen sind – außer in der Mitte, wo sie ein Auge gebildet haben. Ein magisches Auge: Es soll die Englische Krankheit (Rachitis) heilen und Trollzauber vertreiben. Hierher bringe ich meine Eimer und Besen, wenn sie vom Trollwerk betroffen wurden. Einmal durch das Loch gesteckt, bleiben sie anschließend lange Zeit an ihrem Platz.\n\nZum Glück ist es noch eine Weile bis zur Dämmerung, also gehen wir durch den Wald hinunter zur Wiese. Wir folgen einfach dem Pfad am Feld entlang, und am Ende biegen wir rechts in den Wald ab. Dann folgen wir dem Weg hinunter bis zur alten Fußbrücke.",
+    "text_en": "The Eye Tree stands a little way down the slope to the right. It’s a beech where two trunks have grown together except in the middle, where they have formed an eye. A magical eye—it can cure rickets and cleanse away troll magic. This is where I bring my buckets and brooms when they’ve been struck by troll mischief. They get a quick pass through the hole, and then they stay in their place for a good long while.\n\nLuckily, it’s still a while before dusk, so I think we should walk through the forest and down to the meadow. We’ll just follow the path along the field, and at the far end we’ll turn right into the woods. Then we follow the path down to the old footbridge."
+  },
+  {
+    "id": 20,
+    "routeId": 3,
+    "title": "Sti langs mark 1",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "Der er heldigvis meget fredeligt herude - hov var det en hest der vrinskede. Apropos hest, hvis I nogensinde skulle se en hest med et skelethoved, så lad for guds skyld være med at kigge på den. Det er nemlig Helhesten og man kan miste forstanden, hvis man ser den i øjnene. Heldigvis plejer den først at dukke op når det er mørkt. \n\nEn Helhest er det der hedder en kirkevare – det er en hest der er blevet begravet levende under byggeriet af en kirke, for at beskytte kirken mod mørkets kræfter. En anelse makabert hvis I spørger mig. Men en Helhest varsler sygdom og død, hvis den stopper op ved et hus og kigger ind igennem vinduet, på en af sine natlige vandringer.",
+    "images": [
+      "/img/Marken.webp"
+    ],
+    "audio": "/audio/route3/R3_POI4.mp3",
+    "title_de": "Pfad am Feld 1",
+    "title_en": "Path Along the Field 1",
+    "text_de": "Hier draußen ist es zum Glück sehr friedlich – oh, hat da gerade ein Pferd gewiehert? Apropos Pferd: Wenn ihr jemals ein Pferd mit einem Totenschädel als Kopf seht, dann schaut es um Himmels willen nicht an. Das ist die Helhesten, und wer ihr in die Augen blickt, kann den Verstand verlieren. Zum Glück zeigt sie sich meist erst nach Einbruch der Dunkelheit.\n\nEine Helhesten ist ein sogenanntes Kirchenopfer (ein Bauopfer) – ein Pferd, das beim Bau einer Kirche lebendig unter das Fundament begraben wurde, um die Kirche vor den Kräften der Finsternis zu schützen. Ziemlich makaber, wenn ihr mich fragt. Außerdem soll die Helhesten Krankheit und Tod ankündigen, wenn sie bei einem Haus stehen bleibt und in der Nacht durch das Fenster hineinschaut.",
+    "text_en": "It’s wonderfully peaceful out here—oh, was that a horse neighing? Speaking of horses: if you ever see a horse with a skull for a head, for heaven’s sake don’t look at it. That’s the Helhesten, and meeting its gaze can drive you mad. Fortunately, it usually appears only after dark.\n\nA Helhesten is what’s called a church sacrifice—a horse buried alive beneath a church during construction to protect it from the forces of darkness. A bit macabre, if you ask me. And the Helhesten is said to foretell illness and death if it stops by a house and looks in through the window on its nightly wanderings."
+  },
+  {
+    "id": 21,
+    "routeId": 3,
+    "title": "Sti langs mark 2",
+    "lat": 57.22042,
+    "lon": 10.28017,
+    "radiusMeters": 12,
+    "text": "Ifølge et lokalt sagn skulle der vandre en Helhest rundt i Pajhede Skov om natten. Hesten og dens ejer blev myrdet ude i skoven under Svenskekrigen. Hestens ejer var en svensk soldat, der havde forgrebet sig på en ung pige her i nærheden. Pigens kæreste og hans venner fandt frem til soldaten og myrdede både ham og hesten og begravede dem efterfølgende ude i skoven. Det er sikkert og vist, selv en skovfoged har set den.",
+    "images": [
+      "/img/Marken2.webp"
+    ],
+    "audio": "/audio/route3/R3_POI5.mp3",
+    "title_de": "Pfad am Feld 2",
+    "title_en": "Path Along the Field 2",
+    "text_de": "Einer örtlichen Sage nach streift eine Helhesten nachts durch den Pajhede-Wald. Das Pferd und sein Besitzer wurden während des Schwedischen Krieges im Wald ermordet. Der Besitzer war ein schwedischer Soldat, der sich an einem jungen Mädchen hier in der Nähe vergangen hatte. Der Freund des Mädchens und seine Kameraden fanden den Soldaten, töteten sowohl ihn als auch das Pferd und begruben beide anschließend im Wald. So heißt es – sogar ein Forstaufseher will sie gesehen haben.",
+    "text_en": "According to a local legend, a Helhesten wanders Pajhede Forest at night. The horse and its owner were murdered in the woods during the Swedish War. The owner was a Swedish soldier who had assaulted a young girl nearby. The girl’s sweetheart and his friends found the soldier, killed both him and the horse, and buried them in the forest. That’s how the story goes—even a forest warden has seen it."
+  },
+  {
+    "id": 22,
+    "routeId": 3,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "For at komme tilbage til Møllegården skal vi over engen ved Møllesøen og her findes nogle væsner I sikkert har hørt om – nemlig Ellefolket. Et meget smukt og forførende folk.",
+    "images": [
+      "/img/GangbroRed.webp"
+    ],
+    "audio": "/audio/route3/R3_POI6.mp3",
+    "title_de": "Die Fußbrücke",
+    "title_en": "The Footbridge",
+    "text_de": "Um zur Møllegården zurückzukehren, müssen wir über die Wiese am Mühlensee. Dort gibt es Wesen, von denen ihr sicher schon gehört habt – das Ellevolk, ein sehr schönes und verführerisches Volk.",
+    "text_en": "To get back to Møllegården we have to cross the meadow by the mill pond, where you’ll find beings you’ve probably heard of—the Ellefolk, a very beautiful and seductive folk."
+  },
+  {
+    "id": 23,
+    "routeId": 3,
+    "title": "Engen",
+    "lat": 57.22108,
+    "lon": 10.27854,
+    "radiusMeters": 12,
+    "text": "Ellepigerne plejer at danse herude på engen. Hvis I kommer for tæt på, vil de lave en ring omkring jer og så vil de forhekse jer. Og det er for resten af jeres liv. Ellepiger har hul i ryggen, så I er ikke i tvivl hvis I møder en. Heldigvis er det kun de unge ellepiger der er farlige. Når de bliver gamle, bliver de grimme og får lange hængepatter. De bliver kaldt Slattenpatter og er ikke til fare for nogen som helst. \n\nEllemænd elsker at forføre unge piger der går rundt alene. Her er tricket at tisse i sin træsko, ellemænd er nemlig meget renlige, så de vil straks løbe væk. Mindre kunne måske også godt gøre det. \n\nHold da op som tiden den flyver, jeg skal skynde mig hjem. Har lige fået en ny kost og spand, så jeg skal hjem og se om de står på deres plads eller om de også er blevet ramt af troldtøj. Tak fordi jeg måtte fortælle jer noget om de magiske og farlige væsner vi har her omkring Møllegården. Husk at komme hjem inden det bliver mørkt.",
+    "images": [
+      "/img/Engen.webp",
+      "/img/Engen3.webp"
+    ],
+    "audio": "/audio/route3/R3_POI7.mp3",
+    "title_de": "Die Wiese",
+    "title_en": "The Meadow",
+    "text_de": "Die Elfenmädchen tanzen gewöhnlich hier draußen auf der Wiese. Wenn ihr ihnen zu nahe kommt, bilden sie einen Ring um euch und verhexen euch – und das für den Rest eures Lebens. Elfenmädchen haben eine Vertiefung im Rücken; ihr erkennt sie also sofort. Zum Glück sind nur die jungen Elfenmädchen gefährlich. Wenn sie alt werden, werden sie hässlich und ihre Brüste hängen herab. Man nennt sie dann „Slattenpatter“, und sie sind für niemanden gefährlich.\n\nElfenmänner verführen gerne junge Mädchen, die allein unterwegs sind. Der Trick ist, in den Holzschuh zu urinieren; Elfenmänner sind sehr reinlich und laufen dann sofort davon. Weniger könnte vielleicht auch schon reichen.\n\nMeine Güte, wie die Zeit vergeht – ich muss mich beeilen. Ich habe gerade einen neuen Besen und Eimer bekommen und will nachsehen, ob sie an ihrem Platz stehen oder ob sie auch vom Trollwerk betroffen sind. Danke, dass ich euch von den magischen und gefährlichen Wesen rund um die Møllegården erzählen durfte. Denkt daran, vor Einbruch der Dunkelheit nach Hause zu gehen.",
+    "text_en": "The elf maidens usually dance out here on the meadow. If you get too close, they’ll form a ring around you and bewitch you—for the rest of your life. Elf maidens have a hollow in their backs, so you’ll know one when you meet her. Fortunately, only the young elf maidens are dangerous. As they grow old, they turn ugly and their breasts hang low. People call them “Slattenpatter,” and they’re harmless to anyone.\n\nElf men love to seduce young girls walking alone. The trick is to pee in your wooden shoe; elf men are very fastidious, so they’ll run off at once. Lesser measures might also do.\n\nGoodness, how time flies—I must hurry home. I’ve just got a new broom and bucket, and I want to see if they’re in their place or if they too have been struck by troll mischief. Thank you for listening to the tales of the magical and dangerous beings around Møllegården. Remember to get home before dark."
+  }
+]

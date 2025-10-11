@@ -1,0 +1,167 @@
+[
+    {
+    "id": 24,
+    "routeId": 4,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Margrethe og det her er min mor Ingeborg. Vi elsker begge at bruge naturen i vores mad og til dekorationer på bordene. Selvom turen rundt omkring Møllesøen ikke syner af meget, så har den alligevel meget at byde på af både blomster og bær. \n\nVi går ture hele året rundt, men det er forskelligt hvad vi samler – det afhænger af hvad der blomstrer eller har bær på det pågældende tidspunkt. Men jeg synes at vi skal tage en tur rundt på stien og vi starter oppe ved vindmøllen.",
+    "images": [
+      "/img/DMSkilt.webp",
+      "/img/Møllen.webp"
+    ],
+    "audio": "/audio/route4/R4_POI1.mp3",
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Margrethe und das ist meine Mutter Ingeborg. Wir beide lieben es, die Natur für unser Essen und als Dekoration auf dem Tisch zu nutzen. Auch wenn der Rundweg um den Mühlensee klein wirkt, gibt es hier doch viele Blumen und Beeren zu entdecken.\n\nWir spazieren das ganze Jahr über, aber wir sammeln Unterschiedliches – je nachdem, was gerade blüht oder Beeren trägt. Ich finde, wir sollten den Pfad entlanggehen; wir beginnen oben an der Windmühle.",
+    "text_en": "Hello, my name is Margrethe and this is my mother Ingeborg. We both love using nature in our cooking and as decoration on the table. Even though the walk around the mill pond doesn’t look like much, it still offers plenty of flowers and berries.\n\nWe go for walks all year round, but what we gather depends on what’s in bloom or bearing fruit at the time. I think we should take a stroll along the path, starting up by the windmill."
+  },
+  {
+    "id": 25,
+    "routeId": 4,
+    "title": "Vindmøllen",
+    "lat": 57.22267,
+    "lon": 10.28267,
+    "radiusMeters": 12,
+    "text": "Heroppe plejer vi at finde Blåhat og Blåmunke i juni og juli måned. Det er de fineste blå blomster. De minder meget om hinanden, men kronbladene på Blåmunke er meget finere og smallere end dem på Blåhat. Vi plejer at plukke en lille buket og sætte i en vase inde i den blå stue. Det pynter så fint. \n\nUdover Blåhat og Blåmunke findes der også Kamille med den skønneste duft. Min mor elsker kamillete, men blomsterne er også fine som pynt ovenpå en kage, for eksempel en roulade. Kamille blomstrer det meste af sommeren, så der er god mulighed for at samle en masse blomster og tørre dem til te. \n\nI juli – september står her Rejnfan. Den har gule blomster som mest af alt minder om små fine guldknapper. Og så er det vores stuepige Johannes yndlingsblomst. Hun er en anelse overtroisk og det siges, at Rejnfan holder det onde væk. Så vi har ofte tørrede buketter liggende rundt omkring i huset. Men det pynter nu alt sammen, selvom mor synes at det er noget pjat.",
+    "images": [
+      "/img/Blåmunke.webp",
+      "/img/Kamille.webp",
+      "/img/Rejnfan.webp"
+    ],
+    "audio": "/audio/route4/R4_POI2.mp3",
+    "title_de": "Die Windmühle",
+    "title_en": "The Windmill",
+    "text_de": "Hier oben finden wir im Juni und Juli oft Blåhat und Blåmunke – wunderschöne blaue Blumen. Sie ähneln einander sehr, doch die Blütenblätter der Blåmunke sind feiner und schmaler als die der Blåhat. Wir pflücken gern einen kleinen Strauß und stellen ihn in der blauen Stube in eine Vase – das sieht so hübsch aus.\n\nNeben Blåhat und Blåmunke gibt es hier auch Kamille mit dem herrlichsten Duft. Meine Mutter liebt Kamillentee, aber die Blüten sind auch als Kuchendekoration hübsch, zum Beispiel auf einer Roulade. Kamille blüht den größten Teil des Sommers, daher kann man viele Blüten sammeln und für Tee trocknen.\n\nVon Juli bis September steht hier auch Rejnfan (Rainfarn). Er hat gelbe Blüten, die an kleine goldene Knöpfe erinnern. Das ist das Lieblingsblümchen unserer Stubenmädchen Johanne. Sie ist ein wenig abergläubisch, und man sagt, dass Rainfarn das Böse fernhält. Deshalb liegen bei uns oft getrocknete Sträuße im Haus. Hübsch ist es allemal – auch wenn Mutter meint, das sei Unsinn.",
+    "text_en": "Up here we usually find Blåhat and Blåmunke in June and July—the prettiest blue flowers. They look much alike, but the petals of Blåmunke are finer and narrower than those of Blåhat. We like to pick a small bouquet and put it in a vase in the blue parlour—it looks lovely.\n\nBesides Blåhat and Blåmunke, there’s also chamomile with the most wonderful scent. My mother loves chamomile tea, but the flowers are also pretty as cake decoration, for example on a roulade. Chamomile blooms for most of the summer, so there’s plenty of opportunity to gather blossoms and dry them for tea.\n\nFrom July to September you’ll also find tansy (Rejnfan). Its yellow flowers look like tiny golden buttons. It’s our maid Johanne’s favourite flower. She’s a bit superstitious, and people say tansy keeps evil away. So we often have dried bunches around the house. It all looks lovely, even if mother thinks it’s nonsense."
+  },
+  {
+    "id": 26,
+    "routeId": 4,
+    "title": "Eng 1",
+    "lat": 57.22215,
+    "lon": 10.28057,
+    "radiusMeters": 12,
+    "text": "Fra møllen skal vi over på engen ved søen, vi kan komme igennem klaplågen ovre på den anden side af vejen. Herovre plejer vi at plukke Forglemmigej i juli, dem bruger vi både i buketter men også som pynt på kagen. I skulle tage og prøve, de er så fine med deres bittesmå blå blomster med gul midte. De kan gøre enhver kedelig sirupskage til et lille kunstværk. \n\nEn lidt overset art er græsser, de er rigtig flotte i vaser når de har sat frøstande. Alt efter art og stadie svinger de i farverne fra grønne, rosa nuancer til hvide og brune farver. Mor så meget mærkelig ud i hovedet, en dag jeg havde sat en vase ind på bordet, med kun græsser i. Men nu gør hun det selv. Kan kun anbefale jer at prøve og så er de meget nemme at finde her ude i naturen.",
+    "images": [
+      "/img/Engen2.webp",
+      "/img/Forglemmigej.webp",
+      "/img/Græsser.webp"
+    ],
+    "audio": "/audio/route4/R4_POI3.mp3",
+    "title_de": "Wiese 1",
+    "title_en": "Meadow 1",
+    "text_de": "Von der Mühle gehen wir hinüber zur Wiese am See; durch das Schwingtor auf der anderen Straßenseite kommen wir hinein. Hier pflücken wir im Juli oft Vergissmeinnicht (Forglemmigej) – wir verwenden sie sowohl für Sträuße als auch als Kuchendeko. Probiert es aus: Die winzigen blauen Blüten mit gelber Mitte sind so hübsch. Sie machen selbst einen schlichten Sirupkuchen zu einem kleinen Kunstwerk.\n\nOft übersehen werden die Gräser. Wenn sie Samenstände tragen, sehen sie in Vasen großartig aus. Je nach Art und Stadium reichen die Farben von Grün über Rosatöne bis hin zu Weiß und Braun. Mutter schaute ziemlich merkwürdig, als ich einmal eine Vase nur mit Gräsern auf den Tisch stellte – aber inzwischen macht sie es selbst. Sehr empfehlenswert und hier draußen leicht zu finden.",
+    "text_en": "From the mill we’ll head over to the meadow by the lake; we can get in through the little gate on the other side of the road. Over here we usually pick forget-me-nots (Forglemmigej) in July; we use them both in bouquets and as cake decoration. You should try it—the tiny blue flowers with yellow centers are so pretty. They can turn any plain syrup cake into a little work of art.\n\nA somewhat overlooked group is the grasses. When they’ve set seed heads, they look wonderful in vases. Depending on species and stage, the colors range from green and rosy shades to white and brown. Mother looked rather puzzled the day I put a vase on the table with only grasses—but now she does it herself. Highly recommended, and very easy to find out here in nature."
+  },
+  {
+    "id": 27,
+    "routeId": 4,
+    "title": "Eng 2",
+    "lat": 57.22158,
+    "lon": 10.27871,
+    "radiusMeters": 12,
+    "text": "Nå, vi må hellere komme videre. Selvom jeg elsker engen, så er der også masser at komme efter oppe i skoven. For at komme derop skal vi igennem klaplågen og over den gamle træbro – pas på hvor I går henne, den er ved at være lidt træt og gammel. Hov jeg glemte en plante, nemlig Tusindfryd eller også kaldet Bellis, den der står i græsplænen. Den kan faktisk bruges både til kagepynt, urtete, snaps og de kan sågar syltes. Det har vi dog ikke prøvet endnu, men min mor og jeg overvejer at forsøge.",
+    "images": [
+      "/img/Engen4.webp",
+      "/img/GangbroRed.webp",
+      "/img/Bellis.webp"
+    ],
+    "audio": "/audio/route4/R4_POI4.mp3",
+    "title_de": "Wiese 2",
+    "title_en": "Meadow 2",
+    "text_de": "Weiter geht’s. So sehr ich die Wiese liebe, gibt es im Wald oben auch viel zu entdecken. Um hinaufzukommen, gehen wir durch das Schwingtor und über die alte Holzbrücke – achtet darauf, wo ihr hintretet, sie ist schon ein wenig müde und alt. Ach, eine Pflanze hätte ich beinahe vergessen: die Tausendschönchen, auch Gänseblümchen (Bellis). Man kann sie tatsächlich für Kuchendeko, Kräutertee, Schnaps und sogar eingelegt verwenden. Das haben wir zwar noch nicht probiert, aber Mutter und ich überlegen es.",
+    "text_en": "Let’s move on. Much as I love the meadow, there’s plenty to discover up in the forest. To get there we go through the gate and over the old wooden bridge—watch your step, it’s getting a bit tired and old. Oh, I forgot one plant: the daisy (Tusindfryd/Bellis). You can actually use it for cake decoration, herbal tea, schnapps, and even pickling. We haven’t tried that yet, but mother and I are considering it."
+  },
+  {
+    "id": 28,
+    "routeId": 4,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "Langs gangbroen vokser Pilen, den er så fin om foråret når den får sine små gæslinger og de er så flotte inde i en vase. Den behøver ikke selskab af andre planter. Hvidtjørnen gror også her og udover at være flot i en vase, når den blomstrer, så kan blomsterne også bruges som kagepynt og i snaps. Ville dog ønske at den ikke stak så meget. \n\nNår vi når til enden af broen, så skal vi op ad skråningen og ud ad skoven og så skal vi dreje til venstre – hen til min mors yndlingssted.",
+    "images": [
+      "/img/DyndPad2.webp",
+      "/img/Pil.webp"
+    ],
+    "audio": "/audio/route4/R4_POI5.mp3",
+    "title_de": "Die Fußbrücke",
+    "title_en": "The Footbridge",
+    "text_de": "Entlang der Stegbrücke wächst die Weide; im Frühling, wenn sie ihre weichen Kätzchen bekommt, sieht sie in der Vase wunderschön aus – ganz ohne Begleitgrün. Hier wächst auch der Weißdorn, der nicht nur in der Vase hübsch ist, wenn er blüht, sondern dessen Blüten sich auch als Kuchendeko und für Schnaps eignen. Ich wünschte nur, er würde nicht so stechen.\n\nAm Ende der Brücke gehen wir den Hang hinauf aus dem Wald hinaus und biegen dann links ab – zu Mutters Lieblingsplatz.",
+    "text_en": "Along the footbridge grows the willow; in spring, when it gets its soft catkins, it looks beautiful in a vase—no other plants needed. Hawthorn also grows here and, besides looking lovely in a vase when it blooms, its flowers can be used for cake decoration and in schnapps. I just wish it didn’t prick so much.\n\nWhen we reach the end of the bridge, we go up the slope and out of the woods, then turn left—toward my mother’s favourite spot."
+  },
+  {
+    "id": 29,
+    "routeId": 4,
+    "title": "Sti ved hindbær",
+    "lat": 57.22042,
+    "lon": 10.28017,
+    "radiusMeters": 12,
+    "text": "Her vokser brombærrene, hindbærrene og hylden. Hele efteråret står hun og sylter på livet løs og laver den lækreste saft.  Favoritten her i huset er hyldeblomstsaft. Omkring Sankt Hans bevæbner vi os med alle de kurve vi kan finde og så går jagten ind på hyldeblomster. Det samme gentager sig så til efteråret, her er det så alskens bær der ryger i kurven. En herlig tid på året.",
+    "images": [
+      "/img/Marken.webp",
+      "/img/Brombær.webp",
+      "/img/Hyldeblomst.webp"
+    ],
+    "audio": "/audio/route4/R4_POI6.mp3",
+    "title_de": "Pfad bei den Himbeeren",
+    "title_en": "Path by the Raspberries",
+    "text_de": "Hier wachsen Brombeeren, Himbeeren und Holunder. Den ganzen Herbst über kocht Mutter eifrig ein und macht den leckersten Saft. Der Favorit im Haus ist Holunderblütensirup. Um Johanni bewaffnen wir uns mit allen Körben, die wir finden können, und ziehen los auf Holunderblütenjagd. Im Herbst wiederholt sich das Ganze – dann landen alle möglichen Beeren im Korb. Eine herrliche Jahreszeit.",
+    "text_en": "Blackberries, raspberries, and elder grow here. All autumn long she’s busy preserving and making the most delicious cordials. The household favourite is elderflower cordial. Around Midsummer we arm ourselves with every basket we can find and go hunting for elderflowers. The same repeats in autumn—then all sorts of berries go into the basket. A wonderful time of year."
+  },
+  {
+    "id": 30,
+    "routeId": 4,
+    "title": "Sti 2",
+    "lat": 57.22041,
+    "lon": 10.28048,
+    "radiusMeters": 12,
+    "text": "For at komme tilbage til Møllegården, så skal vi fortsætte ad stien og så drejer den til venstre ind i skoven igen efter noget tid. Der står også tit nogle fine blomster langs stien, bl.a. Kongepen som har en fin lille gul kurve-blomst. Den lyser op overalt hvor den står i august og september.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "audio": "/audio/route4/R4_POI7.mp3",
+    "title_de": "Pfad 2",
+    "title_en": "Path 2",
+    "text_de": "Um zur Møllegården zurückzukehren, folgen wir dem Pfad weiter; nach einiger Zeit biegt er wieder links in den Wald ein. Entlang des Weges stehen oft hübsche Blumen, darunter Kongepen mit einer kleinen gelben Korbblüte. Im August und September leuchtet sie überall dort, wo sie wächst.",
+    "text_en": "To get back to Møllegården we continue along the path, which after a while turns left back into the forest. There are often lovely flowers along the way, including Kongepen with its small yellow composite flower. It brightens up everywhere it grows in August and September."
+  },
+  {
+    "id": 31,
+    "routeId": 4,
+    "title": "Inde i skoven omkring hultræet",
+    "lat": 57.22096,
+    "lon": 10.28172,
+    "radiusMeters": 12,
+    "text": "Inde i skoven hersker Bøgen og der er ikke noget smukkere, end når den springer ud med sine lysegrønne blade om foråret. Det er også her om foråret at Anemonerne og efterfølgende Maj-blomst springer ud med deres hvide blomster. Både bøgegrene, Anemoner og Maj-blomst kan tages med ind og sættes i en vase. Inde i skoven fortsætter vi lige ud og så følger stien rundt til højre og så kommer vi ud på den lille gangbro overfor laden.",
+    "images": [
+      "/img/Hultræ.webp",
+      "/img/Bøgen.webp"
+    ],
+    "audio": "/audio/route4/R4_POI8.mp3",
+    "title_de": "Im Wald beim hohlen Baum",
+    "title_en": "In the Forest near the Hollow Tree",
+    "text_de": "Im Wald herrscht die Buche, und nichts ist schöner, als wenn sie im Frühling mit ihren hellgrünen Blättern austreibt. Ebenfalls im Frühling blühen hier die Anemonen und danach die Maj-blomst, beide mit weißen Blüten. Buchenäste, Anemonen und Maj-blomst kann man mitnehmen und in eine Vase stellen. Im Wald gehen wir geradeaus weiter, folgen dann dem Pfad nach rechts und gelangen zur kleinen Stegbrücke gegenüber der Scheune.",
+    "text_en": "In the forest the beech reigns, and nothing is more beautiful than its fresh light-green leaves in spring. This is also where, in spring, the anemones and later the ‘Maj-blomst’ bloom with their white flowers. You can take beech branches, anemones, and Maj-blomst indoors and put them in a vase. In the forest we go straight on, then follow the path around to the right and come out at the little footbridge opposite the barn."
+  },
+  {
+    "id": 32,
+    "routeId": 4,
+    "title": "Den lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Her til sidst vil vi lige fortælle om en sidste blomst – I kender den rigtig godt, nemlig Mælkebøtter. Deres blomster er gode til saft, de har sådan en lidt honningagtig smag. Man skal bare bruge mælkebøtteblomster, vand, citron og sukker. En dejlig sød og frisk sommerdrik. \n\nInden vores veje skilles, så vil min mor og jeg gerne sige tusinde tak for jeres selskab. Vi håber at vi har kunnet inspirere til nogle lidt vildere buketter i vaserne og noget finere kagepynt. Og så sørg for at komme ud til efteråret og smag på alle de dejlige bær og nyd efterårets farver inden al ting forsvinder under vinterens hvide dyne.",
+    "images": [
+      "/img/SkovturInd3.webp",
+      "/img/Mælkebøtte.webp"
+    ],
+    "audio": "/audio/route4/R4_POI9.mp3",
+    "title_de": "Die kleine Fußbrücke",
+    "title_en": "The Little Footbridge",
+    "text_de": "Zum Schluss noch eine letzte Blume – ihr kennt sie alle: den Löwenzahn. Aus den Blüten lässt sich ein Sirup kochen, der ein wenig nach Honig schmeckt. Man braucht nur Löwenzahnblüten, Wasser, Zitrone und Zucker. Ein herrlich süßes und frisches Sommergetränk.\n\nBevor sich unsere Wege trennen, möchten meine Mutter und ich uns ganz herzlich für eure Gesellschaft bedanken. Wir hoffen, wir konnten euch zu etwas wilderen Vasensträußen und hübscherer Kuchendeko inspirieren. Und geht im Herbst hinaus, kostet die vielen leckeren Beeren und genießt die Farben, bevor alles unter der weißen Decke des Winters verschwindet.",
+    "text_en": "Lastly, one more flower you know very well: the dandelion. Its blossoms make a lovely syrup with a faint honey taste. You only need dandelion flowers, water, lemon, and sugar—a sweet, refreshing summer drink.\n\nBefore we part ways, my mother and I want to thank you warmly for your company. We hope we’ve inspired you to make slightly wilder bouquets for your vases and finer cake decorations. And be sure to get out in autumn to taste all the delicious berries and enjoy the colours before everything disappears under winter’s white blanket."
+  }
+]

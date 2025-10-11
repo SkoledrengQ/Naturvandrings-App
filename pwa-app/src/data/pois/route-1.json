@@ -1,0 +1,138 @@
+[
+{
+    "id": 1,
+    "routeId": 1,
+    "title": "Møllegården",
+    "lat": 57.2214,
+    "lon": 10.28365,
+    "radiusMeters": 12,
+    "text": "Hej jeg hedder Kristian og jeg vil gerne fortælle jer lidt om Mølleskovens historie og hvordan den er blevet skabt. Jeg har altid været fascineret af isens kræfter og Jyske Ås er faktisk blevet dannet under den sidste istid. Istiden hed Weichsel og begyndte for ca. 117.000 år siden og sluttede for ca. 11.700 år siden. \n\nVil I med en tur op i Mølleskoven og se hvad isen har skabt? Vi starter i den ende der ligger tættest på gården.",
+    "images": [
+      "/img/DMSkilt.webp"
+    ],
+    "audio": "/audio/route1/R1_POI1.mp3",
+    "title_de": "Møllegården",
+    "title_en": "Møllegården",
+    "text_de": "Hallo, ich heiße Kristian, und ich möchte euch ein wenig über die Geschichte des Mølleskoven erzählen und darüber, wie er entstanden ist. Ich war schon immer von der Kraft des Eises fasziniert, und die Jyske Ås entstand tatsächlich während der letzten Eiszeit. Diese Eiszeit heißt Weichsel, begann vor etwa 117.000 Jahren und endete vor etwa 11.700 Jahren.\n\nHabt ihr Lust, mit hinauf in den Mølleskoven zu kommen und zu sehen, was das Eis geschaffen hat? Wir starten an dem Ende, das am nächsten am Hof liegt.",
+    "text_en": "Hi, my name is Kristian, and I’d like to tell you a bit about the history of Mølleskoven and how it was formed. I’ve always been fascinated by the power of ice, and the Jyske Ås was actually created during the last Ice Age. That ice age is called the Weichsel glaciation; it began about 117,000 years ago and ended around 11,700 years ago.\n\nShall we head up into Mølleskoven to see what the ice created? We’ll start at the end closest to the farm."
+  },
+  {
+    "id": 2,
+    "routeId": 1,
+    "title": "Lille gangbro",
+    "lat": 57.22121,
+    "lon": 10.28335,
+    "radiusMeters": 12,
+    "text": "Vi skal bare lige over den lille gangbro og så møder vi starten af en randmoræne. En randmoræne er aflejringer fra en gletsjer. For 15.000 år siden kom der en gletsjer fra Østersøen. Med sig havde den enorme mængder af sand, grus, sten og klippeblokke. \n\nEn gletsjer fungerer lidt ligesom når du skubber en sneskovl hen over jorden, så skubber du sneen foran skovlen. Det samme gør en gletsjer, når den bevæger sig ind over land. \n\nI 3000 år lå gletsjeren og bevægede sig frem og tilbage i Vendsyssel, indtil den smeltede helt for 12.000 år siden. Jyske Ås og Mølleskoven er altså en del af gletsjerens efterladenskaber. \n\nOp ad skråningen går vi til venstre for det nedfaldne træ.",
+    "images": [
+      "/img/SkovturInd3.webp"
+    ],
+    "audio": "/audio/route1/R1_POI2.mp3",
+    "title_de": "Kleiner Steg",
+    "title_en": "Little Footbridge",
+    "text_de": "Wir gehen nur schnell über den kleinen Steg, und dann treffen wir auf den Anfang einer Endmoräne. Eine Endmoräne besteht aus Ablagerungen eines Gletschers. Vor 15.000 Jahren kam ein Gletscher aus der Ostsee. Er brachte enorme Mengen an Sand, Kies, Steinen und Felsblöcken mit sich.\n\nEin Gletscher funktioniert ein bisschen so, als würdest du eine Schneeschaufel über den Boden schieben – der Schnee wird vor der Schaufel hergeschoben. Genauso schiebt ein Gletscher Material vor sich her, wenn er sich über Land bewegt.\n\n3.000 Jahre lang bewegte sich der Gletscher in Vendsyssel vor und zurück, bis er vor 12.000 Jahren völlig abschmolz. Die Jyske Ås und der Mølleskoven sind also Hinterlassenschaften dieses Gletschers. \n\nWenn wir den Hang hinaufgehen, halten wir uns links vom umgestürzten Baum.",
+    "text_en": "We just need to cross the little footbridge and then we’ll meet the start of a terminal moraine. A terminal moraine is made of deposits left by a glacier. Fifteen thousand years ago, a glacier came from the Baltic Sea, carrying huge amounts of sand, gravel, stones, and boulders.\n\nA glacier works a bit like pushing a snow shovel along the ground—you push the snow in front of the shovel. A glacier does the same as it moves over land.\n\nFor 3,000 years the glacier advanced and retreated across Vendsyssel, until it finally melted away 12,000 years ago. The Jyske Ås and Mølleskoven are part of what the glacier left behind. \n\nAs we come up the slope, we keep to the left of the fallen tree."
+  },
+  {
+    "id": 3,
+    "routeId": 1,
+    "title": "Toppen af skrænten",
+    "lat": 57.22096,
+    "lon": 10.28172,
+    "radiusMeters": 12,
+    "text": "Når vi kommer op på toppen af randmorænen, kan I få fornemmelsen af den højderyg der strækker sig hele vejen op til Jyske Ås’ udspring mod nordvest. Der har oprindeligt ikke været alle de slugter her i Mølleskoven, de er blevet skabt gennem tiden af Møllebækken og de omkringliggende kilder, der har arbejdet sig ned igennem sandet og gruset. \n\nMøllebækken udspringer i øvrigt oppe fra Jyske Ås ca. 1,5 km herfra, der hvor Dorfgade krydser Jyske Ås. \n\nFor at komme ned i den anden ende af Mølleskoven, så skal vi ud af skoven og så til højre.",
+    "images": [
+      "/img/Moræne1.webp"
+    ],
+    "audio": "/audio/route1/R1_POI3.mp3",
+    "title_de": "Oben an der Böschung",
+    "title_en": "Top of the Slope",
+    "text_de": "Wenn wir oben auf der Endmoräne ankommen, spürt ihr den Höhenrücken, der sich bis zum Ursprung der Jyske Ås nach Nordwesten hinzieht. Ursprünglich gab es hier im Mølleskoven nicht all diese Schluchten – sie wurden im Laufe der Zeit vom Møllebækken und den umliegenden Quellen geschaffen, die sich durch Sand und Kies gegraben haben.\n\nÜbrigens entspringt der Møllebækken oben an der Jyske Ås, etwa 1,5 km von hier, dort, wo die Dorfgade die Jyske Ås kreuzt. \n\nUm zum anderen Ende des Mølleskoven hinunterzukommen, müssen wir den Wald verlassen und dann rechts abbiegen.",
+    "text_en": "When we reach the top of the terminal moraine, you can sense the ridge that stretches all the way to the source of the Jyske Ås to the northwest. Originally, there weren’t all these ravines in Mølleskoven—they were carved over time by the Møllebækken stream and nearby springs working their way down through the sand and gravel.\n\nBy the way, the Møllebækken rises up on the Jyske Ås about 1.5 km from here, where Dorfgade crosses the Jyske Ås. \n\nTo get down to the other end of Mølleskoven, we need to leave the forest and turn right."
+  },
+  {
+    "id": 4,
+    "routeId": 1,
+    "title": "Sti langs mark",
+    "lat": 57.22048,
+    "lon": 10.28175,
+    "radiusMeters": 12,
+    "text": "Da I nu er kommet ud af skoven, så gør jer den tjeneste lige at kigge ud over marken. Så får I et rigtig godt overblik over det omkringliggende landskab. \n\nVi skal ind af det første hul mellem træerne til højre, ned af skrænten og så til venstre langs vandløbet.",
+    "images": [
+      "/img/Marken2.webp"
+    ],
+    "audio": "/audio/route1/R1_POI4.mp3",
+    "title_de": "Pfad entlang des Feldes",
+    "title_en": "Path Along the Field",
+    "text_de": "Da ihr jetzt aus dem Wald herausgekommen seid, nehmt euch einen Moment und blickt über das Feld – so bekommt ihr einen richtig guten Überblick über die umliegende Landschaft. \n\nWir gehen durch die erste Lücke rechts zwischen den Bäumen, den Hang hinunter und dann links am Bach entlang.",
+    "text_en": "Now that you’ve come out of the forest, take a moment to look out across the field—you’ll get a really good view of the surrounding landscape. \n\nWe’ll head into the first opening between the trees on the right, go down the slope, and then turn left to follow the stream."
+  },
+  {
+    "id": 5,
+    "routeId": 1,
+    "title": "Bunden af skov ved vandløb",
+    "lat": 57.22088,
+    "lon": 10.28038,
+    "radiusMeters": 12,
+    "text": "Her kan I rigtig fornemme slugterne og se hvordan kilderne arbejder sig igennem randmorænen. Der kan dog være lidt vådt og mudret – så vær opmærksom på hvor I sætter fødderne. \n\nI øvrigt, en anden spændende detalje er at den gang isen smeltede, der var Vendsyssel dækket af hav. Isen havde på grund af sin massive vægt trykket landjorden så meget ned, at den blev dækket af vand. \n\nDet er derfor, at man nogle steder kan finde gammel havbund inde midt i landet. Efter at isen forsvandt, begyndte landjorden lige så stille at hæve sig igen og blev til det Vendsyssel vi kender i dag.",
+    "images": [
+      "/img/MoræneTop2.webp"
+    ],
+    "audio": "/audio/route1/R1_POI5.mp3",
+    "title_de": "Unten im Wald am Bach",
+    "title_en": "Forest Floor by the Stream",
+    "text_de": "Hier könnt ihr die Schluchten richtig spüren und sehen, wie sich die Quellen durch die Endmoräne arbeiten. Es kann allerdings etwas nass und matschig sein – achtet also darauf, wo ihr hintretet.\n\nNoch ein spannendes Detail: Als das Eis schmolz, war Vendsyssel vom Meer bedeckt. Aufgrund seines gewaltigen Gewichts hatte das Eis das Land so stark nach unten gedrückt, dass es überflutet wurde.\n\nDarum findet man mancherorts alte Meeresböden mitten im Landesinneren. Nachdem das Eis verschwunden war, hob sich das Land langsam wieder – bis zu dem Vendsyssel, das wir heute kennen.",
+    "text_en": "Here you can really sense the ravines and see how the springs cut their way through the terminal moraine. It can be a bit wet and muddy—so watch your step.\n\nAnother interesting detail: when the ice melted, Vendsyssel was covered by the sea. Because of its massive weight, the ice had pushed the land down so much that it lay under water.\n\nThat’s why in some places you can find ancient seabed right in the middle of the country. After the ice disappeared, the land slowly rose again, becoming the Vendsyssel we know today."
+  },
+  {
+    "id": 6,
+    "routeId": 1,
+    "title": "Sti langs vandløb 1",
+    "lat": 57.22073,
+    "lon": 10.27997,
+    "radiusMeters": 12,
+    "text": "I har nok allerede observeret, at skoven mest består af bøgetræer. Det var faktisk sådan, at i gammel tid der var skoven delt op i overskov og underskov. Overskoven ejede godsejeren, mens bønderne måtte have lov til at tage de andre træer til bl.a. brænde og dyrehegn. \n\nOrdningen med overskov og underskov opstod helt tilbage i 1446 og i 1600-tallet blev det præciseret at overskov bestod af eg, bøg og ask og at alle andre træarter uanset størrelse, var underskov. Loven opstod for at sikre de store træer til bl.a. skibsbyggeri, men loven havde den stik modsatte virkning. Dette prøvede man at ændre på i 1781, hvor den Store Udskiftningsforordning blev lavet. Bønderne mistede herefter retten til underskoven, dog mod kompensation.",
+    "images": [
+      "/img/Bøgen.webp"
+    ],
+    "audio": "/audio/route1/R1_POI6.mp3",
+    "title_de": "Pfad am Bach 1",
+    "title_en": "Path Along the Stream 1",
+    "text_de": "Ihr habt sicher schon bemerkt, dass der Wald überwiegend aus Buchen besteht. Früher war der Wald tatsächlich in „Hochwald“ und „Unterholz“ aufgeteilt. Den Hochwald besaß der Gutsbesitzer, während die Bauern die übrigen Bäume z. B. für Brennholz und Viehzäune nutzen durften.\n\nDiese Ordnung entstand bereits 1446, und im 17. Jahrhundert wurde präzisiert, dass Hochwald aus Eiche, Buche und Esche bestand und alle anderen Baumarten – unabhängig von ihrer Größe – Unterholz waren. Das Gesetz sollte große Bäume u. a. für den Schiffbau sichern, hatte aber den gegenteiligen Effekt. 1781 versuchte man das mit der „Store Udskiftningsforordning“ zu ändern. Danach verloren die Bauern das Recht am Unterholz, erhielten aber eine Entschädigung.",
+    "text_en": "You’ve probably noticed that the forest is mostly beech. In earlier times, the forest was divided into “high forest” and “undergrowth.” The landowner owned the high forest, while farmers were allowed to take the other trees for things like firewood and animal fencing.\n\nThis arrangement dates back to 1446, and in the 1600s it was specified that the high forest consisted of oak, beech, and ash, while all other tree species—regardless of size—were classed as undergrowth. The law was intended to secure large trees for uses like shipbuilding but had the opposite effect. In 1781 they tried to change this with the “Store Udskiftningsforordning.” After that, farmers lost the right to the undergrowth, though with compensation."
+  },
+  {
+    "id": 7,
+    "routeId": 1,
+    "title": "Sti langs vandløb 2",
+    "lat": 57.22051,
+    "lon": 10.27913,
+    "radiusMeters": 12,
+    "text": "Jeg ved ikke om I har bemærket det, men rigtig mange af bøgetræerne har knuder på stammen. Det er især noget man ser i Vendsyssel og de træer kaldes også for Vendsyssel Bøge eller Vendsyssel Røller. Jeg har ladet mig fortælle, at man kan dreje nogle flotte skåle ud af knuderne. Knuderne skulle give et rigtig flot spil i træet. Så hvis man skulle falde over en knude en gang og man kender en trædrejer, så var det måske et forsøg værd.",
+    "images": [
+      "/img/Moræne2.webp"
+    ],
+    "audio": "/audio/route1/R1_POI7.mp3",
+    "title_de": "Pfad am Bach 2",
+    "title_en": "Path Along the Stream 2",
+    "text_de": "Ich weiß nicht, ob ihr es bemerkt habt, aber viele Buchen hier haben Knollen am Stamm. Das sieht man besonders in Vendsyssel, und diese Bäume werden auch „Vendsyssel-Buchen“ oder „Vendsyssel-Røller“ genannt. Man sagt, dass sich aus diesen Knollen wunderschöne Schalen drechseln lassen – sie sollen ein sehr schönes Spiel im Holz ergeben. Wenn ihr also einmal so eine Knolle findet und einen Holzdrechsler kennt, wäre das vielleicht einen Versuch wert.",
+    "text_en": "I’m not sure if you’ve noticed, but many of the beech trees have burls on their trunks. You see this especially in Vendsyssel, and those trees are called Vendsyssel Beeches or Vendsyssel “Røller.” I’ve been told you can turn beautiful bowls from these burls—the grain looks wonderful. So if you ever come across one and know a woodturner, it might be worth a try."
+  },
+  {
+    "id": 8,
+    "routeId": 1,
+    "title": "Gangbroen",
+    "lat": 57.22058,
+    "lon": 10.27853,
+    "radiusMeters": 12,
+    "text": "Nå jeg har som sædvanligt snakket alt for meget, det er desværre en af mine dårlige vaner, hvis du spørger min familie. Vi er ved at være nået til vejs ende i vores Mølleskov, nu skal vi bare til højre og så kommer der en gammel gangbro. Den fører hen over vandløbet som løber ud i vores Møllesø. \n\n I øvrigt så kan vi jo takke gletsjeren for, at vi har de helt rigtige forhold til at have både en vandmølle og vindmølle. Uden den havde vi måske ikke kunnet bygge nogle af dem og så har vi ikke kunnet lave strøm, mel eller foder. Det hele hænger sammen i et større puslespil. \n\nHåber at I har fået lidt ny viden og ser på landskabet på en ny måde, næste gang I bevæger jer rundt i landet fra de flade heder til de høje bakkedrag. Tak fordi I ville med mig rundt, det har været rigtig hyggeligt.",
+    "images": [
+      "/img/GangbroRed.webp"
+    ],
+    "audio": "/audio/route1/R1_POI8.mp3",
+    "title_de": "Der Steg",
+    "title_en": "The Footbridge",
+    "text_de": "So, ich habe wie üblich viel zu viel geredet – leider eine meiner schlechten Angewohnheiten, wenn man meine Familie fragt. Wir sind am Ende unserer Runde im Mølleskoven; jetzt müssen wir nur noch nach rechts, dann kommt ein alter Steg. Er führt über den Bach, der in unsere Møllesø mündet.\n\nÜbrigens können wir dem Gletscher danken, dass wir hier die idealen Bedingungen für sowohl eine Wasser- als auch eine Windmühle haben. Ohne ihn hätten wir vielleicht keine von beiden bauen können – und dann hätten wir keinen Strom, kein Mehl und kein Futter erzeugen können. Alles ist Teil eines größeren Puzzles.\n\nIch hoffe, ihr habt etwas Neues mitgenommen und schaut beim nächsten Spaziergang – von den flachen Heiden bis zu den hohen Hügelrücken – mit anderen Augen auf die Landschaft. Danke, dass ihr mich begleitet habt – es war sehr gemütlich.",
+    "text_en": "Well, as usual I’ve talked far too much—one of my bad habits, according to my family. We’re nearly at the end of our walk in Mølleskoven; we just turn right and we’ll reach an old footbridge. It crosses the stream that flows into our Møllesø.\n\nBy the way, we can thank the glacier for giving us just the right conditions for both a watermill and a windmill. Without it, we might not have been able to build either—and then we couldn’t have made power, flour, or feed. It all fits together like a big puzzle.\n\nI hope you learned something new and will see the landscape differently next time you move across the country—from flat heathlands to high ridges. Thanks for joining me; it’s been a real pleasure."
+  }
+]
