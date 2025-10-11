@@ -139,23 +139,6 @@ export default function MapView({ pois, polyline, userPos, boundsKey, nextSegmen
 
         {polyline && polyline.length > 1 && <Polyline positions={polyline} />}
 
-        {/* Animeret retningslinje fra aktuelt → næste */}
-        {nextSegment && (
-          <Polyline
-            positions={nextSegment}
-            pathOptions={{
-              className: "route-animated",
-              color: "#f59e0b",
-              weight: 6,
-              opacity: 0.95,
-              lineCap: "round",
-              // Vigtigt: Sat stregmønster på elementet så CSS kan animere stregforskydning.
-              dashArray: "12 16",
-              dashOffset: "0",
-            }}
-          />
-        )}
-
         {pois.map((p, idx) => (
           <Marker key={p.id} position={[p.lat, p.lon]} icon={PoiDivIcon}>
             <Popup>

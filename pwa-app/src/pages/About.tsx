@@ -24,14 +24,14 @@ export default function About() {
   const content = {
     da: {
       h1: "Om stedet – Dorf Møllegård",
-      p1: "Dorf Møllegård er et historisk miljø omkring møllesøen – med eng, vandløb og Mølleskoven lige ved siden af. Her mødes kulturhistorie og natur: vindmøllen og de gamle spor af landbruget på den ene side, skovens træer, fugleliv og smådyr på den anden. Rundturen byder på smalle skovstier, den gamle gangbro og flotte kig over landskabet.",
+      p1: "Dorf Møllegård er et historisk miljø omkring møllesøen – med eng, vandløb og Mølleskoven lige ved siden af. Her mødes kulturhistorie, natur, vindmøllen og de gamle spor af landbruget på den ene side, skovens træer, fugleliv og smådyr på den anden. Rundturen byder på smalle skovstier, et par gangbroer og flot udsigt over landskabet.",
       h2: "Om Mølleskoven",
       p2: "Mølleskoven er en lille, varieret skov med både lysninger og tæt skygge. Stierne er kortere end en skovtur “ud i det blå”, så børn og voksne kan være med. Enkelte passager er stejle eller ujævne – gå efter forholdene og hold dig til stierne.",
       h3: "Om appen",
       p3a: "Denne app giver dig tematiske ruter i skoven. Når du bevæger dig, åbner fortællingerne automatisk ved de markerede punkter (POI’er).",
       p3b: "Sprog: Dansk, tysk og engelsk (oplæsning kun på dansk).",
       p3c: "GPS: Tillad venligst lokalitet, så appen kan starte de rigtige fortællinger på stedet.",
-      p3d: "Lyd: Slå gerne lyd til på din telefon for den bedste oplevelse. (Voiceover kun på dansk.)",
+      p3d: "Lyd: Slå gerne lyd til på din telefon for den bedste oplevelse. (Oplæsning kun på dansk.)",
       h4: "Gode råd i naturen",
       p4: "Vis hensyn, tag dit affald med, og lad planter og dyr i fred, så andre også kan få en god oplevelse.",
       h5: "Klar?",
@@ -39,7 +39,7 @@ export default function About() {
     },
     de: {
       h1: "Über den Ort – Dorf Møllegård",
-      p1: "Dorf Møllegård ist ein historisches Ensemble rund um den Mühlensee – mit Wiese, Bachlauf und dem Mølleskov direkt nebenan. Hier treffen Kulturgeschichte und Natur aufeinander: die Windmühle und die Spuren der Landwirtschaft einerseits, Bäume, Vogelwelt und Kleintiere des Waldes andererseits. Der Rundgang führt über schmale Pfade, die alte Stegbrücke und bietet schöne Ausblicke auf die Landschaft.",
+      p1: "Dorf Møllegård ist ein historisches Ensemble rund um den Mühlensee – mit Wiese, Bachlauf und dem Mølleskov direkt nebenan. Hier treffen Kulturgeschichte und Natur aufeinander, die Windmühle und die Spuren der Landwirtschaft einerseits, Bäume, Vogelwelt und Kleintiere des Waldes andererseits. Der Rundgang führt über schmale Pfade, die alte Stegbrücke und bietet schöne Ausblicke auf die Landschaft.",
       h2: "Über den Mølleskov",
       p2: "Der Mølleskov ist ein kleiner, abwechslungsreicher Wald mit Lichtungen und schattigen Bereichen. Die Wege sind kurz genug, damit Kinder und Erwachsene gut mitkommen. Einzelne Abschnitte sind steil oder uneben – bitte den Gegebenheiten entsprechend gehen und auf den Pfaden bleiben.",
       h3: "Über die App",
@@ -54,7 +54,7 @@ export default function About() {
     },
     en: {
       h1: "About the place – Dorf Møllegård",
-      p1: "Dorf Møllegård is a historic setting around the mill pond – with meadow, stream and the Mølleskov forest right next door. Here, cultural history meets nature: the windmill and traces of farming on one side, and the forest’s trees, birds and small creatures on the other. The loop features narrow woodland paths, the old footbridge, and lovely views across the landscape.",
+      p1: "Dorf Møllegård is a historic setting around the mill pond – with meadow, stream and the Mølleskov forest right next door. Here, cultural history meets nature, the windmill and traces of farming on one side, and the forest’s trees, birds and small creatures on the other. The loop features narrow woodland paths, the old footbridge, and lovely views across the landscape.",
       h2: "About Mølleskoven",
       p2: "Mølleskoven is a small, varied forest with both clearings and deep shade. Paths are short enough for children and adults alike. Some sections are steep or uneven – walk according to conditions and keep to the paths.",
       h3: "About the app",
